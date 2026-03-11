@@ -1,0 +1,253 @@
+{%- liquid
+  assign heading = section.settings.heading | default: 'Frequently Asked Questions'
+  assign cta_text = section.settings.cta_text | default: 'Need More Information?'
+  assign cta_btn_text = section.settings.cta_btn_text | default: 'Visit Our FAQ Page'
+  assign cta_url = section.settings.cta_url | default: '/pages/faqs'
+  assign accent_color = section.settings.accent_color | default: '#34150C'
+-%}
+
+<section class="vpc-faq-section">
+  <h2 class="vpc-faq-heading" style="color: {{ accent_color }};">{{ heading }}</h2>
+
+  <div class="vpc-faq-grid">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'faq' and block.settings.question != blank -%}
+        <div class="vpc-faq-item" {{ block.shopify_attributes }}>
+          <button class="vpc-faq-question" type="button">
+            <span>{{ block.settings.question }}</span>
+            <span class="vpc-faq-plus">+</span>
+          </button>
+          <div class="vpc-faq-answer">
+            <div class="vpc-faq-answer-inner">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  {%- if cta_text != blank -%}
+    <p class="vpc-faq-cta-text" style="color: {{ accent_color }};">{{ cta_text }}</p>
+  {%- endif -%}
+
+  {%- if cta_btn_text != blank -%}
+    <a href="{{ cta_url }}" class="vpc-faq-cta-btn" style="background: {{ accent_color }};">{{ cta_btn_text }}</a>
+  {%- endif -%}
+</section>
+
+<style>
+.vpc-faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px 60px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.vpc-faq-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+}
+.vpc-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 40px;
+  text-align: left;
+  align-items: start;
+}
+.vpc-faq-item {
+  background: rgba(52, 21, 12, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.vpc-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: {{ accent_color }} !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.vpc-faq-question:hover,
+.vpc-faq-question:focus,
+.vpc-faq-question:active {
+  background: rgba(52, 21, 12, 0.03);
+  color: {{ accent_color }} !important;
+}
+.vpc-faq-question:focus {
+  outline: none;
+}
+.vpc-faq-plus {
+  font-size: 18px;
+  font-weight: 400;
+  color: {{ accent_color }};
+  flex-shrink: 0;
+  margin-left: 12px;
+  transition: transform 0.3s ease;
+}
+.vpc-faq-item.is-open .vpc-faq-plus {
+  transform: rotate(45deg);
+}
+.vpc-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.vpc-faq-item.is-open .vpc-faq-answer {
+  max-height: 500px;
+}
+.vpc-faq-answer-inner {
+  padding: 0 20px 16px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #555;
+}
+.vpc-faq-answer-inner p {
+  margin: 0 0 8px;
+}
+.vpc-faq-answer-inner p:last-child {
+  margin: 0;
+}
+.vpc-faq-cta-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.vpc-faq-cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+.vpc-faq-cta-btn:hover {
+  opacity: 0.85;
+  color: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .vpc-faq-section {
+    padding: 40px 16px 50px;
+  }
+  .vpc-faq-heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .vpc-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  .vpc-faq-question {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+  .vpc-faq-cta-text {
+    font-size: 16px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var faqSection = document.querySelector('.vpc-faq-section');
+  if (faqSection) {
+    faqSection.querySelectorAll('.vpc-faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.vpc-faq-item');
+        var isOpen = item.classList.contains('is-open');
+        faqSection.querySelectorAll('.vpc-faq-item.is-open').forEach(function(el) { el.classList.remove('is-open'); });
+        if (!isOpen) item.classList.add('is-open');
+      });
+    });
+  }
+});
+</script>
+
+{% schema %}
+{
+  "name": "FAQ Grid",
+  "tag": "section",
+  "class": "t4s-section t4s-section-all vpc-faq-grid-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#34150C"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Heading",
+      "default": "Need More Information?"
+    },
+    {
+      "type": "text",
+      "id": "cta_btn_text",
+      "label": "CTA Button Text",
+      "default": "Visit Our FAQ Page"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Button Link",
+      "default": "/pages/faqs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Your question here?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Your answer here.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Grid"
+    }
+  ]
+}
+{% endschema %}
