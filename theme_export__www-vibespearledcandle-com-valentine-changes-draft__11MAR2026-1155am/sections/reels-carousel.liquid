@@ -1,0 +1,635 @@
+<!-- Load Splide.js CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<style>
+  .vd-{{ block.id }}-video-section {
+    padding: 12px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .vd-{{ block.id }}-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  .vd-{{ block.id }}-header {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .vd-{{ block.id }}-heading {
+    color: #000000;
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: normal;
+  }
+
+  .vd-{{ block.id }}-subheading {
+    color: #000000;
+    font-size: {{ block.settings.subheading_size }}px;
+    margin: 0;
+  }
+
+  .vd-{{ block.id }}-splide {
+    margin-bottom: 2em;
+    padding: 0 0em;
+    position: relative;
+  }
+  
+  .vd-{{ block.id }}-splide li{
+    padding-inline-start: 0;
+  }
+
+  .vd-{{ block.id }}-video-container {
+    position: relative;
+    aspect-ratio: 110 / 150;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF5F1;
+    cursor: pointer;
+    max-height: 75dvh;
+  }
+
+  .vd-{{ block.id }}-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .vd-{{ block.id }}-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .vd-{{ block.id }}-play-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .vd-{{ block.id }}-play-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 3px;
+  }
+
+  
+
+  .vd-{{ block.id }}-bottom-section {
+    text-align: center;
+  }
+
+  .vd-{{ block.id }}-cta-button {
+    background: {{ block.settings.button_color }};
+    color: white;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    min-width: 350px;
+    line-height: 1em;
+  }
+
+  .vd-{{ block.id }}-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .vd-{{ block.id }}-button-subtext {
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  /* Popup Styles */
+  .vd-{{ block.id }}-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vd-{{ block.id }}-popup-overlay.active {
+    display: flex;
+  }
+
+  .vd-{{ block.id }}-popup-content {
+    position: relative;
+    width: 90%;
+    max-width: 320px;
+    max-height: auto;
+    aspect-ratio: 9/16;
+  }
+
+  .vd-{{ block.id }}-popup-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+  }
+
+  .vd-{{ block.id }}-popup-close {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    z-index: 10000;
+  }
+
+  .vd-{{ block.id }}-popup-close:hover {
+    opacity: 0.7;
+  }
+
+  /* Splide customization - Full height arrows */
+  .vd-{{ block.id }}-splide .splide__arrow {
+    background: #e8e8e8;
+    border: none;
+    border-radius: 0;
+    width: 32px;
+    height: 100%;
+    top: 0;
+    transform: translateY(0);
+    transition: all 0.2s ease;
+    opacity: 1;
+  }
+
+  .vd-{{ block.id }}-splide .splide__arrow:hover {
+    background: #d4d4d4;
+  }
+
+  .vd-{{ block.id }}-splide .splide__arrow:disabled {
+    opacity: 0;
+  }
+
+  .vd-{{ block.id }}-splide .splide__arrow svg {
+    fill: #4b4b4b;
+    width: 18px;
+    height: 18px;
+  }
+  .vd-{{ block.id }}-splide .splide__arrow svg path{
+      stroke: #e8e8e8;
+  }
+
+  .vd-{{ block.id }}-splide .splide__arrow--prev {
+    left: 0;
+  }
+
+  .vd-{{ block.id }}-splide .splide__arrow--next {
+    right: 0;
+  }
+
+  .vd-{{ block.id }}-splide .splide__pagination {
+    bottom: -30px;
+    gap: 3px;
+  }
+
+  .vd-{{ block.id }}-splide .splide__pagination__page {
+    background: #d1d5db;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .vd-{{ block.id }}-splide .splide__pagination__page.is-active {
+    background: #A2765D;
+    width: 16px;
+    height: 8px;
+    border-radius: 4px;
+    opacity: 1;
+    margin-inline: 5px;
+  }
+
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .vd-{{ block.id }}-video-container {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .vd-{{ block.id }}-video-container {
+      max-height: auto;
+      max-width: 270px
+    }
+
+    .vd-{{ block.id }}-popup-content {
+      max-height: auto;
+      max-width: 270px
+    }
+
+    .vd-{{ block.id }}-splide .splide__arrow {
+      width: 30px;
+    }
+
+    .vd-{{ block.id }}-popup-close {
+      top: -40px;
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .vd-{{ block.id }}-video-container {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .vd-{{ block.id }}-splide_track {
+      overflow: visible !important;
+    }
+  }
+  {% if block.settings.heading_font and block.settings.italic_font == false %}
+    .vd-{{ block.id }}-heading{
+    font-family: "Louize", serif;
+    }
+  {% endif %}
+</style>
+
+<div class="vd-{{ block.id }}-video-section {{ block.settings.custom_class }}">
+  <div class="vd-{{ block.id }}-container">
+    {% if block.settings.heading != blank or block.settings.subheading != blank %}
+      <div class="vd-{{ block.id }}-header">
+        {% if block.settings.heading != blank %}
+          <h2 class="vd-{{ block.id }}-heading {% if block.settings.heading_font %}h2{% endif %}">
+            {% if block.settings.italic_font %}<em>{% endif %}
+            {{ block.settings.heading }}
+            {% if block.settings.italic_font %}</em>{% endif %}
+          </h2>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+          <p class="vd-{{ block.id }}-subheading">{{ block.settings.subheading }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="vd-{{ block.id }}-splide splide" id="vd-{{ block.id }}-splide">
+      <div class="splide__track vd-{{ block.id }}-splide_track">
+        <ul class="splide__list vd-{{ block.id }}-s-splide__list">
+          {% for i in (1..10) %}
+            {% assign video_key = 'video_' | append: i %}
+            {% assign current_video = block.settings[video_key] %}
+            
+            
+            {% if current_video != blank %}
+              <style>
+              .vd-{{ block.id }}-vc-{{ i }} {
+                background: url({{ current_video.preview_image | img_url: '600x' }}) !important;
+                    background-size: cover !important;
+              }
+            </style>
+              <li class="splide__slide">
+                <div class="vd-{{ block.id }}-video-container vd-{{ block.id }}-vc-{{ i }} vid-container" data-video-index="{{ i }}">
+                  <video 
+                    class="vd-{{ block.id }}-video" 
+                    muted 
+                    loop 
+                    playsinline
+                    data-video-id="{{ block.id }}-{{ i }}"
+                    poster="{{ current_video.preview_image | img_url: '600x' }}"
+                  >
+                    <source src="{{ current_video.sources[1].url }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  
+                  <button class="vd-{{ block.id }}-play-button">
+                    <svg class="play-icon" viewBox="0 0 24 24">
+                      <polygon points="5,3 19,12 5,21"></polygon>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% if block.settings.button_text != blank %}
+      <div class="vd-{{ block.id }}-bottom-section">
+        <a href="{{ block.settings.button_url }}" class="vd-{{ block.id }}-cta-button">
+          {{ block.settings.button_text }}
+        </a>
+        {% if block.settings.button_subtext != blank %}
+          <p class="vd-{{ block.id }}-button-subtext">{{ block.settings.button_subtext }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- Popup Overlay -->
+  <div class="vd-{{ block.id }}-popup-overlay" id="vd-{{ block.id }}-popup">
+    <div class="vd-{{ block.id }}-popup-content">
+      <button class="vd-{{ block.id }}-popup-close" id="vd-{{ block.id }}-popup-close">&times;</button>
+      <video 
+        class="vd-{{ block.id }}-popup-video" 
+        id="vd-{{ block.id }}-popup-video"
+        playsinline
+      >
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const blockId = '{{ block.id }}';
+  const splideElement = document.querySelector('#vd-' + blockId + '-splide');
+  
+  if (!splideElement) return;
+  
+  const videoCount = splideElement.querySelectorAll('.splide__slide').length;
+  
+  if (videoCount === 0) return;
+
+  // Determine slides per page based on video count
+  let perPage = 4;
+  if (videoCount < 3) {
+    perPage = videoCount;
+  }
+
+  // Initialize Splide carousel
+  var splide = new Splide('#vd-' + blockId + '-splide', {
+    perPage: perPage,
+    perMove: perPage,
+    gap: '15px',
+    peek: videoCount > 1 ? '50px' : '0',
+    pagination: false,
+    arrows: videoCount > 1,
+    breakpoints: {
+      1150: {
+        perPage: videoCount >= 3 ? 3 : videoCount,
+        perMove: videoCount >= 3 ? 3 : videoCount,
+        gap: '15px',
+      },
+      1024: {
+        perPage: videoCount >= 2 ? 2 : videoCount,
+        perMove: videoCount >= 2 ? 2 : videoCount,
+        gap: '15px',
+      },
+      768: {
+        perPage: 3,
+        perMove: 3,
+        gap: '10px',
+        arrows: false,
+        peek: videoCount > 1 ? '5%' : '0',
+        padding: { right: '5%' },
+      }
+    }
+  });
+  
+  splide.mount();
+
+  // Preload all videos
+  const allVideos = document.querySelectorAll('.vd-' + blockId + '-video');
+  console.log('Total videos found:', allVideos.length);
+  allVideos.forEach((video, index) => {
+    video.load();
+    console.log('Loaded video', index + 1);
+  });
+
+  // Auto-play visible videos for 3 seconds each
+  let currentPlayingIndex = 0;
+  let autoplayTimeout = null;
+  let isAutoplayActive = true;
+  
+  function playVisibleVideos() {
+    console.log('playVisibleVideos called, isAutoplayActive:', isAutoplayActive);
+    
+    if (!isAutoplayActive) return;
+    
+    // Get currently visible slides based on Splide's active index
+    const activeIndex = splide.index;
+    const perPage = splide.options.perPage;
+    
+    console.log('Active index:', activeIndex, 'Per page:', perPage);
+    
+    // Get all slides
+    const allSlides = splide.Components.Slides.get();
+    console.log('Total slides:', allSlides.length);
+    
+    // Get visible slides based on current index and perPage
+    const visibleSlides = allSlides.slice(activeIndex, activeIndex + perPage);
+    console.log('Visible slides:', visibleSlides.length);
+    
+    const videos = visibleSlides.map(slide => {
+      return slide.slide.querySelector('.vd-' + blockId + '-video');
+    }).filter(v => v !== null);
+    
+    console.log('Visible videos:', videos.length);
+    
+    function playNextVideo() {
+      if (videos.length === 0 || !isAutoplayActive) {
+        console.log('Cannot play - videos.length:', videos.length, 'isAutoplayActive:', isAutoplayActive);
+        return;
+      }
+      
+      // Stop all videos
+      videos.forEach((v, idx) => {
+        v.pause();
+        v.currentTime = 0;
+        console.log('Stopped video', idx + 1);
+      });
+      
+      // Play current video
+      const currentVideo = videos[currentPlayingIndex];
+      if (currentVideo) {
+        console.log('Attempting to play video', currentPlayingIndex + 1, 'of', videos.length);
+        
+        // Ensure video is loaded and ready
+        currentVideo.load();
+        currentVideo.muted = true; // Ensure it's muted
+        
+        // Try to play
+        const playPromise = currentVideo.play();
+        
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              console.log('✓ Successfully playing video', currentPlayingIndex + 1);
+            })
+            .catch(error => {
+              console.error('✗ Autoplay blocked:', error.message);
+            });
+        }
+        
+        // Move to next video after 3 seconds
+        if (autoplayTimeout) {
+          clearTimeout(autoplayTimeout);
+        }
+        
+        autoplayTimeout = setTimeout(() => {
+          console.log('3 seconds elapsed, moving to next video');
+          currentPlayingIndex = (currentPlayingIndex + 1) % videos.length;
+          playNextVideo();
+        }, 4000);
+      }
+    }
+    
+    playNextVideo();
+  }
+  
+  // Try to start autoplay immediately
+  console.log('Initiating autoplay...');
+  playVisibleVideos();
+  
+  // Also try after a delay
+  setTimeout(() => {
+    console.log('Retry autoplay after delay...');
+    if (autoplayTimeout) {
+      clearTimeout(autoplayTimeout);
+    }
+    currentPlayingIndex = 0;
+    playVisibleVideos();
+  }, 500);
+  
+  // Enable autoplay on first user interaction
+  let hasUserInteracted = false;
+  document.addEventListener('click', function enableAutoplay() {
+    if (!hasUserInteracted) {
+      hasUserInteracted = true;
+      console.log('User interaction detected, starting autoplay');
+      if (autoplayTimeout) {
+        clearTimeout(autoplayTimeout);
+      }
+      currentPlayingIndex = 0;
+      isAutoplayActive = true;
+      playVisibleVideos();
+    }
+  }, { once: true });
+  
+  // Restart autoplay when slide changes
+  splide.on('moved', function() {
+    console.log('Slider moved, restarting autoplay');
+    if (autoplayTimeout) {
+      clearTimeout(autoplayTimeout);
+    }
+    currentPlayingIndex = 0;
+    isAutoplayActive = true;
+    playVisibleVideos();
+  });
+
+  // Popup functionality
+  const popup = document.getElementById('vd-' + blockId + '-popup');
+  const popupVideo = document.getElementById('vd-' + blockId + '-popup-video');
+  const popupClose = document.getElementById('vd-' + blockId + '-popup-close');
+  const videoContainers = document.querySelectorAll('.vd-' + blockId + '-video-container');
+
+  // Function to control z-index of header and sticky bar
+  function setElementsZIndex(zIndexValue) {
+    const productStickyBar = document.querySelector('product-sticky-bar');
+    const header = document.querySelector('header');
+    
+    if (productStickyBar) {
+      if (zIndexValue === 0) {
+        productStickyBar.style.zIndex = '0';
+      } else {
+        productStickyBar.style.zIndex = '4';
+      }
+    }
+    
+    if (header) {
+      if (zIndexValue === 0) {
+        header.style.setProperty('z-index', '0', 'important');
+      } else {
+        header.style.setProperty('z-index', '6', 'important');
+      }
+    }
+  }
+
+  videoContainers.forEach(container => {
+    container.addEventListener('click', function() {
+      const video = this.querySelector('.vd-' + blockId + '-video');
+      const videoSrc = video.querySelector('source').src;
+      
+      // Pause autoplay
+      if (autoplayTimeout) {
+        clearTimeout(autoplayTimeout);
+      }
+      isAutoplayActive = false;
+      
+      // Pause all carousel videos
+      document.querySelectorAll('.vd-' + blockId + '-video').forEach(v => v.pause());
+      
+      popupVideo.querySelector('source').src = videoSrc;
+      popupVideo.load();
+      popup.classList.add('active');
+      popupVideo.play();
+      document.body.style.overflow = 'hidden';
+      
+      setElementsZIndex(0);
+    });
+  });
+
+  // Close popup
+  function closePopup() {
+    popup.classList.remove('active');
+    popupVideo.pause();
+    popupVideo.currentTime = 0;
+    document.body.style.overflow = '';
+    
+    setElementsZIndex(1);
+    
+    // Resume autoplay
+    currentPlayingIndex = 0;
+    isAutoplayActive = true;
+    playVisibleVideos();
+  }
+
+  popupClose.addEventListener('click', closePopup);
+
+  popup.addEventListener('click', function(e) {
+    if (e.target === popup) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && popup.classList.contains('active')) {
+      closePopup();
+    }
+  });
+});
+</script>

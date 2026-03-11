@@ -1,0 +1,810 @@
+<!-- videos-carousel.liquid -->
+{%- liquid
+  assign sid = section.id
+  assign se_stts = section.settings
+-%}
+
+<style>
+  .videos-{{ sid }}-section {
+    padding: {{ se_stts.padding_top }}px 0 {{ se_stts.padding_bottom }}px;
+    background-color: {{ se_stts.bg_color | default: '#ffffff' }};
+    overflow: hidden;
+  }
+
+  .videos-{{ sid }}-container {
+    max-width: {{ se_stts.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .videos-{{ sid }}-header {
+    text-align: center;
+    margin-bottom: {{ se_stts.heading_spacing }}px;
+  }
+
+  .videos-{{ sid }}-heading {
+    color: {{ se_stts.heading_color | default: '#8B0000' }};
+    font-size: {{ se_stts.heading_size }}px;
+    font-weight: {{ se_stts.heading_weight }};
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .videos-{{ sid }}-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .videos-{{ sid }}-carousel {
+    display: flex;
+    gap: {{ se_stts.gap_size }}px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 10px 0 30px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .videos-{{ sid }}-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .videos-{{ sid }}-video-container {
+    position: relative;
+    flex: 0 0 auto;
+    width: {{ se_stts.video_width_desktop }}px;
+    aspect-ratio: 9 / 16;
+    border-radius: {{ se_stts.border_radius }}px;
+    overflow: hidden;
+    background: #f5f5f5;
+    scroll-snap-align: start;
+    cursor: pointer;
+  }
+
+  .videos-{{ sid }}-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .videos-{{ sid }}-video::-webkit-media-controls {
+    display: none !important;
+  }
+
+  .videos-{{ sid }}-video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+
+  .videos-{{ sid }}-video::-webkit-media-controls-panel {
+    display: none !important;
+  }
+
+  /* Loading placeholder */
+  .videos-{{ sid }}-video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    z-index: 1;
+  }
+
+  .videos-{{ sid }}-video-container.loaded::before {
+    display: none;
+  }
+
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  /* Sound indicator */
+  .videos-{{ sid }}-sound-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  .videos-{{ sid }}-video-container:hover .videos-{{ sid }}-sound-indicator {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .videos-{{ sid }}-sound-indicator svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+  }
+
+  .videos-{{ sid }}-sound-indicator.muted svg.muted-icon {
+    display: block;
+  }
+
+  .videos-{{ sid }}-sound-indicator.muted svg.unmuted-icon {
+    display: none;
+  }
+
+  .videos-{{ sid }}-sound-indicator:not(.muted) svg.muted-icon {
+    display: none;
+  }
+
+  .videos-{{ sid }}-sound-indicator:not(.muted) svg.unmuted-icon {
+    display: block;
+  }
+
+  /* Scroll arrows */
+  .videos-{{ sid }}-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .videos-{{ sid }}-arrow:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .videos-{{ sid }}-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .videos-{{ sid }}-arrow-left {
+    left: 10px;
+  }
+
+  .videos-{{ sid }}-arrow-right {
+    right: 10px;
+  }
+
+  .videos-{{ sid }}-arrow svg {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .videos-{{ sid }}-section {
+      padding: {{ se_stts.padding_top_mobile }}px 0 {{ se_stts.padding_bottom_mobile }}px;
+    }
+
+    .videos-{{ sid }}-container {
+      padding: 0 15px;
+    }
+
+    .videos-{{ sid }}-heading {
+      font-size: {{ se_stts.heading_size_mobile }}px;
+    }
+
+    .videos-{{ sid }}-header {
+      margin-bottom: {{ se_stts.heading_spacing_mobile }}px;
+    }
+
+    .videos-{{ sid }}-video-container {
+      width: {{ se_stts.video_width_mobile }}px;
+    }
+
+    .videos-{{ sid }}-carousel {
+      gap: {{ se_stts.gap_size_mobile }}px;
+    }
+
+    .videos-{{ sid }}-arrow {
+      width: 35px;
+      height: 35px;
+    }
+
+    .videos-{{ sid }}-arrow svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .videos-{{ sid }}-arrow-left {
+      left: 5px;
+    }
+
+    .videos-{{ sid }}-arrow-right {
+      right: 5px;
+    }
+
+    .videos-{{ sid }}-sound-indicator {
+      width: 28px;
+      height: 28px;
+      bottom: 8px;
+      right: 8px;
+    }
+
+    .videos-{{ sid }}-sound-indicator svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .videos-{{ sid }}-video-container {
+      width: calc(100vw - 60px);
+      max-width: {{ se_stts.video_width_mobile }}px;
+    }
+  }
+</style>
+
+<div class="videos-{{ sid }}-section" data-section-id="{{ sid }}">
+  <div class="videos-{{ sid }}-container">
+    {% if se_stts.heading != blank %}
+      <div class="videos-{{ sid }}-header">
+        <h2 class="videos-{{ sid }}-heading">{{ se_stts.heading }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="videos-{{ sid }}-carousel-wrapper">
+      <button class="videos-{{ sid }}-arrow videos-{{ sid }}-arrow-left" aria-label="Scroll left">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+
+      <div class="videos-{{ sid }}-carousel" id="videos-{{ sid }}-carousel">
+        {% for i in (1..10) %}
+          {% assign video_key = 'video_' | append: i %}
+          {% assign current_video = se_stts[video_key] %}
+          
+          {% if current_video != blank %}
+            <div class="videos-{{ sid }}-video-container" data-video-index="{{ i }}" data-loaded="false" data-muted="true">
+              <video 
+                class="videos-{{ sid }}-video" 
+                muted 
+                loop 
+                playsinline
+                autoplay
+                preload="auto"
+                controls="false"
+                disablePictureInPicture
+                controlsList="nodownload nofullscreen noremoteplayback"
+                data-video-id="{{ sid }}-{{ i }}"
+                poster="{{ current_video.preview_image | img_url: '400x' }}"
+                aria-label="Video {{ i }}"
+                oncontextmenu="return false;"
+              >
+                <source src="{{ current_video.sources[1].url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="videos-{{ sid }}-sound-indicator muted">
+                <svg class="muted-icon" viewBox="0 0 24 24">
+                  <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+                <svg class="unmuted-icon" viewBox="0 0 24 24">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <button class="videos-{{ sid }}-arrow videos-{{ sid }}-arrow-right" aria-label="Scroll right">
+        <svg viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const sectionId = '{{ sid }}';
+  const carousel = document.getElementById('videos-' + sectionId + '-carousel');
+  
+  if (!carousel) return;
+
+  const videoContainers = carousel.querySelectorAll('.videos-' + sectionId + '-video-container');
+  const leftArrow = document.querySelector('.videos-' + sectionId + '-arrow-left');
+  const rightArrow = document.querySelector('.videos-' + sectionId + '-arrow-right');
+  
+  let scrollTimeout;
+
+  // Update arrow states
+  function updateArrows() {
+    if (!leftArrow || !rightArrow) return;
+    
+    const scrollLeft = carousel.scrollLeft;
+    const scrollWidth = carousel.scrollWidth;
+    const clientWidth = carousel.clientWidth;
+    
+    leftArrow.disabled = scrollLeft <= 10;
+    rightArrow.disabled = scrollLeft >= scrollWidth - clientWidth - 10;
+  }
+
+  // Scroll functions
+  function scrollCarousel(direction) {
+    const scrollAmount = carousel.clientWidth * 0.8;
+    const targetScroll = direction === 'left' 
+      ? carousel.scrollLeft - scrollAmount 
+      : carousel.scrollLeft + scrollAmount;
+    
+    carousel.scrollTo({
+      left: targetScroll,
+      behavior: 'smooth'
+    });
+  }
+
+  if (leftArrow) {
+    leftArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      scrollCarousel('left');
+    });
+  }
+
+  if (rightArrow) {
+    rightArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      scrollCarousel('right');
+    });
+  }
+
+  carousel.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(updateArrows, 100);
+  });
+
+  // Load and autoplay all videos
+  function initAllVideos() {
+    videoContainers.forEach((container, index) => {
+      const video = container.querySelector('video');
+      if (!video) return;
+
+      // Mark as loaded
+      container.dataset.loaded = 'true';
+      container.classList.add('loaded');
+
+      // Ensure video is muted initially and set to autoplay
+      video.muted = true;
+      video.setAttribute('muted', '');
+      video.loop = true;
+      video.playsInline = true;
+      video.controls = false;
+      
+      // Prevent default video behaviors (fullscreen, context menu)
+      video.addEventListener('dblclick', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      });
+      
+      video.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      });
+
+      // Play video as soon as it has enough data
+      function tryPlayVideo() {
+        if (video.readyState >= 2) { // HAVE_CURRENT_DATA or better
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              // Autoplay prevented - will try again after user interaction
+              console.log('Autoplay prevented for video ' + (index + 1), error);
+            });
+          }
+        } else {
+          // Wait for video to load enough data
+          video.addEventListener('loadeddata', tryPlayVideo, { once: true });
+          video.addEventListener('canplay', tryPlayVideo, { once: true });
+        }
+      }
+
+      // Start playing immediately if ready, otherwise wait
+      if (video.readyState >= 2) {
+        tryPlayVideo();
+      } else {
+        video.addEventListener('loadeddata', tryPlayVideo, { once: true });
+        video.addEventListener('canplay', tryPlayVideo, { once: true });
+        video.load(); // Trigger loading if not already started
+      }
+
+      // Handle video click to toggle sound
+      container.addEventListener('click', function(e) {
+        // Don't trigger if clicking on arrow buttons
+        if (e.target.closest('.videos-' + sectionId + '-arrow')) {
+          return;
+        }
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isMuted = container.dataset.muted === 'true';
+        const soundIndicator = container.querySelector('.videos-' + sectionId + '-sound-indicator');
+
+        if (isMuted) {
+          // Unmute (enable sound)
+          video.muted = false;
+          video.removeAttribute('muted');
+          container.dataset.muted = 'false';
+          if (soundIndicator) {
+            soundIndicator.classList.remove('muted');
+          }
+        } else {
+          // Mute (disable sound)
+          video.muted = true;
+          video.setAttribute('muted', '');
+          container.dataset.muted = 'true';
+          if (soundIndicator) {
+            soundIndicator.classList.add('muted');
+          }
+        }
+
+        // Ensure video continues playing (should already be playing, but just in case)
+        if (video.paused) {
+          video.play().catch(() => {
+            // Play prevented
+          });
+        }
+      });
+    });
+  }
+
+  // Initialize all videos after a short delay
+  setTimeout(() => {
+    initAllVideos();
+  }, 300);
+
+  // Try to autoplay on first user interaction (if autoplay was blocked)
+  let hasUserInteracted = false;
+  const enableAutoplayOnInteraction = () => {
+    if (hasUserInteracted) return;
+    hasUserInteracted = true;
+
+    videoContainers.forEach(container => {
+      const video = container.querySelector('video');
+      if (video && video.paused) {
+        video.play().catch(() => {
+          // Play prevented
+        });
+      }
+    });
+  };
+
+  // Listen for user interaction to enable autoplay
+  ['click', 'touchstart', 'keydown'].forEach(eventType => {
+    document.addEventListener(eventType, enableAutoplayOnInteraction, { once: true, passive: true });
+  });
+
+  // Initial arrow state
+  updateArrows();
+  
+  // Handle window resize
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      updateArrows();
+      // Ensure all videos are still playing after resize
+      videoContainers.forEach(container => {
+        const video = container.querySelector('video');
+        if (video && video.paused) {
+          video.play().catch(() => {});
+        }
+      });
+    }, 250);
+  });
+
+  // Keep videos playing if they pause unexpectedly
+  videoContainers.forEach(container => {
+    const video = container.querySelector('video');
+    if (!video) return;
+
+    video.addEventListener('pause', function() {
+      // Only auto-resume if it wasn't paused by user clicking
+      setTimeout(() => {
+        if (video.paused && container.dataset.userPaused !== 'true') {
+          video.play().catch(() => {});
+        }
+      }, 100);
+    });
+
+    // Handle video ended to restart loop
+    video.addEventListener('ended', function() {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Videos Carousel",
+  "tag": "section",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "MORE THAN 17 MILLION SERVINGS WORLDWIDE"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#8B0000"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Size (Desktop)",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading Size (Mobile)",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading Font Weight",
+      "default": "600",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Heading Bottom Spacing",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing_mobile",
+      "label": "Heading Bottom Spacing (Mobile)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Videos"
+    },
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Video 1"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Video 2"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Video 3"
+    },
+    {
+      "type": "video",
+      "id": "video_4",
+      "label": "Video 4"
+    },
+    {
+      "type": "video",
+      "id": "video_5",
+      "label": "Video 5"
+    },
+    {
+      "type": "video",
+      "id": "video_6",
+      "label": "Video 6"
+    },
+    {
+      "type": "video",
+      "id": "video_7",
+      "label": "Video 7"
+    },
+    {
+      "type": "video",
+      "id": "video_8",
+      "label": "Video 8"
+    },
+    {
+      "type": "video",
+      "id": "video_9",
+      "label": "Video 9"
+    },
+    {
+      "type": "video",
+      "id": "video_10",
+      "label": "Video 10"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Container Max Width",
+      "min": 800,
+      "max": 1600,
+      "step": 50,
+      "default": 1400,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "video_width_desktop",
+      "label": "Video Width (Desktop)",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "default": 280,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "video_width_mobile",
+      "label": "Video Width (Mobile)",
+      "min": 180,
+      "max": 320,
+      "step": 20,
+      "default": 240,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap_size",
+      "label": "Gap Between Videos (Desktop)",
+      "min": 8,
+      "max": 30,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap_size_mobile",
+      "label": "Gap Between Videos (Mobile)",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Video Border Radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "default": 8,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Section Styling"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top (Mobile)",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom (Mobile)",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "default": 30,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Videos Carousel"
+    }
+  ]
+}
+{% endschema %}

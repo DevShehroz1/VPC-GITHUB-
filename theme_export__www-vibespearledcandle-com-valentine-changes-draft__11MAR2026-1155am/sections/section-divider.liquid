@@ -1,0 +1,237 @@
+{%- liquid
+  if section.settings.flip_horizontal
+    assign scaleX = 'scaleX(-1)'
+  else
+    assign scaleX = 'scaleX(1)'
+  endif
+
+  if section.settings.flip_vertical
+    assign scaleY = 'scaleY(-1)'
+  else
+    assign scaleY = 'scaleY(1)'
+  endif
+
+  if section.settings.minus_bottom_padding
+    assign bottom_padding_mobile = section.settings.padding_bottom | times: 0.75 | times: -1 | round: 0
+    assign bottom_padding_desktop = section.settings.padding_bottom | times: -1
+  else
+    assign bottom_padding_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
+    assign bottom_padding_desktop = section.settings.padding_bottom
+  endif
+-%}
+
+{% style %}
+.section-divider-{{ section.id }} {
+  transform: {{ scaleX }} {{ scaleY }};
+  overflow: hidden;
+  line-height: 0;
+  --wave-color: currentColor;
+}
+
+{% if section.settings.wave_color_mode == 'custom' %}
+.section-divider-{{ section.id }} {
+  --wave-color: {{ section.settings.wave_custom_color }};
+}
+{% endif %}
+
+.section-divider-{{ section.id }} svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Padding */
+.section-{{ section.id }}-top-padding {
+  height: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+}
+.section-{{ section.id }}-bottom-padding {
+  height: {{ bottom_padding_mobile }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-top-padding {
+    height: {{ section.settings.padding_top }}px;
+  }
+  .section-{{ section.id }}-bottom-padding {
+    height: {{ bottom_padding_desktop }}px;
+  }
+}
+
+/* ===============================
+   WAVES 3 ANIMATION (DARKER)
+   =============================== */
+
+.section-divider-{{ section.id }} .waves-animated-1 use {
+  animation: wave-move-{{ section.id }} 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  will-change: transform;
+}
+
+.section-divider-{{ section.id }} .parallax1 use {
+  animation-duration: 7s;
+  animation-delay: -2s;
+  opacity: 0.9;
+}
+
+.section-divider-{{ section.id }} .parallax2 use {
+  animation-duration: 10s;
+  animation-delay: -3s;
+  opacity: 0.8;
+}
+
+.section-divider-{{ section.id }} .parallax3 use {
+  animation-duration: 13s;
+  animation-delay: -4s;
+  opacity: 0.7;
+}
+
+.section-divider-{{ section.id }} .parallax4 use {
+  animation-duration: 20s;
+  animation-delay: -5s;
+  opacity: 0.6;
+}
+
+@keyframes wave-move-{{ section.id }} {
+  0% { transform: translateX(-90px); }
+  100% { transform: translateX(85px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-divider-{{ section.id }} .waves-animated-1 use {
+    animation: none;
+  }
+}
+{% endstyle %}
+
+<div class="section-{{ section.id }}-top-padding {{ section.settings.visibility }}">
+  &nbsp;
+</div>
+
+<div class="section-divider section-divider-{{ section.id }} {{ section.settings.visibility }}">
+  <div class="section-divider__svg">
+    {% if section.settings.shape == 'waves_3' %}
+      <svg
+        class="waves-animated-1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave-{{ section.id }}"
+            d="M-160 44c30 0
+              58-18 88-18s
+              58 18 88 18
+              58-18 88-18
+              58 18 88 18
+              v44h-352z" />
+        </defs>
+
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave-{{ section.id }}" x="50" y="3" fill="var(--wave-color)"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave-{{ section.id }}" x="50" y="0" fill="var(--wave-color)"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave-{{ section.id }}" x="50" y="9" fill="var(--wave-color)"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave-{{ section.id }}" x="50" y="6" fill="var(--wave-color)"/>
+        </g>
+      </svg>
+    {% endif %}
+  </div>
+</div>
+
+<div class="section-{{ section.id }}-bottom-padding {{ section.settings.visibility }}">
+  &nbsp;
+</div>
+
+{% schema %}
+{
+  "name": "Section divider",
+  "settings": [
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Display on",
+      "default": "always-display",
+      "options": [
+        { "value": "always-display", "label": "All devices" },
+        { "value": "mobile-hidden", "label": "Desktop only" },
+        { "value": "desktop-hidden", "label": "Mobile only" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "shape",
+      "label": "Shape",
+      "default": "waves_3",
+      "options": [
+        { "value": "waves_3", "label": "Waves (Animated)" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "wave_color_mode",
+      "label": "Wave color source",
+      "default": "theme",
+      "options": [
+        { "value": "theme", "label": "Theme color" },
+        { "value": "custom", "label": "Custom color" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "wave_custom_color",
+      "label": "Custom wave color",
+      "default": "#2d1a5a",
+      "visible_if": "{{ section.settings.wave_color_mode == 'custom' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_horizontal",
+      "label": "Flip horizontal",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_vertical",
+      "label": "Flip vertical",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": -100,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "minus_bottom_padding",
+      "label": "Apply minus bottom padding",
+      "default": false,
+      "info": "When enabled, applies negative bottom padding to pull content closer"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section divider"
+    }
+  ]
+}
+{% endschema %}

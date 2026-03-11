@@ -1,0 +1,929 @@
+{% comment %}
+<div class="color-background-1 gradient content-for-grouping always-display" style="width:100vw; margin-left:calc(-50vw + 50%); padding:0;">
+
+  <div class="section-sections--23891723059486__custom_liquid_KW3g4U-padding">
+    <style>
+      body.unique-body-class {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .unique-announcement-bar {
+        position: relative;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;  
+        gap: 4px;
+
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+
+        height: auto;
+        padding: 10px 15px;
+
+        background: linear-gradient(90deg, black, #b26634, #f2d6ae, black);
+        background-size: 300% 300%;
+        animation: unique-gradient-shift 6s infinite;
+
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .unique-countdown-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+      }
+
+      .unique-time {
+        background: white;
+        color: black;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+      }
+
+      @keyframes unique-gradient-shift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      @media (max-width: 768px) {
+        .unique-announcement-bar {
+          font-size: 12px;
+          padding: 10px;
+          text-align: center;
+        }
+
+        .unique-countdown-wrapper {
+          gap: 5px;
+        }
+
+        .unique-time {
+          padding: 2px 6px;
+          font-size: 10px;
+        }
+      }
+    </style>
+
+    <div class="unique-announcement-bar">
+      <div>CYBERMONDAY IS LIVE, BUY 80$+ AND SAVE EXTRA</div>
+
+      <div class="unique-countdown-wrapper">
+        <span class="unique-time"><span id="unique-hours">00</span> HRS</span>
+        <span class="unique-time"><span id="unique-minutes">00</span> MIN</span>
+        <span class="unique-time"><span id="unique-seconds">00</span> SEC</span>
+      </div>
+    </div>
+
+    <script>
+      const COUNTDOWN_DURATION = 48 * 60 * 60; 
+      const STORAGE_KEY = "unique_countdown_endtime";
+
+      function getEndTime() {
+        let endTime = localStorage.getItem(STORAGE_KEY);
+
+        if (!endTime) {
+          endTime = Math.floor(Date.now() / 1000) + COUNTDOWN_DURATION;
+          localStorage.setItem(STORAGE_KEY, endTime);
+        }
+
+        return parseInt(endTime, 10);
+      }
+
+      function startCountdown() {
+        const endTime = getEndTime();
+
+        function updateCountdown() {
+          const now = Math.floor(Date.now() / 1000);
+          let remaining = endTime - now;
+
+          if (remaining < 0) remaining = 0;
+
+          const hours = Math.floor(remaining / 3600);
+          const minutes = Math.floor((remaining % 3600) / 60);
+          const seconds = remaining % 60;
+
+          document.getElementById('unique-hours').textContent = String(hours).padStart(2, '0');
+          document.getElementById('unique-minutes').textContent = String(minutes).padStart(2, '0');
+          document.getElementById('unique-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
+
+      startCountdown();
+    </script>
+
+  </div>
+</div>
+
+<div id="shopify-section-sections--25922892398972__custom_timer_christmas_tmXmJ4" 
+class="shopify-section shopify-section-group-header-group timer-slim">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+  /* Modern Valentine's Background */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section {
+    background: #bd3a36;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 56px;
+  }
+  
+  /* Modern Content Container */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Modern subtle sparkle overlay */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(255, 192, 203, 0.06) 0%, transparent 50%);
+    animation: heartSparkle 40s linear infinite;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @keyframes heartSparkle {
+    0% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+    50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.8; }
+    100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  }
+
+  /* Modern Title Section */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Modern Timer Container */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    z-index: 2;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Modern Time Block */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 48px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block:hover::before {
+    left: 100%;
+  }
+
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+  }
+
+  /* Modern Numbers */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    background: none !important;
+    color: #ffffff;
+    padding: 0;
+    min-width: 28px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Modern Labels */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label {
+    font-size: 7px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Modern Separator */
+  .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 2px;
+    flex-shrink: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: -2px;
+  }
+
+  /* Desktop optimizations - Modern */
+  @media (min-width: 769px) {
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section {
+      min-height: 60px;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper {
+      padding: 14px 32px;
+      gap: 24px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading {
+      font-size: 16px;
+      letter-spacing: 0.6px;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading-wrapper {
+      gap: 10px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container {
+      gap: 5px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block {
+      padding: 8px 10px;
+      min-width: 56px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value {
+      font-size: 24px;
+      min-width: 32px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label {
+      font-size: 8px;
+      margin-top: 3px;
+      letter-spacing: 0.7px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator {
+      font-size: 18px;
+      margin: 0 3px;
+    }
+  }
+
+  /* Tablet - Modern */
+  @media (max-width: 768px) {
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section {
+      min-height: 54px;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper {
+      padding: 12px 20px;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading {
+      font-size: 13px;
+      letter-spacing: 0.4px;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading-wrapper {
+      gap: 8px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container {
+      gap: 4px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block {
+      padding: 6px 9px;
+      min-width: 50px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value {
+      font-size: 22px;
+      min-width: 30px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label {
+      font-size: 7px;
+      margin-top: 2px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator {
+      font-size: 16px;
+      margin: 0 2px;
+    }
+  }
+
+  /* Mobile - Modern */
+  @media (max-width: 480px) {
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section {
+      min-height: auto;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper {
+      padding: 10px 16px;
+      gap: 12px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading-wrapper {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading {
+      font-size: 12px;
+      letter-spacing: 0.4px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container {
+      gap: 3px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block {
+      padding: 5px 8px;
+      min-width: 46px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value {
+      font-size: 20px;
+      min-width: 28px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label {
+      font-size: 7px;
+      margin-top: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator {
+      font-size: 14px;
+      margin: 0 2px;
+    }
+  }
+
+  /* Small mobile - Modern */
+  @media (max-width: 360px) {
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper {
+      padding: 8px 12px;
+      gap: 10px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading {
+      font-size: 11px;
+      letter-spacing: 0.3px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container {
+      gap: 2px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block {
+      padding: 4px 7px;
+      min-width: 42px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value {
+      font-size: 18px;
+      min-width: 26px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label {
+      font-size: 6px;
+      margin-top: 1px;
+    }
+
+    .timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator {
+      font-size: 12px;
+      margin: 0 1px;
+    }
+  }
+</style>
+
+<div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-countdown-section" 
+id="timer-section-sections--25922892398972__custom_timer_christmas_tmXmJ4">
+
+  <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-content-wrapper">
+    
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading-wrapper">
+      <h2 class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-heading">Enjoy extra 10% OFF with code VIBES10</h2>
+    </div>
+
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-timer-container" 
+    id="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4">
+
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block">
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value" 
+      id="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-days">00</span>
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label">Days</span>
+    </div>
+
+    <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator">:</span>
+
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block">
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value" 
+      id="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-hours">00</span>
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label">Hours</span>
+    </div>
+
+    <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator">:</span>
+
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block">
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value" 
+      id="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-minutes">00</span>
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label">Min</span>
+    </div>
+
+    <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-separator">:</span>
+
+    <div class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-block">
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-value" 
+      id="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-seconds">00</span>
+      <span class="timer-sections--25922892398972__custom_timer_christmas_tmXmJ4-time-label">Sec</span>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const sectionId = 'sections--25922892398972__custom_timer_christmas_tmXmJ4';
+
+  // End date: February 16, 2026 at 11:59:59 PM PST
+  // Create date in PST (UTC-8) by manually setting the time
+  const targetDate = new Date('2026-02-16T23:59:59-08:00').getTime();
+
+  // Get timer elements
+  const daysEl = document.getElementById('timer-' + sectionId + '-days');
+  const hoursEl = document.getElementById('timer-' + sectionId + '-hours');
+  const minutesEl = document.getElementById('timer-' + sectionId + '-minutes');
+  const secondsEl = document.getElementById('timer-' + sectionId + '-seconds');
+  const timerSection = document.getElementById('timer-section-' + sectionId);
+  const timerContainer = document.getElementById('timer-' + sectionId);
+
+  // Subtle pulse animation for time blocks
+  function pulseTimeBlock(element) {
+    if (element && element.parentElement) {
+      const block = element.parentElement;
+      block.style.transition = 'all 0.2s ease';
+      block.style.transform = 'scale(1.05)';
+      setTimeout(() => {
+        block.style.transform = '';
+      }, 200);
+    }
+  }
+
+  let lastSeconds = -1;
+  let lastMinutes = -1;
+  let lastHours = -1;
+  let lastDays = -1;
+  let timerInterval = null;
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    let distance = targetDate - now;
+
+    if (distance < 0) {
+      if (timerSection) {
+        timerSection.style.display = "none";
+      }
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Update display with zero padding
+    if (daysEl) {
+      const daysStr = String(days).padStart(2, '0');
+      if (daysEl.textContent !== daysStr) {
+        daysEl.textContent = daysStr;
+        if (lastDays !== -1 && lastDays !== days) {
+          pulseTimeBlock(daysEl);
+        }
+      }
+      lastDays = days;
+    }
+
+    if (hoursEl) {
+      const hoursStr = String(hours).padStart(2, '0');
+      if (hoursEl.textContent !== hoursStr) {
+        hoursEl.textContent = hoursStr;
+        if (lastHours !== -1 && lastHours !== hours) {
+          pulseTimeBlock(hoursEl);
+        }
+      }
+      lastHours = hours;
+    }
+
+    if (minutesEl) {
+      const minutesStr = String(minutes).padStart(2, '0');
+      if (minutesEl.textContent !== minutesStr) {
+        minutesEl.textContent = minutesStr;
+        if (lastMinutes !== -1 && lastMinutes !== minutes) {
+          pulseTimeBlock(minutesEl);
+        }
+      }
+      lastMinutes = minutes;
+    }
+
+    if (secondsEl) {
+      const secondsStr = String(seconds).padStart(2, '0');
+      if (secondsEl.textContent !== secondsStr) {
+        secondsEl.textContent = secondsStr;
+        // Subtle pulse only on minute transitions
+        if (seconds === 0) {
+          pulseTimeBlock(secondsEl);
+        }
+      }
+      lastSeconds = seconds;
+    }
+
+    // Subtle urgency effect when less than 24 hours remain
+    if (days === 0 && hours < 24 && timerSection) {
+      timerSection.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+      timerSection.style.boxShadow = '0 4px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)';
+    }
+
+    // Enhanced effect when less than 1 hour remains
+    if (days === 0 && hours === 0 && minutes < 60) {
+      if (timerSection) {
+        timerSection.style.borderColor = 'rgba(255, 255, 255, 0.35)';
+        timerSection.style.boxShadow = '0 6px 28px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
+      }
+    }
+  }
+
+  // Wait for DOM to be ready, then initialize timer
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      updateTimer();
+      timerInterval = setInterval(updateTimer, 1000);
+    });
+  } else {
+    updateTimer();
+    timerInterval = setInterval(updateTimer, 1000);
+  }
+})();
+</script>
+
+</div>
+
+{% schema %}
+{
+  "name": "Valentine Bar",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Valentine Bar"
+    }
+  ]
+}
+{% endschema %}{% endcomment %}
+{%- liquid
+  assign bg_color = section.settings.bg_color | default: '#E0315E'
+  assign text_color = section.settings.text_color | default: '#ffffff'
+  assign use_gradient = section.settings.use_gradient
+-%}
+
+<div class="announcement-bar announcement-bar--{{ section.id }} {% if use_gradient %}announcement-bar--gradient{% endif %}" style="--ab-bg: {{ bg_color }}; --ab-text: {{ text_color }};">
+  <div class="announcement-bar__inner">
+    {%- comment -%} Desktop: 3 texts spread across (start, center, end) {%- endcomment -%}
+    <div class="announcement-bar__desktop">
+      <span class="announcement-bar__item announcement-bar__item--1">
+        {{ section.settings.text_1 | default: '🚚 Free Fast Delivery' }}
+      </span>
+      <span class="announcement-bar__item announcement-bar__item--3">
+        {{ section.settings.text_3 | default: '⭐ 10,000+ Happy Customers' }}
+      </span>
+    </div>
+
+    {%- comment -%} Mobile: one text at a time, arrows + auto-slide every 3 sec {%- endcomment -%}
+    <div class="announcement-bar__mobile" aria-hidden="true">
+      <button type="button" class="announcement-bar__arrow announcement-bar__arrow--left" aria-label="Previous">
+        <svg class="announcement-bar__arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+      <div class="announcement-bar__slider-wrap">
+        <div class="announcement-bar__slider" data-section-id="{{ section.id }}">
+          <span class="announcement-bar__slide">{{ section.settings.text_1 | default: '🚚 Free Fast Delivery' }}</span>
+          <span class="announcement-bar__slide">{{ section.settings.text_3 | default: '⭐ 10,000+ Happy Customers' }}</span>
+        </div>
+      </div>
+      <button type="button" class="announcement-bar__arrow announcement-bar__arrow--right" aria-label="Next">
+        <svg class="announcement-bar__arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .announcement-bar--{{ section.id }} {
+    background: var(--ab-bg);
+    color: var(--ab-text);
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    letter-spacing: 0.02em;
+  }
+
+  .announcement-bar__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .announcement-bar__item {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .announcement-bar__item--2,
+  .announcement-bar__item--3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding-left: 24px;
+  }
+
+  .announcement-bar__item--1 {
+    text-align: left;
+  }
+  .announcement-bar__item--2 {
+    text-align: center;
+  }
+  .announcement-bar__item--3 {
+    text-align: right;
+  }
+
+  /* Mobile: hide desktop, show slider */
+  .announcement-bar__mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .announcement-bar--{{ section.id }} {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .announcement-bar__desktop {
+      display: none;
+    }
+
+    .announcement-bar__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      position: relative;
+    }
+
+    .announcement-bar__slider-wrap {
+      flex: 1;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .announcement-bar__slider {
+      display: flex;
+      width: 300%;
+      transition: transform 0.35s ease-in-out;
+    }
+
+    .announcement-bar__slide {
+      flex: 0 0 33.333%;
+      width: 33.333%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 8px;
+      box-sizing: border-box;
+    }
+
+    .announcement-bar__arrow {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .announcement-bar__arrow:hover {
+      opacity: 0.8;
+    }
+
+    .announcement-bar__arrow:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .announcement-bar--{{ section.id }}.announcement-bar--gradient {
+    background: linear-gradient(90deg, #E0315E 0%, #E0315E 50%, #E0315E 100%) !important;
+  }
+</style>
+
+<script>
+(function() {
+  const sectionId = '{{ section.id }}';
+  const slider = document.querySelector('.announcement-bar__slider[data-section-id="' + sectionId + '"]');
+  const mobile = document.querySelector('.announcement-bar__mobile');
+  if (!slider || !mobile) return;
+
+  const prevBtn = mobile.querySelector('.announcement-bar__arrow--left');
+  const nextBtn = mobile.querySelector('.announcement-bar__arrow--right');
+  const slides = slider.querySelectorAll('.announcement-bar__slide');
+  const total = slides.length;
+  let index = 0;
+  let autoTimer;
+
+  function goTo(i) {
+    index = ((i % total) + total) % total;
+    slider.style.transform = 'translateX(-' + (index * 33.333) + '%)';
+    resetAuto();
+  }
+
+  function next() { goTo(index + 1); }
+  function prev() { goTo(index - 1); }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 3000);
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', prev);
+  if (nextBtn) nextBtn.addEventListener('click', next);
+
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    resetAuto();
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "tag": "section",
+  "class": "section-announcement-bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_gradient",
+      "label": "Use Valentine gradient",
+      "default": true,
+      "info": "When off, uses solid background color"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background (when gradient off)",
+      "default": "#E0315E"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Text 1 (Left)",
+      "default": "🚚 Free Fast Delivery"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Text 3 (Right)",
+      "default": "⭐ 10,000+ Happy Customers"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar",
+      "settings": {
+        "bg_color": "#E0315E",
+        "text_color": "#ffffff",
+        "text_1": "🚚 Free Fast Delivery",
+       
+        "text_3": "⭐ 10,000+ Happy Customers"
+      }
+    }
+  ]
+}
+{% endschema %}

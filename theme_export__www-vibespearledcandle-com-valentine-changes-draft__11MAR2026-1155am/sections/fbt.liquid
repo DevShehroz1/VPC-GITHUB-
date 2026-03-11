@@ -1,0 +1,676 @@
+{%- liquid
+  assign section_id = section.id
+  assign product_1 = section.settings.product_1
+  assign product_2 = section.settings.product_2
+  assign product_3 = section.settings.product_3
+  assign section_title = section.settings.section_title | default: "Frequently Bought Together"
+  assign background_color = section.settings.background_color | default: "#f5f5f5"
+-%}
+
+{%- if product_1 != blank or product_2 != blank or product_3 != blank -%}
+<div class="fbt-section section-{{ section_id }}" 
+     style="background-color: {{ background_color }}; padding: {{ section.settings.padding_top }}px {{ section.settings.padding_side }}px {{ section.settings.padding_bottom }}px;">
+  
+  <div class="fbt-container" style="max-width: {{ section.settings.container_width }}px; margin: 0 auto;">
+    
+    {%- if section_title != blank -%}
+      <h2 class="fbt-title" style="font-size: {{ section.settings.title_size }}px; color: {{ section.settings.title_color }}; margin-bottom: {{ section.settings.title_spacing }}px;">
+        {{ section_title }}
+      </h2>
+    {%- endif -%}
+
+    <div class="fbt-products-wrapper">
+      {%- if product_1 != blank -%}
+        {%- assign current_product = product_1 -%}
+        <div class="fbt-product-card" data-product-id="{{ current_product.id }}" data-default-variant-id="{{ current_product.selected_or_first_available_variant.id }}">
+          
+          <!-- Checkbox -->
+          <div class="fbt-checkbox-wrapper">
+            <input type="checkbox" 
+                   class="fbt-product-checkbox" 
+                   id="fbt-checkbox-{{ section_id }}-{{ current_product.id }}"
+                   data-product-id="{{ current_product.id }}"
+                   data-product-handle="{{ current_product.handle }}">
+            <label for="fbt-checkbox-{{ section_id }}-{{ current_product.id }}" class="fbt-checkbox-label"></label>
+          </div>
+
+          <!-- Product Image -->
+          <div class="fbt-product-image">
+            <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+              {%- if current_product.featured_image -%}
+                <img src="{{ current_product.featured_image | image_url: width: 300 }}" 
+                     alt="{{ current_product.title | escape }}"
+                     loading="lazy">
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </a>
+          </div>
+
+          <!-- Product Details -->
+          <div class="fbt-product-details">
+            <h3 class="fbt-product-title">
+              <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+                {{ current_product.title }}
+              </a>
+            </h3>
+
+            <!-- Variant Selector -->
+            {%- if current_product.variants.size > 1 -%}
+              <div class="fbt-variant-selector">
+                <select class="fbt-variant-select" 
+                        data-product-id="{{ current_product.id }}"
+                        id="fbt-variant-{{ section_id }}-{{ current_product.id }}">
+                  {%- for variant in current_product.variants -%}
+                    <option value="{{ variant.id }}" 
+                            data-price="{{ variant.price | money }}"
+                            {% if variant.available == false %}disabled{% endif %}
+                            {% if forloop.first %}selected{% endif %}>
+                      {{ variant.title }}
+                      {%- unless variant.available %} - Sold Out{%- endunless -%}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endif -%}
+
+            <!-- Price -->
+            <div class="fbt-product-price" data-product-id="{{ current_product.id }}">
+              {%- if current_product.price_varies -%}
+                {{ current_product.price_min | money }} - {{ current_product.price_max | money }}
+              {%- else -%}
+                {{ current_product.price | money }}
+              {%- endif -%}
+            </div>
+          </div>
+
+        </div>
+      {%- endif -%}
+      
+      {%- if product_2 != blank -%}
+        {%- assign current_product = product_2 -%}
+        <div class="fbt-product-card" data-product-id="{{ current_product.id }}" data-default-variant-id="{{ current_product.selected_or_first_available_variant.id }}">
+          
+          <!-- Checkbox -->
+          <div class="fbt-checkbox-wrapper">
+            <input type="checkbox" 
+                   class="fbt-product-checkbox" 
+                   id="fbt-checkbox-{{ section_id }}-{{ current_product.id }}"
+                   data-product-id="{{ current_product.id }}"
+                   data-product-handle="{{ current_product.handle }}">
+            <label for="fbt-checkbox-{{ section_id }}-{{ current_product.id }}" class="fbt-checkbox-label"></label>
+          </div>
+
+          <!-- Product Image -->
+          <div class="fbt-product-image">
+            <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+              {%- if current_product.featured_image -%}
+                <img src="{{ current_product.featured_image | image_url: width: 300 }}" 
+                     alt="{{ current_product.title | escape }}"
+                     loading="lazy">
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </a>
+          </div>
+
+          <!-- Product Details -->
+          <div class="fbt-product-details">
+            <h3 class="fbt-product-title">
+              <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+                {{ current_product.title }}
+              </a>
+            </h3>
+
+            <!-- Variant Selector -->
+            {%- if current_product.variants.size > 1 -%}
+              <div class="fbt-variant-selector">
+                <select class="fbt-variant-select" 
+                        data-product-id="{{ current_product.id }}"
+                        id="fbt-variant-{{ section_id }}-{{ current_product.id }}">
+                  {%- for variant in current_product.variants -%}
+                    <option value="{{ variant.id }}" 
+                            data-price="{{ variant.price | money }}"
+                            {% if variant.available == false %}disabled{% endif %}
+                            {% if forloop.first %}selected{% endif %}>
+                      {{ variant.title }}
+                      {%- unless variant.available %} - Sold Out{%- endunless -%}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endif -%}
+
+            <!-- Price -->
+            <div class="fbt-product-price" data-product-id="{{ current_product.id }}">
+              {%- if current_product.price_varies -%}
+                {{ current_product.price_min | money }} - {{ current_product.price_max | money }}
+              {%- else -%}
+                {{ current_product.price | money }}
+              {%- endif -%}
+            </div>
+          </div>
+
+        </div>
+      {%- endif -%}
+      
+      {%- if product_3 != blank -%}
+        {%- assign current_product = product_3 -%}
+        <div class="fbt-product-card" data-product-id="{{ current_product.id }}" data-default-variant-id="{{ current_product.selected_or_first_available_variant.id }}">
+          
+          <!-- Checkbox -->
+          <div class="fbt-checkbox-wrapper">
+            <input type="checkbox" 
+                   class="fbt-product-checkbox" 
+                   id="fbt-checkbox-{{ section_id }}-{{ current_product.id }}"
+                   data-product-id="{{ current_product.id }}"
+                   data-product-handle="{{ current_product.handle }}">
+            <label for="fbt-checkbox-{{ section_id }}-{{ current_product.id }}" class="fbt-checkbox-label"></label>
+          </div>
+
+          <!-- Product Image -->
+          <div class="fbt-product-image">
+            <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+              {%- if current_product.featured_image -%}
+                <img src="{{ current_product.featured_image | image_url: width: 300 }}" 
+                     alt="{{ current_product.title | escape }}"
+                     loading="lazy">
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </a>
+          </div>
+
+          <!-- Product Details -->
+          <div class="fbt-product-details">
+            <h3 class="fbt-product-title">
+              <a href="{{ current_product.url }}" title="{{ current_product.title }}">
+                {{ current_product.title }}
+              </a>
+            </h3>
+
+            <!-- Variant Selector -->
+            {%- if current_product.variants.size > 1 -%}
+              <div class="fbt-variant-selector">
+                <select class="fbt-variant-select" 
+                        data-product-id="{{ current_product.id }}"
+                        id="fbt-variant-{{ section_id }}-{{ current_product.id }}">
+                  {%- for variant in current_product.variants -%}
+                    <option value="{{ variant.id }}" 
+                            data-price="{{ variant.price | money }}"
+                            {% if variant.available == false %}disabled{% endif %}
+                            {% if forloop.first %}selected{% endif %}>
+                      {{ variant.title }}
+                      {%- unless variant.available %} - Sold Out{%- endunless -%}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endif -%}
+
+            <!-- Price -->
+            <div class="fbt-product-price" data-product-id="{{ current_product.id }}">
+              {%- if current_product.price_varies -%}
+                {{ current_product.price_min | money }} - {{ current_product.price_max | money }}
+              {%- else -%}
+                {{ current_product.price | money }}
+              {%- endif -%}
+            </div>
+          </div>
+
+        </div>
+      {%- endif -%}
+    </div>
+
+    <!-- Add to Cart Button -->
+    <div class="fbt-add-to-cart-wrapper">
+      <button type="button" 
+              class="fbt-add-to-cart-btn"
+              id="fbt-add-to-cart-{{ section_id }}"
+              disabled>
+        Add Selected to Cart
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .fbt-section {
+    width: 100%;
+  }
+
+  .fbt-container {
+    width: 100%;
+  }
+
+  .fbt-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .fbt-products-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .fbt-product-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .fbt-checkbox-wrapper {
+    flex-shrink: 0;
+  }
+
+  .fbt-product-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #dc2626;
+    border: 2px solid #dc2626;
+    border-radius: 4px;
+  }
+
+  .fbt-checkbox-label {
+    display: none;
+  }
+
+  .fbt-product-image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .fbt-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fbt-product-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fbt-product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .fbt-product-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .fbt-product-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .fbt-product-title a:hover {
+    text-decoration: underline;
+  }
+
+  .fbt-variant-selector {
+    position: relative;
+  }
+
+  .fbt-variant-select {
+    width: auto;
+    min-width: 120px;
+    padding: 6px 24px 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+  }
+
+  .fbt-variant-select:focus {
+    outline: none;
+    border-color: #dc2626;
+  }
+
+  .fbt-product-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .fbt-add-to-cart-wrapper {
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .fbt-add-to-cart-btn {
+    background-color: #dc2626;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+
+  .fbt-add-to-cart-btn:hover:not(:disabled) {
+    background-color: #b91c1c;
+  }
+
+  .fbt-add-to-cart-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 768px) {
+    .fbt-product-card {
+      padding: 12px;
+      gap: 12px;
+    }
+
+    .fbt-product-image {
+      width: 80px;
+      height: 80px;
+    }
+
+    .fbt-product-title {
+      font-size: 14px;
+    }
+
+    .fbt-product-price {
+      font-size: 14px;
+    }
+
+    .fbt-add-to-cart-btn {
+      width: 100%;
+      padding: 12px 24px;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    var sectionId = '{{ section_id }}';
+    var addToCartBtn = document.getElementById('fbt-add-to-cart-' + sectionId);
+    var checkboxes = document.querySelectorAll('.fbt-product-checkbox');
+    var variantSelects = document.querySelectorAll('.fbt-variant-select');
+    var priceElements = document.querySelectorAll('.fbt-product-price');
+
+    // Update button state based on checkbox selection
+    function updateAddToCartButton() {
+      var hasSelection = false;
+      checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+          hasSelection = true;
+        }
+      });
+      addToCartBtn.disabled = !hasSelection;
+    }
+
+    // Update price when variant changes
+    variantSelects.forEach(function(select) {
+      select.addEventListener('change', function() {
+        var productId = this.getAttribute('data-product-id');
+        var selectedOption = this.options[this.selectedIndex];
+        var price = selectedOption.getAttribute('data-price');
+        var priceElement = document.querySelector('.fbt-product-price[data-product-id="' + productId + '"]');
+        if (priceElement && price) {
+          priceElement.textContent = price;
+        }
+      });
+    });
+
+    // Listen to checkbox changes
+    checkboxes.forEach(function(checkbox) {
+      checkbox.addEventListener('change', updateAddToCartButton);
+    });
+
+    // Add to cart functionality
+    addToCartBtn.addEventListener('click', function() {
+      if (this.disabled) return;
+
+      var selectedProducts = [];
+      checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+          var productId = checkbox.getAttribute('data-product-id');
+          var productCard = checkbox.closest('.fbt-product-card');
+          var variantSelect = document.getElementById('fbt-variant-' + sectionId + '-' + productId);
+          
+          // Get variant ID from select if exists, otherwise use default variant ID from product card
+          var variantId = null;
+          if (variantSelect) {
+            variantId = variantSelect.value;
+          } else if (productCard) {
+            variantId = productCard.getAttribute('data-default-variant-id');
+          }
+          
+          if (variantId) {
+            selectedProducts.push({
+              id: parseInt(variantId),
+              quantity: 1
+            });
+          }
+        }
+      });
+
+      if (selectedProducts.length === 0) {
+        alert('Please select at least one product.');
+        return;
+      }
+
+      // Disable button during request
+      this.disabled = true;
+      this.textContent = 'Adding...';
+
+      // Add products to cart
+      var formData = {
+        items: selectedProducts
+      };
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(function(response) {
+        if (!response.ok) {
+          return response.json().then(function(error) {
+            throw new Error(error.description || 'Failed to add products to cart');
+          });
+        }
+        return response.json();
+      })
+      .then(function(data) {
+        // Success - reload cart or show success message
+        if (window.theme && window.theme.cartDrawer) {
+          window.theme.cartDrawer.open();
+        } else if (window.dispatchEvent) {
+          // Trigger cart update event
+          document.dispatchEvent(new CustomEvent('cart:updated'));
+          // Fallback: redirect to cart or show notification
+          setTimeout(function() {
+            window.location.href = '/cart';
+          }, 500);
+        } else {
+          // Fallback: redirect to cart
+          window.location.href = '/cart';
+        }
+        
+        // Reset button
+        addToCartBtn.disabled = false;
+        addToCartBtn.textContent = 'Add Selected to Cart';
+        
+        // Uncheck all checkboxes
+        checkboxes.forEach(function(checkbox) {
+          checkbox.checked = false;
+        });
+      })
+      .catch(function(error) {
+        console.error('Error:', error);
+        alert(error.message || 'There was an error adding products to cart. Please try again.');
+        
+        // Reset button
+        addToCartBtn.disabled = false;
+        addToCartBtn.textContent = 'Add Selected to Cart';
+      });
+    });
+
+    // Initialize button state
+    updateAddToCartButton();
+  })();
+</script>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Frequently Bought",
+  "tag": "section",
+  "class": "section-fbt",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Frequently Bought Together"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Title Font Size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Title Bottom Spacing",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Products"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product 2"
+    },
+    {
+      "type": "product",
+      "id": "product_3",
+      "label": "Product 3"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 600,
+      "max": 1920,
+      "step": 20,
+      "unit": "px",
+      "label": "Container Max Width",
+      "default": 1200
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_side",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Side",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f5f5f5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Frequently Bought"
+    }
+  ]
+}
+{% endschema %}

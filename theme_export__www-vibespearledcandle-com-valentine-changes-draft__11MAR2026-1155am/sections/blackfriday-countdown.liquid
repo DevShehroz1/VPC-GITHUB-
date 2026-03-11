@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ section.settings.page_title | default: "Valentine's Day Collection" }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-ink: #1a1a1a;
+            --color-night: #f5f5f5;
+            --color-graphite: #ffffff;
+            --color-carbon: #fafafa;
+            --color-slate: #f0f0f0;
+            --color-smoke: #1a1a1a;
+            --color-white: #ffffff;
+            --color-muted: rgba(26, 26, 26, 0.7);
+            --color-pink: #ec4899;
+            --color-pink-dark: #be185d;
+            --color-pink-bright: #f472b6;
+            --color-red: #ef4444;
+            --color-red-dark: #dc2626;
+            --color-red-bright: #f87171;
+            --color-rose: #f43f5e;
+            --color-rose-light: #fb7185;
+            --font-display: 'Poppins', sans-serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(140deg, rgba(255, 245, 250, 0.96) 0%, rgba(255, 240, 248, 0.95) 45%, rgba(255, 250, 252, 0.98) 100%);
+            color: var(--color-smoke);
+            font-family: var(--font-body);
+            font-size: 20px;
+            line-height: 1.8;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle at 18% 20%, rgba(236, 72, 153, 0.15), transparent 55%),
+                        radial-gradient(circle at 82% 80%, rgba(244, 63, 94, 0.12), transparent 60%),
+                        radial-gradient(circle at 50% 50%, rgba(239, 68, 68, 0.1), transparent 70%),
+                        linear-gradient(125deg, rgba(255, 192, 203, 0.08), transparent);
+            pointer-events: none;
+            z-index: -1;
+            animation: valentineGlow 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes valentineGlow {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        /* Falling Hearts Animation */
+        .falling-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            opacity: 0;
+            will-change: transform, opacity;
+            animation: fall ease-in-out forwards;
+            width: 35px;
+            height: 35px;
+        }
+
+        .heart img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            filter: drop-shadow(0 0 8px rgba(236, 72, 153, 0.6));
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) translateX(0) rotate(0deg) scale(0.8);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.9;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh) translateX(var(--drift, 0px)) rotate(var(--rotation, 360deg)) scale(1);
+                opacity: 0;
+            }
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        .bds-header-banner {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem 1.35rem;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 1.85rem;
+            margin: 0;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.5) 0%, rgba(244, 63, 94, 0.4) 30%, rgba(239, 68, 68, 0.35) 60%, rgba(190, 24, 93, 0.4) 100%);
+            background-size: 200% 200%;
+            animation: valentineGradient 15s ease infinite;
+            border-bottom: 3px solid rgba(236, 72, 153, 0.4);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), 0 0 30px rgba(236, 72, 153, 0.4), 0 0 50px rgba(244, 63, 94, 0.2);
+        }
+
+        .bds-header-banner::before {
+            content: '💕';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 1.2rem;
+            opacity: 0.6;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        .bds-header-banner::after {
+            content: '💖';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.2rem;
+            opacity: 0.6;
+            animation: sparkle 2s ease-in-out infinite 1s;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        @keyframes valentineGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .bds-eyebrow {
+            font-family: var(--font-display);
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            color: var(--color-pink);
+            text-shadow: 0 0 10px rgba(236, 72, 153, 0.5), 0 0 20px rgba(236, 72, 153, 0.3);
+            animation: eyebrowShine 2s ease-in-out infinite;
+        }
+
+        @keyframes eyebrowShine {
+            0%, 100% { text-shadow: 0 0 10px rgba(236, 72, 153, 0.5), 0 0 20px rgba(236, 72, 153, 0.3); }
+            50% { text-shadow: 0 0 15px rgba(236, 72, 153, 0.7), 0 0 25px rgba(244, 63, 94, 0.5), 0 0 35px rgba(236, 72, 153, 0.3); }
+        }
+
+        .bds-banner-text {
+            display: flex;
+            gap: 0.85rem;
+            align-items: center;
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .bds-mobile-timer-link {
+            display: none;
+            width: 100%;
+        }
+
+        .bds-mobile-timer-image {
+            display: none !important;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 18px 38px rgba(0, 0, 0, 0.35);
+        }
+
+        .bds-countdown {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            background: rgba(255, 45, 85, 0.14);
+            border: 1px solid rgba(255, 45, 85, 0.55);
+            box-shadow: 0 0 22px rgba(255, 45, 85, 0.28);
+        }
+
+        .bds-countdown span {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .bds-countdown .bds-time-value {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            line-height: 1.1;
+            color: var(--color-red);
+            min-width: 2ch;
+            text-align: center;
+        }
+
+        .bds-countdown .bds-time-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-muted);
+        }
+
+        .bds-divider {
+            font-size: 1.2rem;
+            font-family: var(--font-display);
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0 -0.1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2.35rem;
+            border-radius: 999px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(120deg, var(--color-pink-bright), var(--color-pink));
+            color: var(--color-white);
+            box-shadow: 0 22px 50px -16px rgba(236, 72, 153, 0.6), 0 0 20px rgba(236, 72, 153, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 26px 58px -18px rgba(236, 72, 153, 0.7), 0 0 30px rgba(236, 72, 153, 0.4);
+            background: linear-gradient(120deg, var(--color-pink), var(--color-pink-bright));
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-smoke);
+            border: 1px solid rgba(255, 255, 255, 0.32);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.14);
+        }
+
+        .products-section {
+            padding: 5.2rem 2.8rem;
+            background: linear-gradient(180deg, rgba(255, 245, 250, 0.97) 0%, rgba(255, 240, 248, 0.95) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .products-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .valentine-banner {
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .valentine-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .valentine-banner-desktop {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .valentine-banner-mobile {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .valentine-banner-desktop {
+                display: none !important;
+            }
+
+            .valentine-banner-mobile {
+                display: block !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .valentine-banner-mobile {
+                display: none !important;
+            }
+
+            .valentine-banner-desktop {
+                display: block !important;
+            }
+        }
+
+        .products-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 6.8vw, 4.5rem);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--color-smoke);
+            text-shadow: 0 0 20px rgba(236, 72, 153, 0.6), 0 0 30px rgba(244, 63, 94, 0.4), 0 0 40px rgba(236, 72, 153, 0.3);
+            margin-bottom: 1.5rem;
+            position: relative;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% { text-shadow: 0 0 20px rgba(236, 72, 153, 0.6), 0 0 30px rgba(244, 63, 94, 0.4), 0 0 40px rgba(236, 72, 153, 0.3); }
+            100% { text-shadow: 0 0 30px rgba(236, 72, 153, 0.8), 0 0 40px rgba(244, 63, 94, 0.6), 0 0 50px rgba(236, 72, 153, 0.5); }
+        }
+
+        .products-subtitle {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: rgba(26, 26, 26, 0.7);
+            line-height: 1.7;
+        }
+
+        .products-grid {
+            display: grid;
+            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .product-card {
+            position: relative;
+            padding: 1.5rem 1.5rem 2rem;
+            background: linear-gradient(155deg, rgba(255, 250, 252, 0.95), rgba(255, 245, 250, 0.92));
+            border-radius: 12px;
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.1);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border 0.4s ease;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .limited-stock-badge {
+            position: absolute;
+            top: 0.75rem;
+            left: calc(0.75rem + 1px);
+            width: clamp(5rem, 18vw, 8rem);
+            aspect-ratio: 1 / 1;
+            pointer-events: none;
+            z-index: 5;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+        }
+
+        .limited-stock-badge img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .limited-stock-badge {
+                top: 0.5rem;
+                left: calc(0.5rem + 1px);
+                width: clamp(4rem, 35vw, 6.5rem);
+            }
+        }
+
+        .valentine-sale-badge {
+            position: absolute;
+            left: -15px;
+            top: 0;
+            width: clamp(80px, 12vw, 120px);
+            height: auto;
+            pointer-events: none;
+            z-index: 10;
+            filter: drop-shadow(0 4px 12px rgba(236, 72, 153, 0.4));
+        }
+
+        .valentine-sale-badge img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .valentine-sale-badge {
+                width: clamp(60px, 15vw, 100px);
+                left: -10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .valentine-sale-badge {
+                width: clamp(50px, 18vw, 80px);
+                left: -8px;
+            }
+        }
+
+        .product-card::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, rgba(236, 72, 153, 0.5), rgba(244, 63, 94, 0.5), rgba(236, 72, 153, 0.5), rgba(244, 63, 94, 0.5));
+            background-size: 300% 300%;
+            border-radius: 12px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.4s ease;
+            animation: borderGlow 3s ease infinite;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(125deg, rgba(236, 72, 153, 0.2), rgba(244, 63, 94, 0.15), transparent 60%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 32px 64px -24px rgba(236, 72, 153, 0.5), 0 0 40px rgba(244, 63, 94, 0.3), 0 0 60px rgba(236, 72, 153, 0.2);
+            border-color: rgba(236, 72, 153, 0.6);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-card:hover::after {
+            opacity: 0.6;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.2rem;
+            background: linear-gradient(135deg, var(--color-pink), var(--color-pink-dark));
+            color: var(--color-white);
+            font-weight: 700;
+            padding: 0.5rem 0.95rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            z-index: 100;
+            pointer-events: auto;
+            opacity: 1;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.5), 0 0 10px rgba(236, 72, 153, 0.3), 0 0 20px rgba(236, 72, 153, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .product-link {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-decoration: none !important;
+            color: inherit;
+            position: relative;
+            z-index: 2;
+        }
+
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 2px solid rgba(236, 72, 153, 0.2);
+            background: rgba(255, 245, 250, 0.8);
+            position: relative;
+            z-index: 1;
+            transition: transform 0.4s ease, border 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+            border-color: rgba(236, 72, 153, 0.5);
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3), 0 0 20px rgba(236, 72, 153, 0.2);
+        }
+
+        .product-title {
+            font-family: var(--font-body);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-smoke);
+        }
+
+        .product-price {
+            display: flex;
+            gap: 0.85rem;
+            align-items: baseline;
+            color: var(--color-pink);
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 10;
+            text-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+        }
+
+        .product-price .price-compare {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: rgba(26, 26, 26, 0.5);
+            text-decoration: line-through;
+            position: relative;
+            z-index: 10;
+        }
+
+        .features-section {
+            padding: 3rem 2.5rem;
+            background: linear-gradient(180deg, rgba(255, 240, 248, 0.94) 0%, rgba(255, 245, 250, 0.96) 100%);
+            border-top: 2px solid rgba(236, 72, 153, 0.2);
+            border-bottom: 2px solid rgba(244, 63, 94, 0.2);
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 1.5rem 1.5rem;
+            background: linear-gradient(150deg, rgba(255, 250, 252, 0.95), rgba(255, 245, 250, 0.9));
+            border-radius: 18px;
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.1);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s ease, box-shadow 0.4s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: rgba(236, 72, 153, 0.6);
+            box-shadow: 0 15px 40px rgba(236, 72, 153, 0.4), 0 0 30px rgba(244, 63, 94, 0.3), 0 0 50px rgba(236, 72, 153, 0.2);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-pink);
+            font-size: 1.8rem;
+            margin: 0 auto 0.8rem;
+            filter: drop-shadow(0 0 8px rgba(236, 72, 153, 0.4));
+        }
+
+        .feature-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .feature-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            color: var(--color-smoke);
+            margin-bottom: 0.6rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .feature-copy {
+            color: rgba(26, 26, 26, 0.75);
+            font-size: 1.05rem;
+            text-align: center;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .bds-header-banner {
+                flex-direction: column;
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .bds-banner-text {
+                flex-direction: column;
+                gap: 0.4rem;
+                width: 100%;
+            }
+
+            .bds-mobile-timer-link {
+                display: none !important;
+                margin-top: 1rem;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .bds-mobile-timer-image {
+                display: none !important;
+                width: 100%;
+            }
+
+            .products-section,
+            .features-section {
+                padding: 3.8rem 1.6rem;
+            }
+
+            .feature-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.4rem;
+                margin: 0 auto 0.6rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products-grid {
+                gap: 1.5rem;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .product-card {
+                padding: 1rem 0.8rem 1.2rem;
+                overflow: visible;
+            }
+
+            .product-link {
+                gap: 0.5rem;
+            }
+
+            .product-image {
+                margin-bottom: 0.75rem;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                border-radius: 1px;
+            }
+
+            .product-title {
+                font-size: 1.15rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .product-price {
+                font-size: 1.4rem;
+                position: relative;
+                z-index: 10;
+            }
+
+            .product-price .price-compare {
+                font-size: 0.95rem;
+                position: relative;
+                z-index: 10;
+            }
+
+            .discount-badge {
+                font-size: 0.85rem;
+                padding: 0.45rem 0.75rem;
+                top: 0.8rem;
+                right: 0.8rem;
+                z-index: 100;
+                opacity: 1;
+            }
+
+            .products-title {
+                font-size: {{ section.settings.product_title_size_mobile }}px !important;
+            }
+
+            .products-subtitle {
+                font-size: {{ section.settings.product_subtitle_size_mobile }}px !important;
+            }
+
+            .feature-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.4rem;
+                margin: 0 auto 0.6rem;
+            }
+
+            .feature-title {
+                font-size: 1.1rem !important;
+                margin-bottom: 0.5rem;
+            }
+
+            .feature-copy {
+                font-size: 0.95rem !important;
+                line-height: 1.5;
+            }
+
+            .feature-card {
+                padding: 1.2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="falling-hearts" id="falling-hearts"></div>
+
+    <script>
+        // Enhanced Falling Hearts Animation with Images
+        (function() {
+            const heartsContainer = document.getElementById('falling-hearts');
+            if (!heartsContainer) return;
+
+            const heartImages = [
+                'https://cdn.shopify.com/s/files/1/0920/7591/7591/files/valentines-day.png?v=1769017635',
+                'https://cdn.shopify.com/s/files/1/0920/7591/7591/files/heart_1.png?v=1769017635',
+                'https://cdn.shopify.com/s/files/1/0920/7591/7591/files/heart.png?v=1769017635'
+            ];
+            const numHearts = 40;
+            let heartCount = 0;
+
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                
+                // Create image element
+                const img = document.createElement('img');
+                img.src = heartImages[Math.floor(Math.random() * heartImages.length)];
+                img.alt = 'Falling Heart';
+                heart.appendChild(img);
+                
+                // Random starting position
+                heart.style.left = Math.random() * 100 + '%';
+                
+                // All hearts are equal size (35px x 35px set in CSS)
+                
+                // Varied animation duration (slower = more graceful)
+                const duration = Math.random() * 5 + 7; // 7-12 seconds (slower)
+                heart.style.animationDuration = duration + 's';
+                
+                // Staggered start times
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                
+                // Horizontal drift for more natural movement
+                const drift = (Math.random() - 0.5) * 100; // -50px to +50px
+                heart.style.setProperty('--drift', drift + 'px');
+                
+                // Varied rotation speed
+                const rotation = (Math.random() * 360 + 180); // 180-540 degrees
+                heart.style.setProperty('--rotation', rotation + 'deg');
+                
+                // Add subtle glow effect
+                const glowIntensity = Math.random() * 0.5 + 0.3;
+                img.style.filter = `drop-shadow(0 0 ${glowIntensity * 8}px rgba(236, 72, 153, 0.6)) brightness(${1 + glowIntensity * 0.2})`;
+                
+                heartsContainer.appendChild(heart);
+                heartCount++;
+
+                // Remove heart after animation completes
+                setTimeout(() => {
+                    if (heart.parentNode) {
+                        heart.remove();
+                        heartCount--;
+                    }
+                }, (duration + 2) * 1000);
+            }
+
+            // Create initial hearts with staggered timing
+            for (let i = 0; i < numHearts; i++) {
+                setTimeout(() => createHeart(), i * 150);
+            }
+
+            // Continuously create new hearts at varied intervals
+            function scheduleNextHeart() {
+                const delay = Math.random() * 400 + 200; // 200-600ms
+                setTimeout(() => {
+                    if (heartCount < 60) { // Limit max hearts for performance
+                        createHeart();
+                    }
+                    scheduleNextHeart();
+                }, delay);
+            }
+            
+            scheduleNextHeart();
+        })();
+    </script>
+
+    {% comment %}
+    <div class="bds-header-banner" id="bds-banner" role="status" aria-live="polite">
+        <span class="bds-eyebrow">💕 Valentine's Day Sale! 💕</span>
+        <div class="bds-banner-text">
+            <span>Up to 50% OFF — Show your love with amazing Valentine's Day deals! Perfect for your special someone. Limited time only!</span>
+        </div>
+    </div>
+    {% endcomment %}
+
+    <!-- Valentine's Day Banner -->
+    <div class="valentine-banner">
+        <img src="https://cdn.shopify.com/s/files/1/0920/7591/7591/files/valentines_website_banner-4_1.png?v=1769533931" alt="Valentine's Day Banner" class="valentine-banner-desktop">
+        <img src="https://cdn.shopify.com/s/files/1/0920/7591/7591/files/valentines_phone_banner-4_1.png?v=1769533929" alt="Valentine's Day Banner" class="valentine-banner-mobile">
+    </div>
+
+    <section class="products-section" id="products">
+        <div class="products-header">
+            <h2 class="products-title" style="font-size: {{ section.settings.product_title_size }}px;">Show Your Love with Perfect Gifts
+</h2>
+            <p class="products-subtitle" style="font-size: {{ section.settings.product_subtitle_size }}px;">Romantic gifts. Heartfelt deals. Limited-time love. 💖
+Make this Valentine’s Day unforgettable <br> <strong> shop now before deals end! </strong></p>
+        </div>
+
+        <div class="products-grid">
+            {% if section.settings.featured_collection != blank %}
+                {% assign bds_collection = collections[section.settings.featured_collection] %}
+                {% for product in bds_collection.products limit: section.settings.products_limit %}
+                    {% assign limited_stock_metafield = product.metafields.custom.limited_stock %}
+                    {% assign limited_stock_image = null %}
+                    {% if limited_stock_metafield %}
+                        {% comment %} Handle image file reference metafield - use img_url filter for image files {% endcomment %}
+                        {% if limited_stock_metafield.value %}
+                            {% assign limited_stock_image = limited_stock_metafield.value | img_url: 'master' %}
+                        {% elsif limited_stock_metafield.src %}
+                            {% assign limited_stock_image = limited_stock_metafield.src %}
+                        {% else %}
+                            {% assign limited_stock_image = limited_stock_metafield | img_url: 'master' %}
+                        {% endif %}
+                    {% endif %}
+                    <article class="product-card{% if limited_stock_image %} has-limited-stock{% endif %}">
+                        {% if limited_stock_image %}
+                            <div class="limited-stock-badge">
+                                <img src="{{ limited_stock_image }}" alt="Limited Stock">
+                            </div>
+                        {% endif %}
+                        {% if product.compare_at_price > product.price %}
+                            {% assign discount_percentage = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price %}
+                            <div class="discount-badge">-{{ discount_percentage | round }}%</div>
+                        {% endif %}
+                        <a href="{{ product.url }}" class="product-link" style="text-decoration:none;color:inherit;">
+                            {% assign vd_sale_icon_metafield = product.metafields.custom.vd_sale_icon %}
+                            {% assign vd_sale_icon_image = null %}
+                            {% if vd_sale_icon_metafield %}
+                                {% comment %} Handle image file reference metafield - use img_url filter for image files {% endcomment %}
+                                {% if vd_sale_icon_metafield.value %}
+                                    {% assign vd_sale_icon_image = vd_sale_icon_metafield.value | img_url: 'master' %}
+                                {% elsif vd_sale_icon_metafield.src %}
+                                    {% assign vd_sale_icon_image = vd_sale_icon_metafield.src %}
+                                {% else %}
+                                    {% assign vd_sale_icon_image = vd_sale_icon_metafield | img_url: 'master' %}
+                                {% endif %}
+                            {% endif %}
+                            {% if vd_sale_icon_image %}
+                                <div class="valentine-sale-badge">
+                                    <img src="{{ vd_sale_icon_image }}" alt="Valentine's Day Sale">
+                                </div>
+                            {% endif %}
+                            {% if product.featured_image %}
+                                <img src="{{ product.featured_image | img_url: '533x533' }}" alt="{{ product.featured_image.alt | escape }}" class="product-image">
+                            {% else %}
+                                <img src="{{ 'product-placeholder.png' | asset_url }}" alt="{{ product.title | escape }}" class="product-image">
+                            {% endif %}
+                            <h3 class="product-title">{{ product.title }}</h3>
+                            <div class="product-price">
+                                {% if product.compare_at_price > product.price %}
+                                    <span class="price-compare">{{ product.compare_at_price | money }}</span>
+                                {% endif %}
+                                <span>{{ product.price | money }}</span>
+                            </div>
+                        </a>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <article class="product-card">
+                    <div style="height: 220px; border-radius: 14px; border: 1px dashed rgba(236, 72, 153, 0.3); display: grid; place-items: center; color: rgba(26, 26, 26, 0.6); margin-bottom: 1.5rem;">
+                        Select a collection in the settings panel
+                    </div>
+                    <h3 class="product-title">Collection Missing</h3>
+                    <p style="color: var(--color-muted); margin-bottom: 1.25rem;">Assign a collection to showcase your premier Valentine's Day lineup and spread the love!</p>
+                    <button type="button" disabled style="background: rgba(236, 72, 153, 0.1); color: rgba(26, 26, 26, 0.4); cursor: not-allowed;">Configure Collection</button>
+                </article>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="features-section" id="perks">
+        <div class="features-grid">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'pillar' %}
+                        <div class="feature-card" {{ block.shopify_attributes }}>
+                            <div class="feature-icon">
+                                {% if block.settings.image %}
+                                    <img src="{{ block.settings.image | img_url: '200x200' }}" alt="{{ block.settings.title }}">
+                                {% else %}
+                                    {{ block.settings.icon | default: '⭐' }}
+                                {% endif %}
+                            </div>
+                            <h3 class="feature-title" style="font-size: {{ section.settings.feature_title_size }}px;">{{ block.settings.title | default: 'Exclusive Perk' }}</h3>
+                            <p class="feature-copy" style="font-size: {{ section.settings.feature_copy_size }}px;">{{ block.settings.description | default: 'Add a short, sharp value statement to reinforce urgency and value.' }}</p>
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </section>
+
+</body>
+</html>
+
+{% schema %}
+{
+  "name": "Valentine's Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "page_title",
+      "label": "Page Title",
+      "default": "Valentine's Day Collection"
+    },
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "product",
+      "id": "hero_cta_product",
+      "label": "Primary CTA Product"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "Primary CTA Text",
+      "default": "Shop Valentine's Collection"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta_secondary_url",
+      "label": "Secondary CTA Link"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_secondary_text",
+      "label": "Secondary CTA Text",
+      "default": "Browse Collection"
+    },
+    {
+      "type": "header",
+      "content": "Typography Settings"
+    },
+    {
+      "type": "range",
+      "id": "product_title_size",
+      "label": "Products Section Title Size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "product_subtitle_size",
+      "label": "Products Section Subtitle Size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "range",
+      "id": "feature_title_size",
+      "label": "Features Section Title Size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "feature_copy_size",
+      "label": "Features Section Description Size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "product_title_size_mobile",
+      "label": "Mobile Products Title Size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "product_subtitle_size_mobile",
+      "label": "Mobile Products Subtitle Size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 29
+    },
+    {
+      "type": "range",
+      "id": "feature_title_size_mobile",
+      "label": "Mobile Features Title Size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "feature_copy_size_mobile",
+      "label": "Mobile Features Description Size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Products"
+    },
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Featured Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "label": "Number of Products",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Value Pillar",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Emoji)",
+          "default": "⚡"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Valentine's Special Pricing"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Show your love with these amazing Valentine's Day deals! Find the perfect gift for your special someone before they're gone." 
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Valentine's Collection",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "💝",
+            "title": "Free Gift Wrapping",
+            "description": "Get your gifts beautifully wrapped for free—show your love with style."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "💌",
+            "title": "Express Delivery",
+            "description": "Fast and secure delivery to make sure your gift arrives on time."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "💖",
+            "title": "Limited Edition",
+            "description": "Hurry—these special Valentine's Day items won't last forever!"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

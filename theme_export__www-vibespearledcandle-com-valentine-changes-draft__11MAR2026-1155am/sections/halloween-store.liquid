@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ section.settings.page_title | default: '🎃 Halloween Spook-tacular Store' }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer:wght@400&family=Creepster:wght@400&family=Butcherman:wght@400&family=Chiller:wght@400;700&family=Eater:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-ghost: #ffffff;
+            --color-slime: #b7ff00;
+            --color-midnight: #000000;
+            --color-pumpkin: #ff6b00;
+            --color-blood: #8b0000;
+            --color-purple: #4a0080;
+            --font-horror: 'Nosifer', cursive;
+            --font-creepy: 'Creepster', cursive;
+            --font-chiller: 'Chiller', cursive;
+            --font-eater: 'Eater', cursive;
+            --font-poppins: 'Poppins', sans-serif;
+        }
+
+        .fomo-banner {
+            position: relative;
+            z-index: 10;
+            background: linear-gradient(90deg, rgba(255, 107, 0, 0.95), rgba(74, 0, 128, 0.95));
+            border-bottom: 2px solid var(--color-slime);
+            padding: 0.85rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--font-poppins);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .fomo-banner.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-100%);
+        }
+
+        .fomo-eyebrow {
+            font-family: var(--font-eater);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--color-slime);
+            text-shadow: 0 0 12px var(--color-slime);
+            animation: flicker 1.6s ease-in-out infinite;
+        }
+
+        .fomo-message {
+            font-size: 1rem;
+            color: var(--color-ghost);
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .fomo-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(183, 255, 0, 0.6);
+            border-radius: 999px;
+            padding: 0.35rem 0.9rem;
+            font-weight: 600;
+            color: var(--color-ghost);
+            font-size: 0.95rem;
+            box-shadow: 0 0 18px rgba(183, 255, 0, 0.35);
+        }
+
+        .fomo-time-value {
+            font-family: var(--font-horror);
+            font-size: 1.2rem;
+            color: var(--color-slime);
+            min-width: 2ch;
+            text-align: center;
+        }
+
+        .fomo-time-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: color-mix(in oklab, var(--color-ghost) 80%, #ccc 20%);
+        }
+
+        .fomo-divider {
+            font-family: var(--font-eater);
+            color: var(--color-pumpkin);
+            font-size: 1.2rem;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; text-shadow: 0 0 12px var(--color-slime); }
+            45% { opacity: 0.85; text-shadow: 0 0 6px var(--color-slime); }
+            55% { opacity: 1; text-shadow: 0 0 14px var(--color-slime); }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px; /* reset to default scale */
+        }
+
+        body {
+            background: #000000 !important;
+            color: var(--color-ghost);
+            font-family: var(--font-poppins);
+            font-style: normal !important;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Ensure all text elements use normal font style */
+        p, span, div, h1, h2, h3, h4, h5, h6, a, button {
+            font-style: normal !important;
+        }
+
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #ff6b00, transparent),
+                radial-gradient(2px 2px at 40px 70px, #b7ff00, transparent),
+                radial-gradient(1px 1px at 90px 40px, #8b0000, transparent),
+                radial-gradient(1px 1px at 130px 80px, #4a0080, transparent),
+                radial-gradient(2px 2px at 160px 30px, #ff6b00, transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px;
+            animation: sparkle 20s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes sparkle {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
+        }
+
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
+            background: #000000 !important;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(255, 107, 0, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(183, 255, 0, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-pumpkin-img {
+            width: 440px; /* doubled size */
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem auto;
+            filter: drop-shadow(0 0 20px rgba(255, 107, 0, 0.6));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero-eyebrow {
+            font-family: var(--font-eater);
+            font-size: 2rem;
+            color: var(--color-slime);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px var(--color-slime);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero-title {
+            font-family: var(--font-horror);
+            font-size: clamp(3rem, 9vw, 6.5rem);
+            color: var(--color-ghost);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 30px var(--color-pumpkin), 0 0 60px var(--color-pumpkin);
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            from { text-shadow: 0 0 30px var(--color-pumpkin), 0 0 60px var(--color-pumpkin); }
+            to { text-shadow: 0 0 50px var(--color-pumpkin), 0 0 80px var(--color-pumpkin), 0 0 100px var(--color-pumpkin); }
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-poppins);
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: color-mix(in oklab, var(--color-ghost) 85%, #999 15%);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.75rem; /* decreased size */
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem; /* decreased size */
+            font-family: var(--font-poppins);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--color-pumpkin), #ff8c00);
+            color: var(--color-midnight);
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.6);
+            border: 2px solid var(--color-pumpkin);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 50px rgba(255, 107, 0, 0.8), 0 0 80px rgba(255, 107, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-ghost);
+            border: 2px solid var(--color-ghost);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-ghost);
+            color: var(--color-midnight);
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        /* Floating pumpkins */
+        .pumpkin {
+            position: absolute;
+            font-size: 3rem;
+            animation: floatPumpkin 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        .pumpkin:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .pumpkin:nth-child(2) { top: 20%; right: 15%; animation-delay: 2s; }
+        .pumpkin:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 4s; }
+        .pumpkin:nth-child(4) { bottom: 10%; right: 10%; animation-delay: 1s; }
+
+        @keyframes floatPumpkin {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 6rem 2rem;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            background: #000000 !important;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-eyebrow {
+            font-family: var(--font-eater);
+            font-size: 1.2rem;
+            color: var(--color-slime);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px var(--color-slime);
+        }
+
+        .section-title {
+            font-family: var(--font-horror);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--color-ghost);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 25px var(--color-pumpkin);
+        }
+
+        .section-subtitle {
+            font-family: var(--font-poppins);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: color-mix(in oklab, var(--color-ghost) 80%, #999 20%);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        /* 4 columns on larger screens */
+        @media (min-width: 1200px) {
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, rgba(0,0,0,0.8) 0%, rgba(139,0,0,0.1) 100%);
+            border: 2px solid color-mix(in oklab, var(--color-slime) 30%, transparent);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .percentage-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(45deg, var(--color-pumpkin), #ff8c00);
+            color: var(--color-midnight);
+            padding: 0.5rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            font-family: var(--font-poppins);
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.6);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .product-card-link {
+            text-decoration: none !important;
+            color: inherit !important;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .product-card-link:hover {
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255, 107, 0, 0.05) 50%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--color-pumpkin);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 107, 0, 0.3);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+            border: 1px solid color-mix(in oklab, var(--color-slime) 20%, transparent);
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            font-family: var(--font-poppins);
+            font-size: 1.3rem;
+            font-weight: 600;
+            font-style: normal !important;
+            color: var(--color-ghost);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            text-shadow: 0 0 20px rgba(255, 107, 0, 0.8), 0 0 40px rgba(255, 107, 0, 0.6), 0 0 60px rgba(255, 107, 0, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none !important;
+            display: block;
+        }
+
+        .product-card-link:hover .product-title {
+            color: #ff6b00;
+            text-shadow: 0 0 30px rgba(255, 107, 0, 1), 0 0 60px rgba(255, 107, 0, 0.8), 0 0 90px rgba(255, 107, 0, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .product-price {
+            font-family: var(--font-horror);
+            font-size: 1.5rem;
+            color: var(--color-pumpkin);
+            margin-bottom: 1.5rem;
+            text-shadow: none;
+        }
+
+        .product-price::before {
+            content: '🎃 ';
+            animation: floatEmoji 3s ease-in-out infinite;
+        }
+
+        .price-compare {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 0.5rem;
+            text-shadow: none;
+        }
+
+        .price-sale {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-pumpkin);
+            text-shadow: none;
+        }
+
+        @keyframes floatEmoji {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            50% { transform: translateY(-3px) rotate(5deg); }
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background: linear-gradient(45deg, var(--color-slime), #9fff00);
+            color: var(--color-midnight);
+            border: none;
+            padding: 0.875rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            font-family: var(--font-poppins);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .add-to-cart:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px var(--color-slime), 0 0 50px rgba(183, 255, 0, 0.4);
+        }
+
+        .add-to-cart::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .add-to-cart:hover::before {
+            left: 100%;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 6rem 2rem;
+            background: #000000 !important;
+            border-top: 3px solid var(--color-pumpkin);
+            border-bottom: 3px solid var(--color-pumpkin);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid color-mix(in oklab, var(--color-slime) 20%, transparent);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-pumpkin);
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.3);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature-title {
+            font-family: var(--font-horror);
+            font-size: 1.5rem;
+            color: var(--color-ghost);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px var(--color-pumpkin);
+        }
+
+        .feature-description {
+            font-family: var(--font-poppins);
+            font-size: 1rem;
+            font-weight: 400;
+            color: color-mix(in oklab, var(--color-ghost) 85%, #999 15%);
+            line-height: 1.6;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .fomo-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .fomo-message {
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+
+            .fomo-timer {
+                justify-content: center;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .products-section {
+                padding: 2rem 1rem;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            /* Force normal font style on mobile */
+            body, p, span, div, h1, h2, h3, h4, h5, h6, a, button, .product-title {
+                font-style: normal !important;
+            }
+            
+            /* Ensure product title is visible and clickable on mobile */
+            .product-title {
+                font-style: normal !important;
+                text-decoration: none !important;
+                color: var(--color-ghost) !important;
+                display: block !important;
+                cursor: pointer !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-pumpkin-img {
+                width: 320px; /* doubled mobile size */
+                margin-bottom: 0.75rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animation utilities */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fomo-banner" id="fomo-banner" role="status" aria-live="polite">
+        <span class="fomo-eyebrow">Final Hours!</span>
+        <p class="fomo-message">
+            Last day to grab the Halloween deal before it vanishes into the night.
+            <span class="fomo-timer" id="fomo-timer" aria-label="Offer countdown">
+                <span class="fomo-time-value" id="fomo-hours">17</span>
+                <span class="fomo-time-label">hrs</span>
+                <span class="fomo-divider">:</span>
+                <span class="fomo-time-value" id="fomo-minutes">00</span>
+                <span class="fomo-time-label">mins</span>
+                <span class="fomo-divider">:</span>
+                <span class="fomo-time-value" id="fomo-seconds">00</span>
+                <span class="fomo-time-label">secs</span>
+            </span>
+        </p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="pumpkin">🎃</div>
+        <div class="pumpkin">👻</div>
+        <div class="pumpkin">🕷️</div>
+        <div class="pumpkin">🧛</div>
+        
+        <div class="hero-content">
+            {% if section.settings.hero_image %}
+                <img src="{{ section.settings.hero_image | img_url: '800x800' }}" alt="{{ section.settings.hero_image.alt | default: 'Pumpkin' }}" class="hero-pumpkin-img">
+            {% else %}
+                <img src="https://cdn.shopify.com/s/files/1/0920/7591/7591/files/pumpkin.webp?v=1760718709" alt="Pumpkin" class="hero-pumpkin-img">
+            {% endif %}
+            <p class="hero-eyebrow">{{ section.settings.hero_eyebrow | default: '🎃 Welcome to' }}</p>
+            <h1 class="hero-title">{{ section.settings.hero_title | default: 'Trick or Treat' }}</h1>
+            <p class="hero-subtitle">{{ section.settings.hero_subtitle | default: 'Glow-up your cart with fang-tastic finds. Friendly, fun, and spook‑tacular for all ages.' }}</p>
+            <div class="hero-cta">
+                {% if section.settings.hero_cta_product %}
+                    <a href="{{ all_products[section.settings.hero_cta_product].url }}" class="btn btn-primary">{{ section.settings.hero_cta_text | default: 'Shop if you dare' }}</a>
+                {% else %}
+                    <a href="#products" class="btn btn-primary">{{ section.settings.hero_cta_text | default: 'Shop if you dare' }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">{{ section.settings.products_eyebrow | default: 'Featured' }}</p>
+            <h2 class="section-title">{{ section.settings.products_title | default: 'Spook-tacular Finds' }}</h2>
+            <p class="section-subtitle">{{ section.settings.products_subtitle | default: 'Discover our haunted collection of Halloween treasures' }}</p>
+        </div>
+
+        <div class="products-grid">
+            {% if section.settings.featured_collection != blank %}
+                {% assign collection = collections[section.settings.featured_collection] %}
+                {% for product in collection.products limit: section.settings.products_limit %}
+                    <div class="product-card reveal">
+                        {% if product.compare_at_price > product.price %}
+                            {% assign discount_percentage = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price %}
+                            <div class="percentage-tag">{{ discount_percentage }}% OFF</div>
+                        {% endif %}
+                        <a href="{{ product.url }}" class="product-card-link">
+                            {% if product.featured_image %}
+                                <img src="{{ product.featured_image | img_url: '533x533' }}" alt="{{ product.featured_image.alt | escape }}" class="product-image">
+                            {% else %}
+                                <img src="{{ 'product-placeholder.png' | asset_url }}" alt="{{ product.title | escape }}" class="product-image">
+                            {% endif %}
+                            <h3 class="product-title">{{ product.title }}</h3>
+                            <p class="product-price">
+                                {% if product.compare_at_price > product.price %}
+                                    <span class="price-compare">{{ product.compare_at_price | money }}</span>
+                                    <span class="price-sale">{{ product.price | money }}</span>
+                                {% else %}
+                                    {{ product.price | money }}
+                                {% endif %}
+                            </p>
+                        </a>
+                        <form action="/cart/add" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                            <button type="submit" class="add-to-cart" name="add" data-product-id="{{ product.id }}">
+                                Quick Add to Cart
+                            </button>
+                        </form>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <!-- Fallback content when no collection is selected -->
+                <div class="product-card reveal">
+                    <div class="product-image" style="background: linear-gradient(45deg, #333, #666); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem;">
+                        Select a collection in theme settings
+                    </div>
+                    <h3 class="product-title">No Collection Selected</h3>
+                    <p class="product-price">Please configure your collection</p>
+                    <button class="add-to-cart" disabled>Configure Collection</button>
+                </div>
+            {% endif %}
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="about">
+        <div class="section-header reveal">
+            <h2 class="section-title">{{ section.settings.features_title | default: 'Why Choose Our Haunted Collection?' }}</h2>
+            <p class="section-subtitle">{{ section.settings.features_subtitle | default: 'Discover what makes our spook-tacular products the perfect choice for your Halloween needs' }}</p>
+        </div>
+
+        <div class="features-grid">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'feature' %}
+                        <div class="feature-card reveal" {{ block.shopify_attributes }}>
+                            <div class="feature-icon">{{ block.settings.icon | default: '👻' }}</div>
+                            <h3 class="feature-title">{{ block.settings.title | default: 'Feature Title' }}</h3>
+                            <p class="feature-description">{{ block.settings.description | default: 'Feature description goes here.' }}</p>
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <script>
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveal.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.disabled) return;
+                
+                const form = this.closest('form');
+                if (form) {
+                    const originalText = this.textContent;
+                    this.textContent = 'Adding...';
+                    this.style.background = 'linear-gradient(45deg, #ff6b00, #ff8c00)';
+                    
+                    // Submit the form
+                    fetch('/cart/add.js', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            id: form.querySelector('input[name="id"]').value,
+                            quantity: 1
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        this.textContent = 'Added! ✨';
+                        this.style.background = 'linear-gradient(45deg, #4a0080, #6a0dad)';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.background = 'linear-gradient(45deg, var(--color-slime), #9fff00)';
+                        }, 1500);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        this.textContent = 'Error';
+                        this.style.background = 'linear-gradient(45deg, #8b0000, #ff0000)';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.background = 'linear-gradient(45deg, var(--color-slime), #9fff00)';
+                        }, 1500);
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links (only for hash links)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Handle product card clicks
+        document.querySelectorAll('.product-card-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default for product links
+                console.log('Product card clicked:', this.href);
+            });
+        });
+        
+        // Prevent add-to-cart button clicks from triggering card link
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event bubbling to card link
+            });
+        });
+
+        // Initialize scroll reveal
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+        
+        // Add some spooky sound effects (optional)
+        document.addEventListener('click', function() {
+            // You can add sound effects here if desired
+            console.log('👻 Spooky click!');
+        });
+
+        // Halloween countdown banner (17-hour FOMO)
+        (function() {
+            const banner = document.getElementById('fomo-banner');
+            if (!banner) return;
+
+            const storageKey = 'halloween_fomo_expiry';
+            const now = Date.now();
+            const seventeenHours = 17 * 60 * 60 * 1000;
+
+            function getCookieValue(name) {
+                const match = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.$?*|{}()\[\]\\\/\+^]/g, '\\$&') + '=([^;]*)'));
+                return match ? decodeURIComponent(match[1]) : null;
+            }
+
+            function setCookieValue(name, value, expiryMs) {
+                const expiryDate = new Date(expiryMs);
+                document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expiryDate.toUTCString() + '; path=/; SameSite=Lax';
+            }
+
+            function clearCookie(name) {
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=Lax';
+            }
+
+            let expiry = now + seventeenHours;
+
+            const cookieExpiry = parseInt(getCookieValue(storageKey) || '', 10);
+            if (!isNaN(cookieExpiry) && cookieExpiry > now) {
+                expiry = cookieExpiry;
+            } else {
+                setCookieValue(storageKey, expiry, expiry);
+            }
+
+            try {
+                const storedExpiry = localStorage.getItem(storageKey);
+                if (storedExpiry && !isNaN(parseInt(storedExpiry, 10)) && parseInt(storedExpiry, 10) > now) {
+                    expiry = Math.min(expiry, parseInt(storedExpiry, 10));
+                }
+                localStorage.setItem(storageKey, expiry);
+            } catch (error) {
+                console.warn('FOMO countdown localStorage issue', error);
+            }
+
+            function updateCountdown() {
+                const current = Date.now();
+                const remaining = expiry - current;
+
+                if (remaining <= 0) {
+                    banner.classList.add('hidden');
+                    banner.setAttribute('aria-hidden', 'true');
+                    try {
+                        localStorage.removeItem(storageKey);
+                    } catch (error) {
+                        console.warn('FOMO countdown storage cleanup failed', error);
+                    }
+                    clearCookie(storageKey);
+                    clearInterval(intervalId);
+                    return;
+                }
+
+                const totalSeconds = Math.floor(remaining / 1000);
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+
+                const hoursEl = document.getElementById('fomo-hours');
+                const minutesEl = document.getElementById('fomo-minutes');
+                const secondsEl = document.getElementById('fomo-seconds');
+
+                if (hoursEl && minutesEl && secondsEl) {
+                    hoursEl.textContent = String(hours).padStart(2, '0');
+                    minutesEl.textContent = String(minutes).padStart(2, '0');
+                    secondsEl.textContent = String(seconds).padStart(2, '0');
+                }
+            }
+
+            updateCountdown();
+            const intervalId = setInterval(updateCountdown, 1000);
+        })();
+    </script>
+</body>
+</html>
+
+{% schema %}
+{
+  "name": "Halloween Store",
+  "settings": [
+    {
+      "type": "text",
+      "id": "page_title",
+      "label": "Page Title",
+      "default": "🎃 Halloween Spook-tacular Store"
+    },
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_eyebrow",
+      "label": "Hero Eyebrow Text",
+      "default": "🎃 Welcome to"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero Title",
+      "default": "Trick or Treat"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_subtitle",
+      "label": "Hero Subtitle",
+      "default": "Glow-up your cart with fang-tastic finds. Friendly, fun, and spook‑tacular for all ages."
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "Hero CTA Button Text",
+      "default": "Shop if you dare"
+    },
+    {
+      "type": "product",
+      "id": "hero_cta_product",
+      "label": "Hero CTA Product Link"
+    },
+    {
+      "type": "header",
+      "content": "Products Section"
+    },
+    {
+      "type": "text",
+      "id": "products_eyebrow",
+      "label": "Products Section Eyebrow",
+      "default": "Featured"
+    },
+    {
+      "type": "text",
+      "id": "products_title",
+      "label": "Products Section Title",
+      "default": "Spook-tacular Finds"
+    },
+    {
+      "type": "textarea",
+      "id": "products_subtitle",
+      "label": "Products Section Subtitle",
+      "default": "Discover our haunted collection of Halloween treasures"
+    },
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Featured Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "label": "Number of Products to Show",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Features Section"
+    },
+    {
+      "type": "text",
+      "id": "features_title",
+      "label": "Features Section Title",
+      "default": "Why Choose Our Haunted Collection?"
+    },
+    {
+      "type": "textarea",
+      "id": "features_subtitle",
+      "label": "Features Section Subtitle",
+      "default": "Discover what makes our spook-tacular products the perfect choice for your Halloween needs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Feature Icon (Emoji)",
+          "default": "👻"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Feature Description",
+          "default": "Feature description goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Halloween Store",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "👻",
+            "title": "Spook-tacular Quality",
+            "description": "Premium materials and craftsmanship ensure your Halloween items will haunt for years to come."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🎃",
+            "title": "Frightfully Fast Shipping",
+            "description": "Get your Halloween essentials delivered faster than a ghost disappearing into the night."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🕷️",
+            "title": "Creepy Customer Care",
+            "description": "Our support team is available 24/7 to help with any questions or concerns about your order."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "🌙",
+            "title": "Hauntingly Good Prices",
+            "description": "Enjoy frightfully affordable prices without sacrificing quality on all your Halloween favorites."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

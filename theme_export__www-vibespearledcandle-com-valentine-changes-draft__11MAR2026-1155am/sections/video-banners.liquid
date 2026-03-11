@@ -1,0 +1,178 @@
+<section class="video-banners" data-section-id="{{ section.id }}">
+  <style>
+    .video-banners {
+      width: 100%;
+    }
+
+    .video-banners__media {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .video-banners__video {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-banners__video-element {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Only mobile video on mobile */
+    .video-banners__video--mobile {
+      display: block;
+    }
+
+    .video-banners__video--desktop {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .video-banners__video--mobile {
+        display: none;
+      }
+
+      .video-banners__video--desktop {
+        display: block;
+      }
+    }
+
+    .video-banners__cta-wrapper {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .video-banners__cta {
+      pointer-events: auto;
+      padding: 0.9rem 2.4rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .video-banners__cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    }
+
+    .video-banners__cta:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+  </style>
+
+  <div class="video-banners__media">
+    {% if section.settings.desktop_video != blank %}
+      <div class="video-banners__video video-banners__video--desktop">
+        {{ section.settings.desktop_video | video_tag:
+          autoplay: true,
+          loop: true,
+          muted: true,
+          playsinline: true,
+          controls: false,
+          class: 'video-banners__video-element'
+        }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.mobile_video != blank %}
+      <div class="video-banners__video video-banners__video--mobile">
+        {{ section.settings.mobile_video | video_tag:
+          autoplay: true,
+          loop: true,
+          muted: true,
+          playsinline: true,
+          controls: false,
+          class: 'video-banners__video-element'
+        }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.cta_label != blank %}
+      <div class="video-banners__cta-wrapper">
+        <a
+          href="{{ section.settings.cta_link | default: 'https://www.vibespearledcandle.com/collections/shop-all' }}"
+          class="video-banners__cta"
+          style="
+            background-color: {{ section.settings.cta_bg_color }};
+            color: {{ section.settings.cta_text_color }};
+            border-radius: {{ section.settings.cta_radius }}px;
+          "
+        >
+          {{ section.settings.cta_label }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video banners",
+  "settings": [
+    {
+      "type": "video",
+      "id": "desktop_video",
+      "label": "Desktop video"
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Mobile video"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA text",
+      "default": "Shop All"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "CTA background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "CTA text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "cta_radius",
+      "label": "CTA border radius (px)",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video banners"
+    }
+  ]
+}
+{% endschema %}

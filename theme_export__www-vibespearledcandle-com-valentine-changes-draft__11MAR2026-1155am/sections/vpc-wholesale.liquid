@@ -1,0 +1,352 @@
+{% comment %}
+  VPC Wholesale Section
+  Contact form for wholesale inquiries - emails sent to store contact (set contact@vibespearledcandle.com in Shopify Settings > Notifications)
+{% endcomment %}
+
+{%- liquid
+  assign heading = section.settings.heading
+  assign subheading = section.settings.subheading
+  assign accent_color = section.settings.accent_color
+  assign cta_color = section.settings.cta_color
+-%}
+
+<div class="vpc-wholesale" id="wholesale" data-shopify-section="{{ section.id }}" style="--vpc-accent: {{ accent_color }}; --vpc-cta: {{ cta_color }};">
+  <div class="vpc-wholesale__inner">
+    <div class="vpc-wholesale__content">
+      <header class="vpc-wholesale__header">
+        {%- if heading != blank -%}
+          <h2 class="vpc-wholesale__title">{{ heading }}</h2>
+        {%- else -%}
+          <h2 class="vpc-wholesale__title">Need wholesale rates or custom options? Let's make it happen.</h2>
+        {%- endif -%}
+        {%- if subheading != blank and subheading != 'Optional subheading text' -%}
+          <p class="vpc-wholesale__subtitle">{{ subheading }}</p>
+        {%- endif -%}
+      </header>
+
+      <ul class="vpc-wholesale__benefits">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'benefit' and block.settings.text != blank -%}
+            <li class="vpc-wholesale__benefit" {{ block.shopify_attributes }}>
+              <span class="vpc-wholesale__benefit-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </span>
+              <span>{{ block.settings.text }}</span>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if section.blocks.size == 0 -%}
+          <li class="vpc-wholesale__benefit">
+            <span class="vpc-wholesale__benefit-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </span>
+            <span>Special pricing available for bulk orders (3+ bulk bags)</span>
+          </li>
+          <li class="vpc-wholesale__benefit">
+            <span class="vpc-wholesale__benefit-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </span>
+            <span>Custom color shades crafted to fit your brand or space</span>
+          </li>
+        {%- endif -%}
+      </ul>
+
+      <div class="vpc-wholesale__form-wrapper">
+        {% form 'contact', class: 'vpc-wholesale__form' %}
+          {%- if form.posted_successfully? -%}
+            <div class="vpc-wholesale__message vpc-wholesale__message--success" role="status">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <p>Thank you! Your wholesale inquiry has been sent. We'll respond within 24–48 hours.</p>
+            </div>
+          {%- endif -%}
+          {%- if form.errors -%}
+            <div class="vpc-wholesale__message vpc-wholesale__message--error" role="alert">
+              {%- for error in form.errors -%}
+                <p>{{ error | capitalize }} {{ form.errors.messages[error] }}</p>
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+
+          <div class="vpc-wholesale__field">
+            <label for="vpc-wholesale-name-{{ section.id }}">Name</label>
+            <input
+              type="text"
+              id="vpc-wholesale-name-{{ section.id }}"
+              name="contact[name]"
+              placeholder="Your name"
+              required
+              autocomplete="name"
+            >
+          </div>
+          <div class="vpc-wholesale__field">
+            <label for="vpc-wholesale-email-{{ section.id }}">Email</label>
+            <input
+              type="email"
+              id="vpc-wholesale-email-{{ section.id }}"
+              name="contact[email]"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            >
+          </div>
+          <div class="vpc-wholesale__field">
+            <label for="vpc-wholesale-message-{{ section.id }}">Message</label>
+            <textarea
+              id="vpc-wholesale-message-{{ section.id }}"
+              name="contact[body]"
+              placeholder="Tell us about your wholesale needs – quantity, customization, or timeline..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="vpc-wholesale__submit">
+            Send inquiry
+          </button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .vpc-wholesale {
+    padding: 4rem 1.5rem 5rem;
+    background: #FAE9D5;
+    font-family: var(--font-body-family, inherit);
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .vpc-wholesale__inner {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .vpc-wholesale__header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .vpc-wholesale__title {
+    font-family: var(--font-heading-family, var(--font-body-family, inherit));
+    font-size: clamp(1.25em, 4vw, 1.75em);
+    font-weight: 600;
+    color: #2c2c2c;
+    line-height: 1.3;
+    margin: 0 0 0.75em;
+    letter-spacing: -0.02em;
+  }
+  .vpc-wholesale__subtitle {
+    font-size: 1em;
+    color: #6b6b6b;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .vpc-wholesale__benefits {
+    list-style: none;
+    margin: 0 0 2.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .vpc-wholesale__benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .vpc-wholesale__benefit-icon {
+    flex-shrink: 0;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--vpc-accent, #c9a962);
+    color: #fff;
+  }
+  .vpc-wholesale__benefit-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .vpc-wholesale__form-wrapper {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2.25rem 2rem;
+    box-shadow: 0 4px 24px rgba(52, 21, 12, 0.08);
+    border: 2px solid var(--vpc-cta, #34150C);
+  }
+  .vpc-wholesale__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .vpc-wholesale__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .vpc-wholesale__field label {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .vpc-wholesale__field input,
+  .vpc-wholesale__field textarea {
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 1em;
+    font-family: inherit;
+    color: #2c2c2c;
+    background: #fff;
+    border: 2px solid var(--vpc-cta, #34150C);
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .vpc-wholesale__field input::placeholder,
+  .vpc-wholesale__field textarea::placeholder {
+    color: #888;
+  }
+  .vpc-wholesale__field input:hover,
+  .vpc-wholesale__field textarea:hover {
+    border-color: #2a1109;
+  }
+  .vpc-wholesale__field input:focus,
+  .vpc-wholesale__field textarea:focus {
+    outline: none;
+    border-color: var(--vpc-cta, #34150C);
+    box-shadow: 0 0 0 3px rgba(52, 21, 12, 0.15);
+  }
+  .vpc-wholesale__field textarea {
+    resize: vertical;
+    min-height: 7.5em;
+  }
+  .vpc-wholesale__submit {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: inherit;
+    color: #fff;
+    background: var(--vpc-cta, #34150C);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  .vpc-wholesale__submit:hover {
+    filter: brightness(0.9);
+  }
+  .vpc-wholesale__submit:active {
+    transform: scale(0.99);
+  }
+  .vpc-wholesale__message {
+    padding: 1rem 1.25rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  .vpc-wholesale__message--success {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  .vpc-wholesale__message--success svg {
+    flex-shrink: 0;
+  }
+  .vpc-wholesale__message--error {
+    background: #ffebee;
+    color: #c62828;
+  }
+  @media (min-width: 768px) {
+    .vpc-wholesale {
+      padding: 5rem 2rem 6.25rem;
+    }
+    .vpc-wholesale__form-wrapper {
+      padding: 2.75rem 2.5rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Wholesale Inquiry",
+  "tag": "section",
+  "class": "vpc-wholesale-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Form submissions are sent to your store's Customer support email. Set contact@vibespearledcandle.com in Settings → Notifications."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Need wholesale rates or custom options? Let's make it happen."
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Optional subheading text"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color (icons)",
+      "default": "#c9a962"
+    },
+    {
+      "type": "color",
+      "id": "cta_color",
+      "label": "CTA button color",
+      "default": "#34150C"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit / bullet",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Special pricing available for bulk orders"
+        }
+      ]
+    }
+  ],
+      "presets": [
+    {
+      "name": "Wholesale Inquiry",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": { "text": "Special pricing available for bulk orders (3+ bulk bags)" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "text": "Custom color shades crafted to fit your brand or space" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

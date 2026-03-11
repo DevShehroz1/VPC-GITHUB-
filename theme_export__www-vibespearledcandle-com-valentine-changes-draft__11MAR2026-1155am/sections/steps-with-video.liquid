@@ -1,0 +1,113 @@
+{% schema %}
+{
+  "name": "Steps With Video",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Steps With Video"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="steps-video-section">
+  <div class="steps-container">
+
+    <!-- LEFT VIDEO -->
+    <div class="steps-video">
+      <video autoplay muted loop playsinline>
+        <source src="https://cdn.shopify.com/videos/c/o/v/ef58b227f20745f6a8d055ef8e715e4c.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="steps-content">
+
+      <h2 class="steps-heading">Ready in 4 Simple Steps</h2>
+
+      <div class="steps-list">
+
+        <div class="step-item">
+          <p><strong>1.</strong> Gently pour the pearled wax into your candle holder, filling it up to your desired level. The beauty of pearled candles is that you control how much you use!</p>
+        </div>
+
+        <div class="step-item">
+          <p><strong>2.</strong> Place the wick into the wax pearls, ensuring it's upright and centered for an even burn.</p>
+        </div>
+
+        <div class="step-item">
+          <p><strong>3.</strong> Add a few drops of essential oil from our collection onto the candle pearls. As the pearls warm, the fragrance gently infuses the air, creating a serene, aromatic atmosphere.</p>
+        </div>
+
+        <div class="step-item">
+          <p><strong>4.</strong> Ignite the wick and enjoy a clean, slow-burning candle experience. Watch as the pearls melt into a smooth, glowing pool of wax.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.steps-video-section {
+  padding: 60px 20px;
+  background: #F0E1CD;
+}
+
+.steps-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.steps-video video {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.steps-heading {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-item {
+  margin: 0;
+}
+
+.step-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2A2552;
+  margin: 0;
+}
+
+.step-item p strong {
+  font-weight: 700;
+  color: #2A2552;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .steps-heading {
+    font-size: 30px;
+  }
+}
+</style>
+ 

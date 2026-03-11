@@ -1,0 +1,88 @@
+{% schema %}
+{
+  "name": "Creator Collaborate Form",
+  "settings": [],
+  "presets": [
+    {"name": "Creator Collaborate Form"}
+  ]
+}
+{% endschema %}
+
+<style>
+.creator-collaborate-section {
+  background: #FAE9D4;
+  padding: 40px 0;
+  min-height: 100vh;
+  width: 100%;
+}
+.creator-collaborate-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .creator-collaborate-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .creator-collaborate-form-fields {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+}
+.creator-collaborate-form {
+  background: #FAE9D4;
+  border-radius: 12px;
+  padding: 40px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  font-size: 1.5rem;
+  color: #181818;
+  width: 100%;
+}
+.creator-collaborate-form input,
+.creator-collaborate-form textarea {
+  font-size: 1.35rem !important;
+}
+.creator-collaborate-form label {
+  font-size: 1.25rem !important;
+}
+.creator-collaborate-form button[type="submit"] {
+  font-size: 1.5rem !important;
+  padding: 22px 48px !important;
+}
+</style>
+
+<div class="creator-collaborate-section">
+  <div class="creator-collaborate-container">
+    <h2 style="text-align: center; font-size: 3rem; font-weight: bold; margin-bottom: 2rem; color: #181818;">CREATOR COLLABORATE</h2>
+    <form method="post" action="/contact" id="creator-collaborate-form" accept-charset="UTF-8" class="contact-form creator-collaborate-form">
+      <input type="hidden" name="form_type" value="contact" />
+      <input type="hidden" name="utf8" value="✓" />
+      <div class="creator-collaborate-form-fields" style="display: flex; gap: 32px; margin-bottom: 28px;">
+        <input type="text" name="contact[name]" placeholder="Name" style="flex:1; padding: 22px; border-radius: 8px; border: 1.5px solid #e0d3c2; background: #FAE9D4; font-size: 1.35rem;" />
+        <input type="email" name="contact[email]" placeholder="Email" style="flex:1; padding: 22px; border-radius: 8px; border: 1.5px solid #e0d3c2; background: #FAE9D4; font-size: 1.35rem;" />
+      </div>
+      <div class="creator-collaborate-form-fields" style="display: flex; gap: 32px; margin-bottom: 28px;">
+        <input type="text" name="contact[instagram_handle]" placeholder="Instagram Handle" style="flex:1; padding: 22px; border-radius: 8px; border: 1.5px solid #e0d3c2; background: #FAE9D4; font-size: 1.35rem;" />
+        <input type="text" name="contact[tiktok_handle]" placeholder="TikTok Handle" style="flex:1; padding: 22px; border-radius: 8px; border: 1.5px solid #e0d3c2; background: #FAE9D4; font-size: 1.35rem;" />
+      </div>
+      <div style="margin-bottom: 28px;">
+        <label style="font-weight: 600; margin-bottom: 12px; display: block; font-size: 1.25rem;">Collaboration Type</label>
+        <div style="display: flex; gap: 40px; align-items: center;">
+          <label style="display: flex; align-items: center; gap: 10px; font-weight: 500; font-size: 1.2rem;">
+            <input type="radio" name="contact[collaboration_type]" value="UGC Creator" style="accent-color: #181818; width: 24px; height: 24px;" /> UGC Creator
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; font-weight: 500; font-size: 1.2rem;">
+            <input type="radio" name="contact[collaboration_type]" value="Influencer" style="accent-color: #181818; width: 24px; height: 24px;" /> Influencer
+          </label>
+        </div>
+      </div>
+      <div style="margin-bottom: 36px;">
+        <textarea name="contact[body]" placeholder="Message" rows="5" style="width: 100%; padding: 22px; border-radius: 8px; border: 1.5px solid #e0d3c2; background: #FAE9D4; font-size: 1.35rem;"></textarea>
+      </div>
+      <button type="submit" style="background: #3a1e12; color: #fff; font-weight: 700; padding: 22px 48px; border: none; border-radius: 8px; font-size: 1.5rem; cursor: pointer; width: 100%; max-width: 340px; display: block; margin: 0 auto;">Submit</button>
+    </form>
+  </div>
+</div> 
