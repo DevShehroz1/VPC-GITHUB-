@@ -277,6 +277,24 @@
         "pd_mb": ""
       }
     },
+    "fbt_wXxpwp": {
+      "type": "fbt",
+      "name": "Frequently Bought",
+      "settings": {
+        "section_title": "Frequently Bought Together",
+        "title_size": 24,
+        "title_color": "#333333",
+        "title_spacing": 30,
+        "product_1": "heart-shaped-candle-vessel",
+        "product_2": "candela-candle-vessel",
+        "product_3": "wicks-pack-of-20",
+        "container_width": 1200,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_side": 20,
+        "background_color": "#fae9d4"
+      }
+    },
     "three_steps_zbaUiY": {
       "type": "three-steps",
       "blocks": {
@@ -658,6 +676,7 @@
     "custom_liquid_TPFpkT",
     "custom_liquid_z6pCnL",
     "custom_liquid_Q3xqiP",
+    "fbt_wXxpwp",
     "three_steps_zbaUiY",
     "custom_liquid_bgQAeG",
     "custom_liquid_vpc_faq",
