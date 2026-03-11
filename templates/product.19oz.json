@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "breadcrumb": {
@@ -367,6 +358,22 @@
         "time": 3
       }
     },
+    "custom_liquid_WUpP7n": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align:center; padding: 20px;\">\n  <h2 style=\"font-size: 28px; font-weight: bold; color: #3d1b00; margin-bottom: 30px;\">What is included</h2>\n\n  <div class=\"what-included-row\" style=\"display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;\">\n\n    <!-- First Image - Candle -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.image %}\n          <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" alt=\"Candle\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n        {% endif %}\n      </div>\n      <p style=\"font-weight: 600; color: #3d1b00; margin-top: 8px;\">Candle</p>\n    </div>\n\n    <!-- Plus Sign -->\n    <div class=\"included-plus\">+</div>\n\n    <!-- Second Image - Wicks -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_1_163653f2-4245-4341-b516-9402f0889ce0.png?v=1754577023\" alt=\"Wicks\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n      </div>\n      <p style=\"font-weight: 600; color: #3d1b00; margin-top: 8px;\">Wicks</p>\n    </div>\n\n  </div>\n</div>\n\n<style>\n  .included-img {\n    flex: 1;\n    max-width: 210px;\n  }\n  .included-plus {\n    font-size: 20px;\n    font-weight: normal;\n    color: #8b5e3c;\n    line-height: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  @media (max-width: 768px) {\n    .what-included-row {\n      gap: 6px;\n    }\n    .included-img {\n      flex: 0 0 40%;\n      max-width: none;\n    }\n    .included-plus {\n      font-size: 16px;\n    }\n  }\n</style>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
     "custom_liquid_cncC6p": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -456,6 +463,22 @@
       "settings": {
         "custom_liquid": "<style>\n  /* Hide by default */\n  .mobile-only {\n    display: none;\n  }\n\n  /* Show only on mobile (max-width: 767px = common breakpoint) */\n  @media screen and (max-width: 767px) {\n    .mobile-only {\n      display: block;\n      width: 100%; /* make it responsive */\n      height: auto;\n    }\n  }\n</style>\n\n<!-- Image -->\n<img \n  src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Safe_Clean_6.jpg?v=1756063468\" \n  alt=\"Safe Clean\"\n  class=\"mobile-only\"\n/>",
         "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_PNJLK3": {
+      "type": "custom-liquid",
+      "name": "UGC ",
+      "settings": {
+        "custom_liquid": "<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Product Video Section</title>\n\n<style>\n  body {\n    margin: 0;\n    font-family: sans-serif;\n  }\n\n  /* === FULL WIDTH WRAPPER === */\n  .video-slider-wrapper {\n    position: relative;\n    width: 100vw;\n    left: 50%;\n    margin-left: -50vw;\n    background: #f7e6d2;\n    padding: 30px 0;\n  }\n\n  /* === SLIDER === */\n  .video-slider {\n    display: flex;\n    gap: 12px;\n    overflow-x: auto;\n    scroll-snap-type: x mandatory;\n    scrollbar-width: none;\n    padding: 0 12px 10px;\n  }\n\n  .video-slider::-webkit-scrollbar {\n    display: none;\n  }\n\n  .video-container {\n    flex: 0 0 auto;\n    width: 200px;\n    height: 350px;\n    border-radius: 6px;\n    overflow: hidden;\n    scroll-snap-align: start;\n    background: #000;\n  }\n\n  video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  /* === TABLET & UP === */\n  @media (min-width: 768px) {\n    .video-slider {\n      padding-left: 40px;\n      padding-right: 40px;\n      gap: 20px;\n    }\n  }\n\n  /* === DESKTOP === */\n  @media (min-width: 1024px) {\n    .video-slider {\n      padding-left: 60px;\n      padding-right: 60px;\n      gap: 25px;\n    }\n  }\n\n  /* === LARGE SCREENS === */\n  @media (min-width: 1440px) {\n    .video-container {\n      width: 250px;\n      height: 450px;\n    }\n\n    .video-slider {\n      padding-left: 80px;\n      padding-right: 80px;\n      gap: 30px;\n    }\n  }\n</style>\n\n<div class=\"video-slider-wrapper\">\n  <div class=\"video-slider\" id=\"videoSlider\">\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/ac04f7ff1e6047f9b5f9b1461da5bf9a.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/2e8b7510c8ae4741ac81cc69d8db5724.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/b62025c09ece4ee58e558f9cca084a5b.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/0632d8c745c6432ab1f021c2be605103.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/c2cd876ab0144961b7579606c2a8f7fb.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/a2d3183688a644ffa3ac5122312024e9.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n  </div>\n</div>",
+        "layout": "t4s-container-fluid",
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
@@ -787,8 +810,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      },
-      "disabled": true
+      }
     },
     "featured_collection_MpytB9": {
       "type": "featured-collection",
@@ -1086,180 +1108,24 @@
         "loox_reviews_loox_dynamic_section_YcYt3W"
       ],
       "settings": {}
-    },
-    "vpc_what_included": {
-      "type": "vpc-what-included",
-      "settings": {
-        "heading": "What is included",
-        "background_color": "#ffffff",
-        "text_color": "#3d1b00",
-        "item_1_label": "Candle",
-        "item_1_use_metafield": true,
-        "item_2_label": "Wicks"
-      }
-    },
-    "vpc_reels_19oz": {
-      "type": "vpc-reels",
-      "settings": {
-        "heading": "Beautiful Ways to Decorate Your Candle",
-        "background_color": "#f7e6d2"
-      },
-      "blocks": {
-        "video_1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/ac04f7ff1e6047f9b5f9b1461da5bf9a.mov"
-          }
-        },
-        "video_2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/2e8b7510c8ae4741ac81cc69d8db5724.mov"
-          }
-        },
-        "video_3": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/b62025c09ece4ee58e558f9cca084a5b.mov"
-          }
-        },
-        "video_4": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/0632d8c745c6432ab1f021c2be605103.mp4"
-          }
-        },
-        "video_5": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/c2cd876ab0144961b7579606c2a8f7fb.mp4"
-          }
-        },
-        "video_6": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/a2d3183688a644ffa3ac5122312024e9.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "video_1",
-        "video_2",
-        "video_3",
-        "video_4",
-        "video_5",
-        "video_6"
-      ]
-    },
-    "vpc_faq_19oz": {
-      "type": "vpc-faq",
-      "settings": {
-        "heading": "Frequently Asked Questions",
-        "accent_color": "#34150C",
-        "cta_text": "Need More Information?",
-        "cta_btn_text": "Visit Our FAQ Page",
-        "cta_url": "https://www.vibespearledcandle.com/pages/faqs"
-      },
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "How do Vibes Pearled Candles work?",
-            "answer": "<p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.</p>"
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Are the pearled candles refillable?",
-            "answer": "<p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.</p>"
-          }
-        },
-        "faq_3": {
-          "type": "faq",
-          "settings": {
-            "question": "What are the wax Pearls made from?",
-            "answer": "<p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.</p>"
-          }
-        },
-        "faq_4": {
-          "type": "faq",
-          "settings": {
-            "question": "How long do the candles burn?",
-            "answer": "<p>Our 11 oz candles are provided with 15 wicks, while the 18 oz candles are provided with 30 wicks.</p><p>Each Wick burns for 12 hrs.</p>"
-          }
-        },
-        "faq_5": {
-          "type": "faq",
-          "settings": {
-            "question": "Why can't I smell the fragrance when burning?",
-            "answer": "<p>Our fragrances are subtle and calming, not overpowering. We recommend burning in smaller rooms or ensuring the wax pool fully melts for the best scent throw.</p>"
-          }
-        },
-        "faq_6": {
-          "type": "faq",
-          "settings": {
-            "question": "Are your pearled candles safe for pets?",
-            "answer": "<p>Yes! Our candles are made with non-toxic ingredients, making them pet-safe. However, we recommend keeping them out of reach of pets and never leaving a burning candle unattended.</p>"
-          }
-        },
-        "faq_7": {
-          "type": "faq",
-          "settings": {
-            "question": "Do your pearled candles produce soot?",
-            "answer": "<p>No! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton/wood wicks.</p>"
-          }
-        },
-        "faq_8": {
-          "type": "faq",
-          "settings": {
-            "question": "Where can I buy pearled candle refills?",
-            "answer": "<p>Get additional Pearls, wicks, and accessories directly from our website!</p>"
-          }
-        },
-        "faq_9": {
-          "type": "faq",
-          "settings": {
-            "question": "Are the pearled candles safe to use?",
-            "answer": "<p>Absolutely! Our candles are made with clean ingredients that produce minimal to no smoke. As with any candle, keep them away from flammable materials, never leave them unattended, and trim the wick to 5mm before lighting.</p>"
-          }
-        },
-        "faq_10": {
-          "type": "faq",
-          "settings": {
-            "question": "Do you offer international shipping?",
-            "answer": "<p>Currently, we ship within the USA only. We are working on expanding our shipping options internationally - stay tuned!</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4",
-        "faq_5",
-        "faq_6",
-        "faq_7",
-        "faq_8",
-        "faq_9",
-        "faq_10"
-      ]
     }
   },
   "order": [
     "breadcrumb",
     "custom_liquid_VLUiee",
+    "custom_liquid_BLdmHK",
     "main",
+    "custom_liquid_WUpP7n",
     "custom_liquid_cncC6p",
-    "vpc_what_included",
     "1770488191a0bdfa43",
     "custom_liquid_4rQcNd",
+    "custom_liquid_9LynCg",
     "1756144149b01c687a",
     "custom_liquid_ftA7fi",
-    "vpc_reels_19oz",
+    "custom_liquid_PNJLK3",
     "three_steps_8Ejmzq",
+    "feature_columns_UBHdJf",
     "custom_liquid_LLn4zK",
-    "vpc_faq_19oz",
     "accordion_rHG3RG",
     "featured_collection_MpytB9",
     "sidebar",
