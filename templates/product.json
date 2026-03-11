@@ -238,22 +238,6 @@
         "pd_mb": ""
       }
     },
-    "custom_liquid_z6pCnL": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "custom_liquid": "<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Product Video Section</title>\n\n<style>\n  body {\n    margin: 0;\n    font-family: sans-serif;\n  }\n\n  /* === FULL WIDTH WRAPPER === */\n  .video-slider-wrapper {\n    position: relative;\n    width: 100vw;\n    left: 50%;\n    margin-left: -50vw;\n    background: #f7e6d2;\n    padding: 30px 0;\n  }\n\n  /* === SLIDER === */\n  .video-slider {\n    display: flex;\n    gap: 12px;\n    overflow-x: auto;\n    scroll-snap-type: x mandatory;\n    scrollbar-width: none;\n    padding: 0 12px 10px;\n  }\n\n  .video-slider::-webkit-scrollbar {\n    display: none;\n  }\n\n  .video-container {\n    flex: 0 0 auto;\n    width: 200px;\n    height: 350px;\n    border-radius: 6px;\n    overflow: hidden;\n    scroll-snap-align: start;\n    background: #000;\n  }\n\n  video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  /* === TABLET & UP === */\n  @media (min-width: 768px) {\n    .video-slider {\n      padding-left: 40px;\n      padding-right: 40px;\n      gap: 20px;\n    }\n  }\n\n  /* === DESKTOP === */\n  @media (min-width: 1024px) {\n    .video-slider {\n      padding-left: 60px;\n      padding-right: 60px;\n      gap: 25px;\n    }\n  }\n\n  /* === LARGE SCREENS === */\n  @media (min-width: 1440px) {\n    .video-container {\n      width: 250px;\n      height: 450px;\n    }\n\n    .video-slider {\n      padding-left: 80px;\n      padding-right: 80px;\n      gap: 30px;\n    }\n  }\n</style>\n\n<div class=\"video-slider-wrapper\">\n  <div class=\"video-slider\" id=\"videoSlider\">\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/ac04f7ff1e6047f9b5f9b1461da5bf9a.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/2e8b7510c8ae4741ac81cc69d8db5724.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/b62025c09ece4ee58e558f9cca084a5b.mov\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/0632d8c745c6432ab1f021c2be605103.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/c2cd876ab0144961b7579606c2a8f7fb.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n    <div class=\"video-container\">\n      <video src=\"https://cdn.shopify.com/videos/c/o/v/a2d3183688a644ffa3ac5122312024e9.mp4\" autoplay muted loop playsinline></video>\n    </div>\n\n  </div>\n</div>",
-        "layout": "t4s-container-wrap",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": ""
-      }
-    },
     "custom_liquid_Q3xqiP": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -642,6 +626,59 @@
         "loox_reviews_loox_dynamic_section_Rnjdtw"
       ],
       "settings": {}
+    },
+    "vpc_reels": {
+      "type": "vpc-reels",
+      "settings": {
+        "heading": "Beautiful Ways to Decorate Your Candle",
+        "background_color": "#f7e6d2"
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/ac04f7ff1e6047f9b5f9b1461da5bf9a.mov"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/2e8b7510c8ae4741ac81cc69d8db5724.mov"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/b62025c09ece4ee58e558f9cca084a5b.mov"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/0632d8c745c6432ab1f021c2be605103.mp4"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/c2cd876ab0144961b7579606c2a8f7fb.mp4"
+          }
+        },
+        "video_6": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/a2d3183688a644ffa3ac5122312024e9.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5",
+        "video_6"
+      ]
     }
   },
   "order": [
@@ -649,7 +686,7 @@
     "custom_liquid_rxkeWB",
     "main",
     "custom_liquid_TPFpkT",
-    "custom_liquid_z6pCnL",
+    "vpc_reels",
     "custom_liquid_Q3xqiP",
     "three_steps_zbaUiY",
     "custom_liquid_bgQAeG",
