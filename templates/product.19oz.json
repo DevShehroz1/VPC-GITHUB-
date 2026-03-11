@@ -388,7 +388,8 @@
         "pd_tb": "",
         "mg_mb": ",,30px,",
         "pd_mb": ""
-      }
+      },
+      "disabled": true
     },
     "1770488191a0bdfa43": {
       "type": "apps",
@@ -810,7 +811,8 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      }
+      },
+      "disabled": true
     },
     "featured_collection_MpytB9": {
       "type": "featured-collection",
@@ -1108,6 +1110,21 @@
         "loox_reviews_loox_dynamic_section_YcYt3W"
       ],
       "settings": {}
+    },
+    "custom_liquid_vpc_faq_19oz": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.vpc-faq-section {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 50px 20px 60px;\n  text-align: center;\n  font-family: 'Poppins', sans-serif;\n}\n.vpc-faq-heading {\n  font-family: 'Poppins', sans-serif;\n  font-size: 28px;\n  font-weight: 700;\n  color: #34150C;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  margin-bottom: 30px;\n}\n.vpc-faq-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 12px;\n  margin-bottom: 40px;\n  text-align: left;\n  align-items: start;\n}\n.vpc-faq-item {\n  background: rgba(52, 21, 12, 0.06);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.vpc-faq-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 16px 20px;\n  cursor: pointer;\n  background: none;\n  border: none;\n  width: 100%;\n  text-align: left;\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n  font-weight: 500;\n  color: #34150C !important;\n  -webkit-tap-highlight-color: transparent;\n}\n.vpc-faq-question:hover,\n.vpc-faq-question:focus,\n.vpc-faq-question:active {\n  background: rgba(52, 21, 12, 0.03);\n  color: #34150C !important;\n}\n.vpc-faq-question:focus { outline: none; }\n.vpc-faq-plus {\n  font-size: 18px;\n  font-weight: 400;\n  color: #34150C;\n  flex-shrink: 0;\n  margin-left: 12px;\n  transition: transform 0.3s ease;\n}\n.vpc-faq-item.is-open .vpc-faq-plus { transform: rotate(45deg); }\n.vpc-faq-answer {\n  max-height: 0;\n  overflow: hidden;\n  transition: max-height 0.35s ease;\n}\n.vpc-faq-item.is-open .vpc-faq-answer { max-height: 500px; }\n.vpc-faq-answer-inner {\n  padding: 0 20px 16px;\n  font-size: 13px;\n  line-height: 1.7;\n  color: #555;\n}\n.vpc-faq-answer-inner p { margin: 0 0 8px; }\n.vpc-faq-answer-inner p:last-child { margin: 0; }\n.vpc-faq-cta-text {\n  font-family: 'Poppins', sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  color: #34150C;\n  text-transform: uppercase;\n  letter-spacing: 0.03em;\n  margin-bottom: 16px;\n}\n.vpc-faq-cta-btn {\n  display: inline-block;\n  padding: 12px 28px;\n  background: #34150C;\n  color: #fff !important;\n  font-family: 'Poppins', sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.06em;\n  text-decoration: none;\n  border-radius: 6px;\n  transition: opacity 0.3s ease;\n}\n.vpc-faq-cta-btn:hover { opacity: 0.85; color: #fff !important; }\n\n@media (max-width: 767px) {\n  .vpc-faq-section { padding: 40px 16px 50px; }\n  .vpc-faq-heading { font-size: 22px; margin-bottom: 20px; }\n  .vpc-faq-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 30px; }\n  .vpc-faq-question { font-size: 13px; padding: 14px 16px; }\n  .vpc-faq-cta-text { font-size: 16px; }\n}\n</style>\n\n<section class=\"vpc-faq-section\">\n  <h2 class=\"vpc-faq-heading\">Frequently Asked Questions</h2>\n  <div class=\"vpc-faq-grid\">\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>How do Vibes Pearled Candles work?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are the pearled candles refillable?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>What are the wax Pearls made from?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>How long do the candles burn?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our 11 oz candles are provided with 15 wicks, while the 18 oz candles are provided with 30 wicks.</p><p>Each Wick burns for 12 hrs.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Why can't I smell the fragrance when burning?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our fragrances are subtle and calming, not overpowering. We recommend burning in smaller rooms or ensuring the wax pool fully melts for the best scent throw.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are your pearled candles safe for pets?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Yes! Our candles are made with non-toxic ingredients, making them pet-safe. However, we recommend keeping them out of reach of pets and never leaving a burning candle unattended.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Do your pearled candles produce soot?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>No! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton/wood wicks.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Where can I buy pearled candle refills?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Get additional Pearls, wicks, and accessories directly from our website!</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are the pearled candles safe to use?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Absolutely! Our candles are made with clean ingredients that produce minimal to no smoke. As with any candle, keep them away from flammable materials, never leave them unattended, and trim the wick to 5mm before lighting.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Do you offer international shipping?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Currently, we ship within the USA only. We are working on expanding our shipping options internationally - stay tuned!</p></div></div>\n    </div>\n  </div>\n  <p class=\"vpc-faq-cta-text\">Need More Information?</p>\n  <a href=\"https://www.vibespearledcandle.com/pages/faqs\" class=\"vpc-faq-cta-btn\">Visit Our FAQ Page</a>\n</section>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var faqSection = document.querySelector('.vpc-faq-section');\n  if (faqSection) {\n    faqSection.querySelectorAll('.vpc-faq-question').forEach(function(btn) {\n      btn.addEventListener('click', function() {\n        var item = this.closest('.vpc-faq-item');\n        var isOpen = item.classList.contains('is-open');\n        faqSection.querySelectorAll('.vpc-faq-item.is-open').forEach(function(el) { el.classList.remove('is-open'); });\n        if (!isOpen) item.classList.add('is-open');\n      });\n    });\n  }\n});\n</script>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -1126,6 +1143,7 @@
     "three_steps_8Ejmzq",
     "feature_columns_UBHdJf",
     "custom_liquid_LLn4zK",
+    "custom_liquid_vpc_faq_19oz",
     "accordion_rHG3RG",
     "featured_collection_MpytB9",
     "sidebar",
