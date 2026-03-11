@@ -297,7 +297,8 @@
         "pd_tb": "",
         "mg_mb": ",,30px,",
         "pd_mb": ""
-      }
+      },
+      "disabled": true
     },
     "custom_liquid_z6pCnL": {
       "type": "custom-liquid",
