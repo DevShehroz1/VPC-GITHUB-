@@ -1,0 +1,565 @@
+{%- liquid
+  assign collection_handle = section.settings.collection | default: '19oz'
+  assign heading = section.settings.heading | default: 'Build Your Bundle & Save'
+  assign subheading = section.settings.subheading | default: 'Select 2 or more candles to unlock savings'
+  assign min_qty = section.settings.min_qty | default: 2
+  assign discount_step = section.settings.discount_step | default: 5
+  assign accent_color = section.settings.accent_color | default: '#34150C'
+  assign bg_color = section.settings.background_color | default: '#fae9d4'
+-%}
+
+<section class="vpc-bb" style="background: {{ bg_color }};">
+  <div class="vpc-bb__inner">
+    <h2 class="vpc-bb__heading" style="color: {{ accent_color }};">{{ heading }}</h2>
+    <p class="vpc-bb__sub">{{ subheading }}</p>
+
+    <!-- Discount Tiers -->
+    <div class="vpc-bb__tiers" id="vpcBBTiers">
+      <div class="vpc-bb__tier" data-qty="2"><span class="vpc-bb__tier-qty">2+</span><span class="vpc-bb__tier-off">5% OFF</span></div>
+      <div class="vpc-bb__tier" data-qty="3"><span class="vpc-bb__tier-qty">3+</span><span class="vpc-bb__tier-off">10% OFF</span></div>
+      <div class="vpc-bb__tier" data-qty="4"><span class="vpc-bb__tier-qty">4+</span><span class="vpc-bb__tier-off">15% OFF</span></div>
+      <div class="vpc-bb__tier" data-qty="5"><span class="vpc-bb__tier-qty">5+</span><span class="vpc-bb__tier-off">20% OFF</span><span class="vpc-bb__tier-best">BEST DEAL</span></div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="vpc-bb__grid">
+      {%- for product in collections[collection_handle].products -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+        <div class="vpc-bb__card" data-variant-id="{{ variant.id }}" data-price="{{ variant.price }}">
+          <div class="vpc-bb__img-wrap">
+            <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title | escape }}" loading="lazy">
+            {%- if product.compare_at_price > product.price -%}
+              <span class="vpc-bb__sale-badge">SALE</span>
+            {%- endif -%}
+          </div>
+          <div class="vpc-bb__card-info">
+            <h3 class="vpc-bb__card-title">{{ product.title }}</h3>
+            <div class="vpc-bb__card-price">
+              <span class="vpc-bb__price-now" data-original-price="{{ variant.price }}">{{ variant.price | money }}</span>
+              {%- if product.compare_at_price > product.price -%}
+                <del class="vpc-bb__price-was">{{ product.compare_at_price | money }}</del>
+              {%- endif -%}
+            </div>
+            <div class="vpc-bb__qty-row">
+              <button class="vpc-bb__qty-btn vpc-bb__qty-minus" type="button" aria-label="Decrease">−</button>
+              <span class="vpc-bb__qty-val">0</span>
+              <button class="vpc-bb__qty-btn vpc-bb__qty-plus" type="button" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    <!-- Summary Bar -->
+    <div class="vpc-bb__summary" id="vpcBBSummary" style="display:none;">
+      <div class="vpc-bb__summary-row">
+        <div class="vpc-bb__summary-left">
+          <span class="vpc-bb__summary-count" id="vpcBBCount">0 items</span>
+          <span class="vpc-bb__summary-save" id="vpcBBSave"></span>
+        </div>
+        <div class="vpc-bb__summary-right">
+          <span class="vpc-bb__summary-original" id="vpcBBOriginal"></span>
+          <span class="vpc-bb__summary-total" id="vpcBBTotal">$0.00</span>
+        </div>
+      </div>
+      <button class="vpc-bb__atc-btn" id="vpcBBAtc" type="button" style="background: {{ accent_color }};" disabled>
+        Select at least {{ min_qty }} candles
+      </button>
+      <p class="vpc-bb__guarantee">🛡 Try risk-free — 30-day money-back guarantee</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.vpc-bb {
+  padding: 50px 20px 60px;
+  font-family: 'Poppins', sans-serif;
+}
+.vpc-bb__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.vpc-bb__heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 8px;
+}
+.vpc-bb__sub {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 30px;
+}
+
+/* Tiers */
+.vpc-bb__tiers {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+.vpc-bb__tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(52,21,12,0.15);
+  background: rgba(255,255,255,0.5);
+  min-width: 90px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.vpc-bb__tier.is-active {
+  border-color: #34150C;
+  background: rgba(52,21,12,0.08);
+  transform: scale(1.05);
+}
+.vpc-bb__tier-qty {
+  font-size: 18px;
+  font-weight: 700;
+  color: #34150C;
+}
+.vpc-bb__tier-off {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+.vpc-bb__tier-best {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  background: #e53935;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Grid */
+.vpc-bb__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.vpc-bb__card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.vpc-bb__card.is-selected {
+  border-color: #34150C;
+  box-shadow: 0 4px 16px rgba(52,21,12,0.12);
+}
+.vpc-bb__img-wrap {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: #f9f3ec;
+}
+.vpc-bb__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.vpc-bb__sale-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.vpc-bb__card-info {
+  padding: 14px;
+}
+.vpc-bb__card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #34150C;
+  margin: 0 0 6px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vpc-bb__card-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.vpc-bb__price-now {
+  font-size: 15px;
+  font-weight: 700;
+  color: #34150C;
+}
+.vpc-bb__price-now.is-discounted {
+  color: #2e7d32;
+}
+.vpc-bb__price-was {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Qty controls */
+.vpc-bb__qty-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 36px;
+}
+.vpc-bb__qty-btn {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #34150C;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.vpc-bb__qty-btn:hover {
+  background: rgba(52,21,12,0.06);
+}
+.vpc-bb__qty-val {
+  width: 36px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34150C;
+  border-left: 1.5px solid #ddd;
+  border-right: 1.5px solid #ddd;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Summary bar */
+.vpc-bb__summary {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: sticky;
+  bottom: 20px;
+  z-index: 100;
+}
+.vpc-bb__summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.vpc-bb__summary-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.vpc-bb__summary-count {
+  font-size: 15px;
+  font-weight: 700;
+  color: #34150C;
+}
+.vpc-bb__summary-save {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+.vpc-bb__summary-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.vpc-bb__summary-original {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+.vpc-bb__summary-total {
+  font-size: 22px;
+  font-weight: 700;
+  color: #34150C;
+}
+.vpc-bb__atc-btn {
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.vpc-bb__atc-btn:not(:disabled):hover {
+  opacity: 0.85;
+}
+.vpc-bb__atc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.vpc-bb__guarantee {
+  font-size: 12px;
+  color: #888;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 1023px) {
+  .vpc-bb__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 767px) {
+  .vpc-bb { padding: 40px 12px 50px; }
+  .vpc-bb__heading { font-size: 24px; }
+  .vpc-bb__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .vpc-bb__tiers { gap: 8px; }
+  .vpc-bb__tier { padding: 10px 14px; min-width: 70px; }
+  .vpc-bb__tier-qty { font-size: 15px; }
+  .vpc-bb__summary { margin-left: -4px; margin-right: -4px; border-radius: 12px; padding: 18px; }
+  .vpc-bb__card-info { padding: 10px; }
+  .vpc-bb__card-title { font-size: 12px; }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var section = document.querySelector('.vpc-bb');
+  if (!section) return;
+
+  var minQty = {{ min_qty }};
+  var discountStep = {{ discount_step }};
+  var cards = section.querySelectorAll('.vpc-bb__card');
+  var summary = document.getElementById('vpcBBSummary');
+  var countEl = document.getElementById('vpcBBCount');
+  var saveEl = document.getElementById('vpcBBSave');
+  var origEl = document.getElementById('vpcBBOriginal');
+  var totalEl = document.getElementById('vpcBBTotal');
+  var atcBtn = document.getElementById('vpcBBAtc');
+  var tiers = document.querySelectorAll('.vpc-bb__tier');
+
+  function getDiscountPercent(totalItems) {
+    if (totalItems < minQty) return 0;
+    return Math.min((totalItems - 1) * discountStep, 25);
+  }
+
+  function formatMoney(cents) {
+    return '$' + (cents / 100).toFixed(2);
+  }
+
+  function updateAll() {
+    var totalItems = 0;
+    var totalPrice = 0;
+    var items = [];
+
+    cards.forEach(function(card) {
+      var qty = parseInt(card.querySelector('.vpc-bb__qty-val').textContent) || 0;
+      var price = parseInt(card.getAttribute('data-price')) || 0;
+      var variantId = card.getAttribute('data-variant-id');
+
+      if (qty > 0) {
+        totalItems += qty;
+        totalPrice += price * qty;
+        items.push({ id: parseInt(variantId), quantity: qty });
+        card.classList.add('is-selected');
+      } else {
+        card.classList.remove('is-selected');
+      }
+    });
+
+    var discountPct = getDiscountPercent(totalItems);
+    var discountAmount = Math.round(totalPrice * discountPct / 100);
+    var finalPrice = totalPrice - discountAmount;
+
+    /* Update tier highlights */
+    tiers.forEach(function(t) {
+      var tQty = parseInt(t.getAttribute('data-qty'));
+      t.classList.toggle('is-active', totalItems >= tQty);
+    });
+
+    /* Update card prices to show discounted price */
+    cards.forEach(function(card) {
+      var priceEl = card.querySelector('.vpc-bb__price-now');
+      var origPrice = parseInt(priceEl.getAttribute('data-original-price'));
+      if (discountPct > 0) {
+        var discPrice = Math.round(origPrice * (100 - discountPct) / 100);
+        priceEl.textContent = formatMoney(discPrice);
+        priceEl.classList.add('is-discounted');
+      } else {
+        priceEl.textContent = formatMoney(origPrice);
+        priceEl.classList.remove('is-discounted');
+      }
+    });
+
+    /* Summary */
+    if (totalItems > 0) {
+      summary.style.display = 'block';
+      countEl.textContent = totalItems + (totalItems === 1 ? ' item' : ' items');
+
+      if (discountPct > 0) {
+        saveEl.textContent = 'You save ' + discountPct + '% (' + formatMoney(discountAmount) + ')';
+        origEl.textContent = formatMoney(totalPrice);
+        origEl.style.display = 'block';
+      } else {
+        saveEl.textContent = 'Add ' + (minQty - totalItems) + ' more for 5% off';
+        origEl.style.display = 'none';
+      }
+
+      totalEl.textContent = formatMoney(finalPrice);
+
+      if (totalItems >= minQty) {
+        atcBtn.disabled = false;
+        atcBtn.textContent = 'ADD BUNDLE TO CART — ' + formatMoney(finalPrice);
+      } else {
+        atcBtn.disabled = true;
+        atcBtn.textContent = 'Select at least ' + minQty + ' candles';
+      }
+    } else {
+      summary.style.display = 'none';
+    }
+
+    /* Store items for ATC */
+    atcBtn.setAttribute('data-items', JSON.stringify(items));
+    atcBtn.setAttribute('data-discount', discountPct);
+  }
+
+  /* Qty buttons */
+  cards.forEach(function(card) {
+    var valEl = card.querySelector('.vpc-bb__qty-val');
+    card.querySelector('.vpc-bb__qty-plus').addEventListener('click', function() {
+      valEl.textContent = parseInt(valEl.textContent) + 1;
+      updateAll();
+    });
+    card.querySelector('.vpc-bb__qty-minus').addEventListener('click', function() {
+      var v = parseInt(valEl.textContent);
+      if (v > 0) {
+        valEl.textContent = v - 1;
+        updateAll();
+      }
+    });
+  });
+
+  /* Add to cart */
+  atcBtn.addEventListener('click', function() {
+    if (this.disabled) return;
+    var items = JSON.parse(this.getAttribute('data-items') || '[]');
+    if (!items.length) return;
+
+    this.textContent = 'ADDING...';
+    this.disabled = true;
+
+    var addItems = items.map(function(item) {
+      return { id: item.id, quantity: item.quantity };
+    });
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: addItems })
+    })
+    .then(function(res) { return res.json(); })
+    .then(function() {
+      atcBtn.textContent = 'ADDED TO CART!';
+      setTimeout(function() { window.location.href = '/cart'; }, 800);
+    })
+    .catch(function() {
+      atcBtn.textContent = 'ERROR — TRY AGAIN';
+      atcBtn.disabled = false;
+    });
+  });
+
+  updateAll();
+});
+</script>
+
+{% schema %}
+{
+  "name": "Bundle Builder",
+  "tag": "section",
+  "class": "t4s-section t4s-section-all vpc-bundle-builder",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Build Your Bundle & Save"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Select 2 or more candles to unlock savings"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "min_qty",
+      "label": "Minimum Quantity",
+      "min": 2,
+      "max": 5,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "discount_step",
+      "label": "Discount % per tier",
+      "min": 3,
+      "max": 10,
+      "default": 5,
+      "info": "e.g. 5 = 5% for 2, 10% for 3, 15% for 4..."
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#34150C"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#fae9d4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder"
+    }
+  ]
+}
+{% endschema %}
