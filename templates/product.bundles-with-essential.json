@@ -1,1 +1,1185 @@
-{"sections":{"breadcrumb":{"type":"brc-nav-product","disabled":true,"settings":{"breadcrumb_pr":true,"back_next_pr":true,"cl_bg":"#fae9d4","cl_link":"#222222"}},"custom_liquid_4BzeAQ":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" \/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" \/>\n  <title>Floating Candles<\/title>\n  <style>\n    \/* Hide everything on desktop *\/\n    @media (min-width: 768px) {\n      .info-heading-mobile,\n      .info-badges-mobile {\n        display: none;\n      }\n    }\n\n    \/* Mobile styles *\/\n    @media (max-width: 767px) {\n      .info-heading-mobile {\n        text-align: center;\n        font-family: 'Poppins', sans-serif;\n        font-weight: 700;\n        font-size: 32px; \/* original size restored *\/\n        line-height: 44px;\n        letter-spacing: -0.02em;\n        text-transform: uppercase;\n        color: #000;\n        margin-bottom: 20px;\n        padding: 0 10px;\n        word-break: break-word;\n      }\n\n      .info-badges-mobile {\n        display: flex;\n        justify-content: center;\n        gap: 10px;\n        flex-wrap: nowrap; \/* keep original layout *\/\n        margin: 0 auto 20px;\n      }\n\n      .info-badges-mobile .badge {\n        display: flex;\n        align-items: center;\n        gap: 6px;\n        width: 188px;\n        height: 44px;\n        border: 1px solid #E25A5A;\n        border-radius: 6px;\n        padding: 0 12px;\n        font-family: sans-serif;\n        font-size: 16px;\n        color: #2c2c2c;\n        background-color: #FCF1E2;\n        box-sizing: border-box;\n        justify-content: center;\n      }\n\n      .info-badges-mobile .badge img {\n        width: 20px;\n        height: 20px;\n        object-fit: contain;\n      }\n    }\n  <\/style>\n<\/head>\n<body>\n\n  <!-- Heading -->\n  <div class=\"info-heading-mobile\">\n    FLOATING CANDLES<br>FOR INSTANT CALM\n  <\/div>\n\n  <!-- Badges -->\n  <div class=\"info-badges-mobile\">\n    <div class=\"badge\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Vector.png?v=1752999075\" alt=\"Mood-lifting icon\">\n      <span>Mood-lifting<\/span>\n    <\/div>\n    <div class=\"badge\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Group_121.png?v=1752999075\" alt=\"Soot-free icon\">\n      <span>soot-free<\/span>\n    <\/div>\n  <\/div>\n\n<\/body>\n<\/html>","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":"30px,,15px,","pd_mb":""}},"custom_liquid_pFnamg":{"type":"custom-liquid","disabled":true,"name":"Custom Liquid","settings":{"custom_liquid":"<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http:\/\/w3.org\/2000\/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"\/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"\/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"\/>\n      <\/svg>\n    <\/div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  <\/span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; \/* Badge'ler arasındaki boşluk *\/\n  transform: scale(0.8); \/* Tüm bileşenleri orantılı küçültme *\/\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; \/* Açık kırmızı arka plan *\/\n  color: #000000; \/* Koyu kırmızı metin *\/\n  padding: 3px 5px; \/* Küçültülmüş padding *\/\n  border-radius: 5px; \/* Orantılı yuvarlama *\/\n  font-size: 10px; \/* Küçültülmüş font boyutu *\/\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; \/* Küçültülmüş boşluk *\/\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; \/* Küçültülmüş ikon boyutu *\/\n  height: 12px; \/* Küçültülmüş ikon boyutu *\/\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n<\/style>\n<\/div>","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":"10,,10px","pd":"","mg_tb":"10,,10px","pd_tb":"","mg_mb":"10,,10px","pd_mb":""}},"main":{"type":"main-product","blocks":{"custom_liquid_8naEbP":{"type":"custom_liquid","disabled":true,"settings":{"custom_liquid":"<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http:\/\/w3.org\/2000\/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"\/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"\/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"\/>\n      <\/svg>\n    <\/div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  <\/span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; \/* Badge'ler arasındaki boşluk *\/\n  transform: scale(0.8); \/* Tüm bileşenleri orantılı küçültme *\/\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; \/* Açık kırmızı arka plan *\/\n  color: #000000; \/* Koyu kırmızı metin *\/\n  padding: 3px 5px; \/* Küçültülmüş padding *\/\n  border-radius: 5px; \/* Orantılı yuvarlama *\/\n  font-size: 10px; \/* Küçültülmüş font boyutu *\/\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; \/* Küçültülmüş boşluk *\/\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; \/* Küçültülmüş ikon boyutu *\/\n  height: 12px; \/* Küçültülmüş ikon boyutu *\/\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n<\/style>\n<\/div>"}},"title":{"type":"title","settings":{"txt_tr_pr":"uppercase","fnt_df_pr":"1","size_pr":24,"fw_pr":600,"lh_pr":0,"ls_pr":0,"pr_title_color":"#222222"}},"price_review":{"type":"price_review","settings":{"price":"0","type_sale":"1","tax_ship":false,"rating":false,"review_liquid":"","size_price_pr":22,"fw_price_pr":400,"price_color":"#696969","price_sale_color":"#ec0101"}},"affirm_pay_over_time_messaging_product_block_zUbYQw":{"type":"shopify:\/\/apps\/affirm-pay-over-time-messaging\/blocks\/product-block\/6dce54be-130d-4d13-9636-1e8f611b3071","settings":{"logo_align":"left","font_size":14,"logo_color":"blue","logo_type":"logo","public_api_key":"","price_selector":""}},"loox_reviews_loox_rating_UaQ4Uy":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"contentSize":14,"pattern":"(4.93\/5) Based on 11,000+ Reviews","hideText":false,"alignment":"","layout":"","textColor":"","starColor":"","showAllReviews":true,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"custom_liquid_bDeVrW":{"type":"custom_liquid","name":"USPs ","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Product Features<\/title>\n  <style> \n    body {\n      font-family: Arial, sans-serif;\n      margin: 0;\n      padding: 20px;\n      background-color: white;\n    }\n\n    .features-section {\n      max-width: 600px;\n      margin: 0 auto;\n    }\n\n    .feature-item {\n      display: flex;\n      align-items: center;\n      margin-bottom: 20px;\n      color: #000; \/* Corrected color *\/\n    }\n\n    .feature-icon {\n      margin-right: 15px;\n      flex-shrink: 0;\n      width: 20px;\n      height: 20px;\n      object-fit: contain;\n    }\n\n    .feature-text {\n      font-size: 14px;\n      font-weight: 400;\n      margin: 0;\n    }\n  <\/style>\n<\/head>\n<body>\n  <div class=\"features-section\">\n    <div class=\"feature-item\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/download_3.png?v=1754248299\" alt=\"Refillable & Eco-friendly\" class=\"feature-icon\">\n      <p class=\"feature-text\">Refillable & Eco-friendly<\/p>\n    <\/div>\n\n    <div class=\"feature-item\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/download_b3dd6ebc-b9bd-480a-acff-c1a599084da2.png?v=1754248299\" alt=\"Safe and Clean Burning\" class=\"feature-icon\">\n      <p class=\"feature-text\">Safe and Clean Burning<\/p>\n    <\/div>\n\n    <div class=\"feature-item\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/download_2_eaa15157-7590-434c-899a-288a7925bac1.png?v=1754248299\" alt=\"Plant-Based Wax\" class=\"feature-icon\">\n      <p class=\"feature-text\">Plant-Based Wax<\/p>\n    <\/div>\n\n    <div class=\"feature-item\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/download_1.png?v=1754248300\" alt=\"Safe for pets\" class=\"feature-icon\">\n      <p class=\"feature-text\">Safe for pets<\/p>\n    <\/div>\n  <\/div>\n<\/body>\n<\/html>"}},"custom_liquid_yU7p6E":{"type":"custom_liquid","disabled":true,"settings":{"custom_liquid":"<img src=\"{{ product.metafields.custom.image | image_url: 'master' }}\" alt=\"Product Image\">"}},"custom_liquid_XwRJAr":{"type":"custom_liquid","settings":{"custom_liquid":"{{ product.metafields.custom.short_desription | metafield_tag }}"}},"form":{"type":"form","settings":{"selector_mode":"block2","color_mode":"variant_image","enable_fit_ratio_img":false,"color_size":"exlarge","show_qty":true,"enable_wishlist":true,"enable_compare":true,"btn_atc_full":false,"pr_btn_round":10,"ani":"t4s-ani-shake","time":6,"btn_txt":"3","btn_icon":false,"button_style":"default","button_color":"primary","button_effect":"sweep-to-top","wishlist_color":"#222222","wishlist_color_hover":"#56cfe1","wishlist_color_active":"#e81e1e","compare_color":"#222222","compare_color_hover":"#56cfe1","compare_color_active":"#222222","show_dynamic_checkout":false,"btn_txt2":"3","button_color_payment":"dark","show_gift_card_recipient":false,"product_list":[],"show_product_current":true,"qty_val":"0","advance_label":"Choose style","advance_pr_list":[]}},"custom_liquid_33kEK3":{"type":"custom_liquid","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Mobile Secure Checkout Block<\/title>\n    <style>\n        \/* Mobile-only styles *\/\n        .mobile-secure-checkout {\n            display: none;\n            text-align: center;\n            padding: 0;\n            background-color: #FAEAD3A6;\n            font-family: 'Poppins', sans-serif;\n            margin: 0;\n        }\n        \n        .secure-text {\n            font-size: 15px;\n            color: #2c2c2c;\n            margin: 0 0 8px 0;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            gap: 6px;\n            font-weight: 400;\n        }\n        \n        .lock-icon {\n            width: auto;\n            height: auto;\n            vertical-align: middle;\n        }\n        \n        .separator-line {\n            width: 100%;\n            height: 1px;\n            background-color: #2c2c2c;\n            margin: 0;\n            opacity: 0.6;\n        }\n        \n        \/* Show only on mobile devices *\/\n        @media only screen and (max-width: 768px) {\n            .mobile-secure-checkout {\n                display: block;\n            }\n        }\n        \n        \/* Hide on desktop *\/\n        @media only screen and (min-width: 769px) {\n            .mobile-secure-checkout {\n                display: none;\n            }\n        }\n    <\/style>\n<\/head>\n<body>\n    <div class=\"mobile-secure-checkout\">\n        <div class=\"secure-text\">\n            we commit a secure checkout\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Vector_bb28a8d2-7273-4f6a-9fd3-6c7057137a65.png?v=1753979673\" \n                 alt=\"Secure Lock Icon\" \n                 class=\"lock-icon\">\n        <\/div>\n        <div class=\"separator-line\"><\/div>\n    <\/div>\n<\/body>\n<\/html>"}},"img_Aw6Qwr":{"type":"img","settings":{"al":"center","mess":"","size":16,"source":"1","image":"shopify:\/\/shop_images\/08fb3ec239273a8d9c17a8534d390e98d06e8b41-removebg-preview.png","wimg":100,"svg":"apple_pay,google_pay,master,paypal,shopify_pay,visa","height":33}},"custom_liquid_jVkYcg":{"type":"custom_liquid","settings":{"custom_liquid":"<div class=\"mobile-badge-wrapper\">\n  <div class=\"mobile-badge-container\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/image_2.png?v=1754767673\" alt=\"Shipping Icon\" class=\"mobile-badge-image\">\n    <span class=\"mobile-badge-text\">Same Day Free Shipping<\/span>\n  <\/div>\n<\/div>\n\n<style>\n  @import url('https:\/\/fonts.googleapis.com\/css2?family=Poppins:wght@400;600&display=swap');\n\n  .mobile-badge-wrapper {\n    background-color: #faebd7; \/* beige background *\/\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 20px 0;\n    font-family: 'Poppins', sans-serif;\n  }\n\n  .mobile-badge-container {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    background-color: #ffffff; \/* white background *\/\n    border: 1.5px solid #e0c7b1;\n    border-radius: 8px; \/* reduced radius *\/\n    padding: 8px 16px;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.08);\n    position: relative;\n  }\n\n  .mobile-badge-container::before,\n  .mobile-badge-container::after {\n    content: \"\";\n    flex: 1;\n    height: 1px;\n    background-color: #d8b99e;\n    position: absolute;\n    top: 50%;\n  }\n\n  .mobile-badge-container::before {\n    left: -50px;\n    width: 50px;\n  }\n\n  .mobile-badge-container::after {\n    right: -50px;\n    width: 50px;\n  }\n\n  .mobile-badge-image {\n    height: 30px; \/* increased size *\/\n    width: auto;\n    display: block;\n  }\n\n  .mobile-badge-text {\n    font-weight: 600;\n    font-size: 14px;\n    color: #000; \/* black text *\/\n  }\n\n  \/* Hide on tablets & desktop, show only on mobile *\/\n  @media (min-width: 769px) {\n    .mobile-badge-wrapper {\n      display: none !important;\n    }\n  }\n<\/style>"}},"order_tfwqY9":{"type":"order","disabled":true,"settings":{"hide_pre":true,"icon":"2","icon_name":"las la-truck","ani":"none","txt":"Order in the next [hour] to get it between [date_start] and [date_end]","ds":3,"de":7,"mode":"1","cut_day":"SAT,SUN","frm_day":"t44, t45 t46","time":"6:00:00","hr":"hours","min":"minutes"}},"custom_liquid_4cYaUe":{"type":"custom_liquid","disabled":true,"settings":{"custom_liquid":"<style>\n  .what-included-section {\n    padding: 60px 0;\n    background-color: #fff;\n  }\n  \n  .what-included-container {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n  \n  .what-included-title {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 700;\n    font-size: 2.5rem;\n    color: #8B4513;\n    text-align: center;\n    margin-bottom: 50px;\n  }\n  \n  .products-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 30px;\n    margin-top: 40px;\n  }\n  \n  .product-item {\n    background-color: #f5f5dc;\n    border-radius: 15px;\n    padding: 30px;\n    text-align: center;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n    transition: transform 0.3s ease;\n  }\n  \n  .product-item:hover {\n    transform: translateY(-5px);\n  }\n  \n  .product-image {\n    width: 100%;\n    max-width: 250px;\n    height: auto;\n    border-radius: 10px;\n    margin-bottom: 20px;\n  }\n  \n  .product-container {\n    width: 100%;\n    max-width: 200px;\n    height: auto;\n    border-radius: 8px;\n    margin: 0 auto;\n  }\n  \n  .product-info {\n    margin-top: 15px;\n  }\n  \n  .product-name {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 1.2rem;\n    color: #333;\n    margin-bottom: 8px;\n  }\n  \n  .product-size {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 500;\n    font-size: 1rem;\n    color: #666;\n  }\n  \n  .essential-oils-badge {\n    display: inline-block;\n    background: linear-gradient(45deg, #FFD700, #FFA500);\n    color: #333;\n    padding: 8px 15px;\n    border-radius: 20px;\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 0.85rem;\n    margin-top: 10px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n  }\n  \n  @media (max-width: 768px) {\n    .products-grid {\n      grid-template-columns: 1fr;\n      gap: 20px;\n    }\n    \n    .what-included-title {\n      font-size: 2rem;\n    }\n    \n    .product-item {\n      padding: 20px;\n    }\n  }\n<\/style>\n\n<section class=\"what-included-section\">\n  <div class=\"what-included-container\">\n    <h2 class=\"what-included-title\">What is included<\/h2>\n    \n    <div class=\"products-grid\">\n      <!-- First Product - Metafield Image -->\n      <div class=\"product-item\">\n        <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          <\/div>\n        <\/div>\n      <\/div>\n      \n      <!-- Second Product - First URL -->\n      <div class=\"product-item\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          <\/div>\n        <\/div>\n      <\/div>\n      \n      <!-- Third Product - Second URL -->\n      <div class=\"product-item\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/ChatGPTImageMay27_2025_04_00_01PM.webp?v=1749826287\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/section>"}},"reelfy_videos_reelfy_section_4VCm4z":{"type":"shopify:\/\/apps\/reelfy-videos\/blocks\/reelfy-section\/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f","disabled":true,"settings":{"title":"","subtitle":"","heading_size":"1","heading_align":"left","heading_color":"","desc_style":"subtitle","desc_color":"","custom_class":"","background_color":"","padding_top":36,"padding_bottom":36,"padding_left_right":0}},"custom_liquid_TrxhrN":{"type":"custom_liquid","disabled":true,"settings":{"custom_liquid":"<div style=\"text-align:center; padding: 20px;\">\n  <h2 style=\"font-size: 28px; font-weight: bold; color: #3d1b00; margin-bottom: 30px;\">What is included<\/h2>\n\n  <div class=\"what-included-row\" style=\"display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;\">\n\n    <!-- First Image - Metafield -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1\/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.image %}\n          <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" alt=\"Included image 1\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n        {% endif %}\n      <\/div>\n    <\/div>\n\n    <!-- Plus Sign -->\n    <div class=\"included-plus\">+<\/div>\n\n    <!-- Second Image - Correct namespace\/key -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1\/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.essential_oil %}\n          {% capture essential_val %}{{ product.metafields.custom.essential_oil }}{% endcapture %}\n          {% if essential_val contains 'http' %}\n            <!-- Metafield stores a direct URL -->\n            <img src=\"{{ essential_val }}\" alt=\"Included image 2\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n          {% else %}\n            <!-- Metafield is a Shopify file\/image reference -->\n            <img src=\"{{ product.metafields.custom.essential_oil | image_url: width: 600 }}\" alt=\"Included image 2\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n          {% endif %}\n        {% endif %}\n      <\/div>\n    <\/div>\n\n    <!-- Plus Sign -->\n    <div class=\"included-plus\">+<\/div>\n\n    <!-- Third Image -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1\/1; overflow: hidden; border-radius: 6px;\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/3_1_163653f2-4245-4341-b516-9402f0889ce0.png?v=1754577023\" alt=\"Included image 3\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n      <\/div>\n    <\/div>\n\n  <\/div>\n<\/div>\n\n<style>\n  .included-img {\n    flex: 1;\n    max-width: 210px;\n  }\n  .included-plus {\n    font-size: 20px;\n    font-weight: normal;\n    color: #8b5e3c;\n    line-height: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  @media (max-width: 768px) {\n    .included-img {\n      flex: 0 0 30%;\n      max-width: none;\n    }\n    .included-plus {\n      font-size: 16px;\n    }\n  }\n<\/style>"}},"95d4f334-8ea7-4cd2-b609-2373b1e848b8":{"type":"tab_des","settings":{"title":"Description"}},"tab_html_TA6yNN":{"type":"tab_html","settings":{"title":"What’s Included in the Pack?","content":"<p>{{ product.metafields.custom.includes | metafield_tag }}<\/p>","page":""}},"tab_html_hzGPhA":{"type":"tab_html","settings":{"title":"Ingredients","content":"<p><strong>100%<\/strong> <strong>Plant-Based Wax<\/strong> <strong>- <\/strong>Clean-burning, non-toxic, and free from paraffin.<\/p><p><strong>Premium Fragrance Oils<\/strong> <strong>- <\/strong>Thoughtfully curated for a balanced, long-lasting scent.<\/p><p><strong>Phthalate-Free Fragrances<\/strong> <strong>- <\/strong>Luxurious, non-toxic scents crafted to enhance your mood.<\/p>","page":""}},"tab_html_KkUw9D":{"type":"tab_html","settings":{"title":"Burn Time","content":"<p>Each Wick burns for 12 hrs.<\/p>","page":""}},"tab_html_JqUUNt":{"type":"tab_html","settings":{"title":"How To Use","content":"<p><strong>Trim the Wick -<\/strong> Before lighting, trim the wick to 1\/4 inch for a clean, even burn.<\/p><p><strong>Burn Safely -<\/strong> Keep the candle on a flat, heat-resistant surface, and never leave it unattended.<\/p>","page":""}},"tab_html_xhYjV4":{"type":"tab_html","settings":{"title":"Why You’ll Love It","content":"<p><strong>Customizable & Refillable<\/strong> <strong>- <\/strong>Adjust wax levels, mix colors, and blend scents.<\/p><p><strong>Mess-Free & Even Burning - <\/strong>No tunneling, no wasted wax.<\/p><p><strong>Long lasting<\/strong> <strong>- <\/strong>A candle you can keep using forever.<\/p>","page":""}},"94011ade-ec25-4d68-b37a-70660ede49dd":{"type":"social","settings":{"socials_align":"start","social_mode":"2","social_style":"1","social_size":"extra_small","bd_radius":0,"use_color_set":true,"icon_cl":"#222222","bg_cl":"#00badb","space_h_item":"20","space_v_item":"5","space_h_item_mb":"20","space_v_item_mb":"4"}},"bded529b-9b8f-4d5c-8f04-5de0b22e627d":{"type":"tab_html","settings":{"title":"Collapsible tab","content":"","page":""}},"custom_liquid_87hzpc":{"type":"custom_liquid","disabled":true,"settings":{"custom_liquid":"<style>\n    body {\n      margin: 0;\n      padding: 0;\n    }\n  \n    .icon-wrapper,\n    .custom-icon-row {\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n  \n    .custom-icon-row {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      width: 100%;\n      text-align: center;\n      flex-wrap: nowrap;\n      overflow-x: hidden; \/* Hide horizontal scrollbar *\/\n      -webkit-overflow-scrolling: touch;\n      gap: 0;\n      scrollbar-width: none; \/* Firefox *\/\n    }\n    .custom-icon-row::-webkit-scrollbar {\n      display: none; \/* Chrome, Safari, Opera *\/\n    }\n  \n    .icon-block {\n      flex: 0 0 33.33%;\n      max-width: 33.33%;\n      padding: 0; \/* Removed top and bottom padding *\/\n      margin: 0;\n      box-sizing: border-box;\n      min-width: 120px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n  \n    .icon-block img {\n      width: 48px;\n      height: auto;\n      margin-bottom: 6px;\n      margin-top: 0; \/* Ensure no top margin *\/\n    }\n  \n    .icon-block p {\n      font-size: 13px;\n      font-weight: 500;\n      margin: 0;\n      color: #333;\n      line-height: 1.2;\n    }\n  \n    .icon-block p + p {\n      font-size: 13px;\n      font-weight: 400;\n      color: #555;\n      margin-top: 2px;\n    }\n  \n    @media (max-width: 768px) {\n      .icon-block {\n        min-width: 100px;\n      }\n  \n      .icon-block img {\n        width: 36px;\n      }\n  \n      .icon-block p,\n      .icon-block p + p {\n        font-size: 12px;\n      }\n    }\n  \n    @media (max-width: 480px) {\n      .icon-block {\n        min-width: 90px;\n      }\n  \n      .icon-block img {\n        width: 30px;\n      }\n  \n      .icon-block p,\n      .icon-block p + p {\n        font-size: 11px;\n      }\n    }\n  <\/style>\n  \n  <div class=\"icon-wrapper\">\n    <div class=\"custom-icon-row\">\n      <div class=\"icon-block\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/free-shipping.png?v=1751615179\" alt=\"Free Shipping Icon\">\n        <p>Free shipping in<\/p>\n        <p>US<\/p>\n      <\/div>\n      <div class=\"icon-block\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/leaves.png?v=1751615389\" alt=\"Hassle-free returns Icon\">\n        <p>100 % Plant Based <\/p>\n        <p>wax<\/p>\n      <\/div>\n      <div class=\"icon-block\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/fire.png?v=1751615179\" alt=\"Secure checkout Icon\">\n        <p>Long Lasting<\/p>\n        <p>Burn Time<\/p>\n      <\/div>\n    <\/div>\n  <\/div>"}}},"block_order":["custom_liquid_8naEbP","title","price_review","affirm_pay_over_time_messaging_product_block_zUbYQw","loox_reviews_loox_rating_UaQ4Uy","custom_liquid_bDeVrW","custom_liquid_yU7p6E","custom_liquid_XwRJAr","form","custom_liquid_33kEK3","img_Aw6Qwr","custom_liquid_jVkYcg","order_tfwqY9","custom_liquid_4cYaUe","reelfy_videos_reelfy_section_4VCm4z","custom_liquid_TrxhrN","95d4f334-8ea7-4cd2-b609-2373b1e848b8","tab_html_TA6yNN","tab_html_hzGPhA","tab_html_KkUw9D","tab_html_JqUUNt","tab_html_xhYjV4","94011ade-ec25-4d68-b37a-70660ede49dd","bded529b-9b8f-4d5c-8f04-5de0b22e627d","custom_liquid_87hzpc"],"settings":{"pr_layout":"default","enable_sticky_info":true,"media_layout":"thumbnails_left","media_size":"medium","thumb_lr_size":"medium","image_ratio":"ratio1_1","image_size":"contain","image_position":"default","main_click":"none","zoom_tp":"inner","enable_zoom_icon":false,"enable_zoom_click_mb":true,"enable_video_looping":false,"enable_video_muting":true,"enable_video_autoplaying":false,"eff":"slide","nav_btn":true,"btn_vi":"always","btn_owl":"default","btn_shape":"round","btn_cl":"primary","btn_size":"medium","btn_hidden_mobile":false,"nav_dot":false,"dot_owl":"default","dots_cl":"dark","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"tabs_design":"accordion","tabs_design_mb":"tab","tabs_position":"external","enable_first_tab":true,"tabs_layout_fix":"full","bg":"#fae9d4","bg_mb":"#fae9d4","product_list":[],"sticky_mode":"2","sticky_show":"2","sticky_layout_mb":"minimal","enable_select":true,"ani":"t4s-ani-shake","time":3}},"custom_liquid_fB4mXF":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<div class=\"desktop-included-wrapper\" style=\"text-align:center; padding: 20px;\">\n  <h2 style=\"font-size: 28px; font-weight: bold; color: #3d1b00; margin-bottom: 30px;\">What is included<\/h2>\n\n  <div class=\"desktop-included-row\" style=\"display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;\">\n\n    <!-- First Image - Metafield -->\n    <div class=\"desktop-included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1\/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.image %}\n          <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" alt=\"Included image 1\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n        {% endif %}\n      <\/div>\n    <\/div>\n\n    <!-- Plus Sign -->\n    <div class=\"desktop-included-plus\">+<\/div>\n\n    <!-- Second Image -->\n    <div class=\"desktop-included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1\/1; overflow: hidden; border-radius: 6px;\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/2_868ae35e-4bc7-40f1-8809-289dfb1a02d7.png?v=1754239567\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n      <\/div>\n    <\/div>\n\n  <\/div>\n<\/div>\n\n<style>\n  .desktop-included-img {\n    flex: 1;\n    max-width: 210px;\n  }\n  .desktop-included-plus {\n    font-size: 20px;\n    font-weight: normal;\n    color: #8b5e3c;\n    line-height: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  @media (max-width: 768px) {\n    .desktop-included-wrapper {\n      display: none !important; \/* hide on mobile *\/\n    }\n  }\n<\/style>","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"175973502228b72262":{"type":"apps","blocks":{"reelfy_videos_reelfy_section_aTFapg":{"type":"shopify:\/\/apps\/reelfy-videos\/blocks\/reelfy-section\/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f","settings":{"title":"","subtitle":"","heading_size":"1","heading_align":"left","heading_color":"","desc_style":"subtitle","desc_color":"","custom_class":"","background_color":"","padding_top":36,"padding_bottom":36,"padding_left_right":24}}},"block_order":["reelfy_videos_reelfy_section_aTFapg"],"settings":{}},"custom_liquid_77etJC":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Candle Info Section<\/title>\n  <!-- Poppins font -->\n  <link href=\"https:\/\/fonts.googleapis.com\/css2?family=Poppins:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      margin: 0;\n      font-family: 'Poppins', sans-serif;\n    }\n\n    \/* Desktop only *\/\n    @media (max-width: 991px) {\n      .candle-info-section {\n        display: none !important;\n      }\n    }\n\n    .candle-info-section {\n      position: relative;\n      background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Copy_of_vb2.webp?v=1752503627') no-repeat center center\/cover;\n      padding: 120px 20px; \/* Increased height *\/\n      color: #fff;\n      text-align: center;\n      overflow: hidden;\n    }\n\n    \/* Brown overlay *\/\n    .candle-info-section::before {\n      content: \"\";\n      position: absolute;\n      top: 0; left: 0; right: 0; bottom: 0;\n      background: rgba(60, 30, 10, 0.7);\n      z-index: 1;\n    }\n\n    .candle-info-section > * {\n      position: relative;\n      z-index: 2;\n    }\n\n    .accordion-row {\n      display: flex;\n      justify-content: center;\n      flex-wrap: wrap;\n      gap: 15px;\n      margin-bottom: 80px; \/* more space before icons *\/\n    }\n\n    .accordion-item {\n      border: 1px solid #fff;\n      border-radius: 6px;\n      padding: 12px 20px;\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      cursor: pointer;\n      min-width: 220px;\n      background: rgba(255, 255, 255, 0.05);\n      transition: background 0.3s;\n      color: #fff;\n    }\n\n    .accordion-item:hover {\n      background: rgba(255, 255, 255, 0.15);\n    }\n\n    .accordion-item strong {\n      font-weight: 600;\n      font-size: 15px;\n    }\n\n    .accordion-item span {\n      font-size: 18px;\n      font-weight: bold;\n    }\n\n    \/* Popup *\/\n    .popup-overlay {\n      display: none;\n      position: fixed;\n      top: 0; left: 0;\n      width: 100%; height: 100%;\n      background: rgba(0,0,0,0.8);\n      justify-content: center;\n      align-items: center;\n      z-index: 9999;\n    }\n\n    .popup-content {\n      background: #fff;\n      color: #000;\n      padding: 30px;\n      border-radius: 10px;\n      max-width: 600px;\n      text-align: left;\n      position: relative;\n      font-family: 'Poppins', sans-serif;\n    }\n\n    .popup-content h3 {\n      margin-top: 0;\n      margin-bottom: 15px;\n      font-weight: 600;\n    }\n\n    .popup-content p {\n      margin-bottom: 10px;\n      line-height: 1.6;\n    }\n\n    .popup-close {\n      position: absolute;\n      top: 12px;\n      right: 12px;\n      font-size: 20px;\n      cursor: pointer;\n      font-weight: bold;\n    }\n\n    \/* Icons at bottom *\/\n    .icon-row {\n      display: flex;\n      justify-content: center;\n      gap: 100px;\n      flex-wrap: wrap;\n    }\n\n    .icon-box {\n      text-align: center;\n      color: #fff;\n      max-width: 200px;\n    }\n\n    .icon-box img {\n      max-width: 70px;\n      margin-bottom: 12px;\n    }\n\n    .icon-box p {\n      font-weight: 600;\n      margin: 0;\n    }\n  <\/style>\n<\/head>\n<body>\n  \n  <section class=\"candle-info-section\">\n    <div class=\"accordion-row\">\n      <div class=\"accordion-item\" data-popup=\"included\"><strong>Included<\/strong><span>+<\/span><\/div>\n      <div class=\"accordion-item\" data-popup=\"ingredients\"><strong>Ingredients<\/strong><span>+<\/span><\/div>\n      <div class=\"accordion-item\" data-popup=\"burntime\"><strong>Burn Time<\/strong><span>+<\/span><\/div>\n      <div class=\"accordion-item\" data-popup=\"howtouse\"><strong>How to Use<\/strong><span>+<\/span><\/div>\n    <\/div>\n\n    <!-- Popup -->\n    <div class=\"popup-overlay\" id=\"popup\">\n      <div class=\"popup-content\">\n        <span class=\"popup-close\">&times;<\/span>\n        <div id=\"popup-text\"><\/div>\n      <\/div>\n    <\/div>\n\n    <!-- Bottom Icons -->\n    <div class=\"icon-row\">\n      <div class=\"icon-box\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/image_5.png?v=1756754744\" alt=\"eco\">\n        <p>Refillable & Eco-friendly<\/p>\n      <\/div>\n      <div class=\"icon-box\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/image_4.png?v=1756754742\" alt=\"clean burning\">\n        <p>Safe and Clean Burning<\/p>\n      <\/div>\n      <div class=\"icon-box\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/image_3.png?v=1756754742\" alt=\"pet friendly\">\n        <p>Pet Friendly<\/p>\n      <\/div>\n    <\/div>\n  <\/section>\n\n  <script>\n    const popupOverlay = document.getElementById(\"popup\");\n    const popupText = document.getElementById(\"popup-text\");\n    const closeBtn = document.querySelector(\".popup-close\");\n\n    const popupData = {\n      included: `\n        <h3>What's Included<\/h3>\n        <p>{{ product.metafields.custom.includes | metafield_tag }}<\/p>\n      `,\n      ingredients: `\n        <h3>Ingredients<\/h3>\n        <p>100% Plant-Based Wax - Clean-burning, non-toxic, and free from paraffin.<\/p>\n        <p>Premium Fragrance Oils - Thoughtfully curated for a balanced, long-lasting scent.<\/p>\n        <p>Phthalate-Free Fragrances - Luxurious, non-toxic scents crafted to enhance your mood.<\/p>\n      `,\n      burntime: `\n        <h3>Burn Time<\/h3>\n        <p>Each Wick burns for 12 hrs.<\/p>\n      `,\n      howtouse: `\n        <h3>How to Use<\/h3>\n        <p><strong>Trim the Wick<\/strong> - Before lighting, trim the wick to 1\/4 inch for a clean, even burn.<\/p>\n        <p><strong>Burn Safely<\/strong> - Keep the candle on a flat, heat-resistant surface, and never leave it unattended.<\/p>\n      `\n    };\n\n    document.querySelectorAll(\".accordion-item\").forEach(item => {\n      item.addEventListener(\"click\", () => {\n        const type = item.getAttribute(\"data-popup\");\n        popupText.innerHTML = popupData[type];\n        popupOverlay.style.display = \"flex\";\n      });\n    });\n\n    closeBtn.addEventListener(\"click\", () => {\n      popupOverlay.style.display = \"none\";\n    });\n\n    popupOverlay.addEventListener(\"click\", (e) => {\n      if (e.target === popupOverlay) {\n        popupOverlay.style.display = \"none\";\n      }\n    });\n  <\/script>\n\n<\/body>\n<\/html>","layout":"t4s-container-fluid","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"custom_liquid_wjTEpj":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Candle Info Section<\/title>\n  <!-- Poppins font -->\n  <link href=\"https:\/\/fonts.googleapis.com\/css2?family=Poppins:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      margin: 0;\n      font-family: 'Poppins', sans-serif;\n    }\n\n\n    \/* Mobile only - hide on desktop *\/\n    @media (min-width: 768px) {\n      .mobile-candle-features {\n        display: none !important;\n      }\n    }\n\n    .mobile-candle-features {\n      position: relative;\n      background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Copy_of_vb2.webp?v=1752503627') no-repeat center center\/cover;\n      padding: 60px 20px;\n      color: #fff;\n      text-align: center;\n      overflow: hidden;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 350px;\n    }\n\n    \/* Brown overlay *\/\n    .mobile-candle-features::before {\n      content: \"\";\n      position: absolute;\n      top: 0; left: 0; right: 0; bottom: 0;\n      background: rgba(60, 30, 10, 0.7);\n      z-index: 1;\n    }\n\n    .mobile-candle-features > * {\n      position: relative;\n      z-index: 2;\n    }\n\n    \/* Mobile icons layout *\/\n    .mobile-feature-icons {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      gap: 0;\n      width: 100%;\n    }\n\n    .mobile-feature-row {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      gap: 30px;\n      flex-wrap: nowrap;\n      width: 100%;\n    }\n\n    .mobile-feature-item {\n      text-align: center;\n      color: #fff;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .mobile-feature-item img {\n      width: 50px;\n      height: 50px;\n      margin-bottom: 8px;\n      filter: brightness(0) invert(1);\n    }\n\n    .mobile-feature-item p {\n      font-weight: 600;\n      margin: 0;\n      font-size: 12px;\n      line-height: 1.3;\n      text-align: center;\n    }\n\n  <\/style>\n<\/head>\n<body>\n  \n  <section class=\"mobile-candle-features\">\n    <!-- Mobile Feature Icons -->\n    <div class=\"mobile-feature-icons\">\n      <div class=\"mobile-feature-row\">\n        <div class=\"mobile-feature-item\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/free-shipping.png?v=1751615179\" alt=\"Free Shipping Icon\">\n          <p>Free shipping in US<\/p>\n        <\/div>\n        <div class=\"mobile-feature-item\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/leaves.png?v=1751615389\" alt=\"Plant Based Icon\">\n          <p>100% Plant Based wax<\/p>\n        <\/div>\n        <div class=\"mobile-feature-item\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/fire.png?v=1751615179\" alt=\"Burn Time Icon\">\n          <p>Long Lasting Burn Time<\/p>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/section>\n\n\n<\/body>\n<\/html>","layout":"t4s-container-fluid","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"175614447726766098":{"type":"apps","blocks":{"affirm_pay_over_time_messaging_product_block_C3qBPG":{"type":"shopify:\/\/apps\/affirm-pay-over-time-messaging\/blocks\/product-block\/6dce54be-130d-4d13-9636-1e8f611b3071","disabled":true,"settings":{"logo_align":"left","font_size":16,"logo_color":"blue","logo_type":"logo","public_api_key":"","price_selector":""}}},"block_order":["affirm_pay_over_time_messaging_product_block_C3qBPG"],"settings":{}},"17561444503cbd8d74":{"type":"apps","blocks":{"essential_upsell_frequently_bought_together_app_block_8cNj6C":{"type":"shopify:\/\/apps\/essential-upsell\/blocks\/frequently-bought-together-app-block\/50627fd9-24fd-4250-8614-accc12826d80","disabled":true,"settings":{}},"affirm_pay_over_time_messaging_product_block_tnxRPJ":{"type":"shopify:\/\/apps\/affirm-pay-over-time-messaging\/blocks\/product-block\/6dce54be-130d-4d13-9636-1e8f611b3071","disabled":true,"settings":{"logo_align":"left","font_size":14,"logo_color":"blue","logo_type":"logo","public_api_key":"","price_selector":""}}},"block_order":["essential_upsell_frequently_bought_together_app_block_8cNj6C","affirm_pay_over_time_messaging_product_block_tnxRPJ"],"settings":{}},"custom_liquid_AaxHx9":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<style>\n  \/* Hide by default *\/\n  .mobile-only {\n    display: none;\n  }\n\n  \/* Show only on mobile (max-width: 767px = common breakpoint) *\/\n  @media screen and (max-width: 767px) {\n    .mobile-only {\n      display: block;\n      width: 100%; \/* make it responsive *\/\n      height: auto;\n    }\n  }\n<\/style>\n\n<!-- Image -->\n<img \n  src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Safe_Clean_6.jpg?v=1756063468\" \n  alt=\"Safe Clean\"\n  class=\"mobile-only\"\n\/>","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"feature_columns_UBHdJf":{"type":"feature_columns","blocks":{"text_block_4Wygf4":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/ChatGPT_Image_Apr_17_2025_04_31_51_PM.webp","title":"1-POUR","text":"<p>Gently pour the pearled wax into your candle holder, filling it up to your desired level. The beauty of pearled candles is that you control how much you use!<br\/><\/p>","button_label":"","button_link":"","open_link":"_blank","btn_icon":false,"button_style":"default","btn_size":"large","btn_cl":"dark","button_effect":"fade"}},"text_block_4yr9C6":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Copy_of_ic2.webp","title":"2-INSERT","text":"<p>Place the wick into the wax pearls, ensuring it's upright and centered for an even burn.<\/p>","button_label":"","button_link":"","open_link":"_blank","btn_icon":false,"button_style":"default","btn_size":"large","btn_cl":"dark","button_effect":"fade"}},"text_block_Bxa7Cm":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/IMG-20250417-WA0021.webp","title":"3-DROP","text":"<p>Add a few drops of essential oil from our collection onto the candle pearls. As the pearls warm, the fragrance gently infuses the air, creating a serene, aromatic atmosphere that soothes your senses.<\/p>","button_label":"","button_link":"","open_link":"_blank","btn_icon":false,"button_style":"default","btn_size":"large","btn_cl":"dark","button_effect":"fade"}},"text_block_Nx8eKH":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Copy_of_ic3.webp","title":"4-LIGHT","text":"<p>Ignite the wick and enjoy a clean, slow-burning candle experience. Watch as the pearls melt into a smooth, glowing pool of wax.<\/p>","button_label":"","button_link":"","open_link":"_blank","btn_icon":false,"button_style":"default","btn_size":"large","btn_cl":"dark","button_effect":"fade"}}},"block_order":["text_block_4Wygf4","text_block_4yr9C6","text_block_Bxa7Cm","text_block_Nx8eKH"],"name":"Text columns with image","settings":{"design_heading":"1","heading_align":"t4s-text-center","top_heading":"HOW TO USE","icon_heading":"las la-gem","top_subheading":"It's so easy","tophead_mb":30,"visibility_option":"both","text_align":"center","pos_text":"default","fs_title":22.5,"fs_text":14,"fs_title_mb":24,"fs_text_mb":14,"image_ratio":"ratio2_3","image_size":"cover","image_position":"8","img_effect":"none","b_effect":"none","layout_des":"1","space_h_item":"30","space_v_item":"30","space_h_item_mb":"10","space_v_item_mb":"10","col_dk":"4","col_tb":"2","col_mb":"1","loop":true,"au_time":0,"au_hover":true,"nav_btn":true,"btn_vi":"always","btn_owl":"simple","btn_shape":"round","btn_cl":"primary","btn_size":"small","btn_hidden_mobile":false,"nav_dot":true,"dot_owl":"elessi","dots_cl":"primary","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"layout":"t4s-container-wrap","cl_bg":"#f1e1cd","cl_bg_gradient":"","mg":"0px,,50px,","pd":"20px,,20px,","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":"20px,,20px,","use_cus_css":false,"code_cus_css":""}},"custom_liquid_U7bKqA":{"type":"custom-liquid","name":"Custom Liquid","settings":{"custom_liquid":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" \/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" \/>\n  <title>Why Choose – Mobile<\/title>\n  <!-- Poppins Font -->\n  <link href=\"https:\/\/fonts.googleapis.com\/css2?family=Poppins:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n  <style>\n    .why-choose-mobile {\n      font-family: 'Poppins', sans-serif; \/* only poppins font *\/\n      background: #FAE9D4; \/* brand bg *\/\n      padding: 32px 16px 24px;\n      display: block; \/* mobile default *\/\n    }\n\n    .why-choose-mobile .container {\n      max-width: 520px;\n      margin: 0 auto;\n    }\n\n    .why-choose-header .section-title {\n      color: #34150C;\n      font-size: 26px;\n      font-weight: 800;\n      letter-spacing: -0.2px;\n      margin: 0 0 8px;\n      text-align: center;\n    }\n\n    .comparison-section {\n      margin-bottom: 28px;\n    }\n\n    .comparison-title {\n      color: #B23C3E;\n      font-size: 17px;\n      font-weight: 800;\n      text-align: center;\n      margin: 0 0 14px;\n    }\n\n    .comparison-card {\n      background: rgba(250, 233, 212, 0.58); \/* #FAE9D594 *\/\n      border: none;\n      border-radius: 12px;\n      padding: 14px;\n      box-shadow: none;\n    }\n\n    .comparison-content {\n      display: flex;\n      align-items: center;   \/* align image + text vertically *\/\n      gap: 16px;\n      min-height: 140px;     \/* same min height for both *\/\n    }\n\n    .candle-image-container,\n    .hazard-image-container {\n      flex: 0 0 100px;       \/* same reserved width for both images *\/\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .candle-image {\n      width: 84px;\n      height: auto;\n      max-height: 120px;\n      object-fit: contain;\n      border-radius: 360px;\n      background: transparent;\n    }\n\n    .hazard-image {\n      width: auto;\n      height: auto;\n      max-width: 84px;       \/* match candle image width *\/\n      max-height: 120px;\n      object-fit: contain;\n    }\n\n    .benefits-list, .drawbacks-list {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      justify-content: center; \/* vertically center list *\/\n      gap: 8px;\n    }\n\n    .benefit-item,\n    .drawback-item {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 4px 0;\n    }\n\n    .benefit-item img,\n    .drawback-item img {\n      width: auto;\n      height: auto;\n      max-width: 24px;\n      max-height: 24px;\n      flex: 0 0 auto;\n      object-fit: contain;\n      image-rendering: -webkit-optimize-contrast;\n      image-rendering: crisp-edges;\n    }\n\n    .benefit-item span,\n    .drawback-item span {\n      color: #34231C;\n      font-size: 14px;\n      font-weight: 600;\n      line-height: 1.2;\n    }\n\n    \/* hide on tablet\/desktop *\/\n    @media (min-width: 768px) {\n      .why-choose-mobile { display: none !important; }\n    }\n  <\/style>\n<\/head>\n<body>\n  <!-- Why Choose – Mobile -->\n  <section class=\"why-choose-mobile\" aria-label=\"Why Choose Vibes Pearl Candles – Mobile\">\n    <div class=\"container\">\n      <div class=\"why-choose-header\">\n        <h2 class=\"section-title\">Why Choose Vibes Pearl Candles?<\/h2>\n      <\/div>\n\n      <!-- This is us -->\n      <div class=\"comparison-section\">\n        <h3 class=\"comparison-title\">This is us<\/h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"candle-image-container\">\n              <img class=\"candle-image\" alt=\"Vibes Pearl Candle\"\n                   src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/Copy_of_vb28_e1a93f2c-f6ab-4bd8-b9c4-87b8c0774bfb.jpg?v=1755786897\" \/>\n            <\/div>\n            <div class=\"benefits-list\">\n              <div class=\"benefit-item\">\n                <img alt=\"Non Toxic\"\n                     src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/chemical-free.png?v=1755110976\" \/>\n                <span>Non Toxic<\/span>\n              <\/div>\n              <div class=\"benefit-item\">\n                <img alt=\"Even Burning\"\n                     src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/fire_1.png?v=1755110977\" \/>\n                <span>Even Burning<\/span>\n              <\/div>\n              <div class=\"benefit-item\">\n                <img alt=\"Pet Friendly\"\n                     src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/animal_1.png?v=1755110977\" \/>\n                <span>Pet Friendly<\/span>\n              <\/div>\n              <div class=\"benefit-item\">\n                <img alt=\"Soothing\"\n                     src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/lotus.png?v=1755110977\" \/>\n                <span>Soothing<\/span>\n              <\/div>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n\n      <!-- This is not us -->\n      <div class=\"comparison-section\" style=\"margin-bottom:0;\">\n        <h3 class=\"comparison-title\">This is not us<\/h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"hazard-image-container\">\n              <img class=\"hazard-image\" alt=\"Hazard Warning\"\n                   src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/warning.png?v=1755245335\" \/>\n            <\/div>\n            <div class=\"drawbacks-list\">\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/hazard.png?v=1755110727\" \/>\n                <span>Synthetic Toxins<\/span>\n              <\/div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/hazard.png?v=1755110727\" \/>\n                <span>Short lifespan<\/span>\n              <\/div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/hazard.png?v=1755110727\" \/>\n                <span>Harmful for Pets<\/span>\n              <\/div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0920\/7591\/7591\/files\/hazard.png?v=1755110727\" \/>\n                <span>Soot & Smoke<\/span>\n              <\/div>\n            <\/div>\n          <\/div>\n        <\/div>\n      <\/div>\n\n    <\/div>\n  <\/section>\n<\/body>\n<\/html>","layout":"t4s-container-fluid","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"custom_liquid_MgCkAT":{"type":"custom-liquid","disabled":true,"name":"Custom Liquid","settings":{"custom_liquid":"","layout":"t4s-container-fluid","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"accordion_7Bg6Dq":{"type":"accordion","blocks":{"accor_item_rNJEUP":{"type":"accor_item","settings":{"icon":"none","title":"1. How do Vibes Pearled Candles work?","content":"<p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.<\/p>"}},"accor_item_yrXpB9":{"type":"accor_item","settings":{"icon":"none","title":"2. Are the pearled candles refillable?","content":"<p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.<\/p>"}},"accor_item_gyfciE":{"type":"accor_item","settings":{"icon":"none","title":"3. What are the wax Pearls made from?","content":"<p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.<\/p>"}},"accor_item_zrWytD":{"type":"accor_item","settings":{"icon":"none","title":"4. How long do the candles burn?","content":"<p>Our 11 oz candles are provided with 15 wicks, while the 18 oz candles are provided with 30 wicks.<\/p><p>Each Wick burns for 12 hrs.<\/p>"}},"accor_item_tYJmVY":{"type":"accor_item","settings":{"icon":"none","title":"5. Why can’t I smell the fragrance when burning?","content":"<p>Our fragrances are designed to be subtle and calming, not overpowering. If you’re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.<\/p>"}},"accor_item_BG8VUy":{"type":"accor_item","settings":{"icon":"none","title":"6. Are your pearled candles safe for pets?","content":"<p>Yes, our candles are made with non-toxic ingredients, but we recommend keeping them out of reach of pets and never leaving a burning candle unattended.<\/p>"}},"accor_item_YEwyMV":{"type":"accor_item","settings":{"icon":"none","title":"7. Do your pearled candles produce soot?","content":"<p>Not at all! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton\/wood wicks.<\/p>"}},"accor_item_bCMCzy":{"type":"accor_item","settings":{"icon":"none","title":"8. Where can I buy pearled candle refills?","content":"<p>You can get additional Pearls, wicks, and accessories directly from our website!<\/p>"}},"accor_item_WiT6ep":{"type":"accor_item","settings":{"icon":"none","title":"9. Are the pearled candles safe to use?","content":"<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:<\/p><ul><li>Keep away from flammable objects<\/li><li>Don’t leave burning candles unattended<\/li><li>Trim the wick to 5mm before each use<\/li><\/ul>"}},"accor_item_JX6AFD":{"type":"accor_item","settings":{"icon":"none","title":"10. Do you offer international shipping?","content":"<p>Currently, we ship within the USA, but we’re working on expanding internationally. Stay tuned!<\/p>"}}},"block_order":["accor_item_rNJEUP","accor_item_yrXpB9","accor_item_gyfciE","accor_item_zrWytD","accor_item_tYJmVY","accor_item_BG8VUy","accor_item_YEwyMV","accor_item_bCMCzy","accor_item_WiT6ep","accor_item_JX6AFD"],"settings":{"design_heading":"1","heading_align":"t4s-text-center","top_heading":"Frequently Asked Questions","icon_heading":"las la-gem","top_subheading":"","tophead_mb":30,"accor_des":"1","title_cl":"#fb5157","bg_title_cl":"#f6f6f8","title_active_cl":"#34150c","bg_title_active_cl":"#f6f6f8","content_cl":"#878787","bg_content_cl":"#ffffff","content_align":"t4s-text-start","auto_active":true,"layout":"t4s-container-wrap","custom_width":1000,"cl_bg":"","cl_bg_gradient":"","mg":",,80px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":"","use_cus_css":false,"code_cus_css":".SectionID {\nbackground-color:red\n}"}},"featured_collection_UxnE7Y":{"type":"featured-collection","settings":{"design_heading":"2","heading_align":"t4s-text-center","top_heading":"Frequently Bought Together","icon_heading":"gem","top_subheading":"99% Customers Love this","tophead_mb":30,"head_btn_label":"View All","head_btn_url":"","head_btn_icon":false,"head_btn_style":"default","head_btn_size":"medium","head_btn_cl":"dark","head_btn_effect":"default","head_btn_hidden_mb":false,"collection":"pearled-candles","product_des":"8","show_vendor":false,"use_cdt":false,"image_ratio":"ratioadapt","image_size":"cover","image_position":"8","content_align":"center","limit":8,"col_dk":"4","col_tb":"2","col_mb":"2","space_h_item":"30","space_v_item":"30","space_h_item_mb":"10","space_v_item_mb":"10","layout_des":"2","loop":true,"au_time":4.5,"au_hover":true,"center_slide":true,"nav_btn":true,"btns_pos":"default","btn_vi":"hover","btn_owl":"default","btn_shape":"none","btn_cl":"dark","btn_size":"small","btn_hidden_mobile":false,"nav_dot":true,"dot_owl":"elessi","dots_cl":"primary","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"use_pagination":"none","enable_bar_lm":true,"btn_icon":false,"button_style":"default","btns_size":"medium","btns_cl":"default","button_effect":"fade","btn_pos":"t4s-text-center","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,85px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,25px,","pd_mb":"","use_cus_css":false,"code_cus_css":".SectionID {\nbackground-color:red\n}"}},"sidebar":{"type":"sidebar-product","blocks":{"f01b181b-62ee-4735-8e25-32cb71ccfaba":{"type":"category","settings":{"title_category":"Product Categories","cat_source":"1","cat_link_list":"","count":true}},"f65f464b-9487-43be-9c91-8688a098bb6f":{"type":"collection","settings":{"title_fea_pr":"Sale Products","collection":"frontpage","limit_pr":5,"image_ratio":"t4s_ratioadapt","image_size":"t4s_cover","image_position":"t4s_position_8"}},"83340bb8-58d2-4148-89e2-a4c7a01cf792":{"type":"instagram","settings":{"title_ins":"Instagram","mode":"2","acc":"","limit":12,"open_link":"_blank","round":0,"col_dk":"3","space_item":"6"}},"9ce9ded8-1cef-4e32-b98b-47364ffa328c":{"type":"shipping","settings":{"title":"Shipping & Delivery","shipping_1":"las la-truck,FREE SHIPPING,Free shipping for all US order","shipping_2":"las la-headset,SUPPORT 24\/7,We support 24 hours a day","shipping_3":"las la-exchange-alt,30 DAYS RETURN,You have 30 days to return","shipping_4":"","shipping_5":"","shipping_6":""}},"4a9c6ae8-f3b4-4192-a6d1-82d01670bce6":{"type":"image","settings":{"b_link":"","open_link":"_self","img_effect":"none","date":"2022\/12\/26","content_align":"center","cdt_des":"2","countdown_pos":"2","cdt_size":"medium","box_bdr":0,"bd_width":0,"space_item":10,"number_cl":"#ffffff","text_cl":"#ffffff","border_cl":"#000000","bg_cl":"#000000"}}},"block_order":["f01b181b-62ee-4735-8e25-32cb71ccfaba","f65f464b-9487-43be-9c91-8688a098bb6f","83340bb8-58d2-4148-89e2-a4c7a01cf792","9ce9ded8-1cef-4e32-b98b-47364ffa328c","4a9c6ae8-f3b4-4192-a6d1-82d01670bce6"],"disabled":true,"settings":{"enable_drawer":true,"space":50,"size":"medium","br_style":"none","brcolor":"#222222","sidebar_bdr":5,"sidebar_pd":10}},"product-recommendations":{"type":"product-recommendations","disabled":true,"settings":{"show":true,"design_heading":"1","heading_align":"t4s-text-center","top_heading":"YOU MAY ALSO LIKE","icon_heading":"las la-gem","top_subheading":"","tophead_mb":30,"product_des":"1","show_vendor":false,"use_cdt":false,"limit":12,"display_type":"4","image_ratio":"ratioadapt","image_size":"cover","image_position":"8","content_align":"default","col_dk":"4","col_tb":"2","col_mb":"2","space_h_item":"30","space_v_item":"30","space_h_item_mb":"10","space_v_item_mb":"10","layout_des":"2","loop":true,"au_time":0,"au_hover":true,"nav_btn":true,"btn_vi":"1","btn_owl":"outline","btn_shape":"round","btn_cl":"dark","btn_size":"small","btn_hidden_mobile":true,"nav_dot":false,"dot_owl":"1","dots_cl":"dark","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":"75px,,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"recently-viewed-products":{"type":"recently_viewed","disabled":true,"settings":{"show":true,"design_heading":"1","heading_align":"t4s-text-center","top_heading":"Recently viewed products","icon_heading":"las la-gem","top_subheading":"","tophead_mb":30,"product_des":"1","show_vendor":false,"use_cdt":false,"limit":14,"sortby":"1","unavailable_prs":"show","image_ratio":"rationt","image_size":"cover","image_position":"8","content_align":"default","col_dk":"4","col_tb":"2","col_mb":"2","space_h_item":"30","space_v_item":"30","space_h_item_mb":"10","space_v_item_mb":"10","layout_des":"2","loop":true,"au_time":0,"au_hover":true,"nav_btn":true,"btn_vi":"always","btn_owl":"outline","btn_shape":"round","btn_cl":"dark","btn_size":"small","btn_hidden_mobile":true,"nav_dot":false,"dot_owl":"default","dots_cl":"dark","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":"75px,,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"1752688979c8d6e654":{"type":"apps","blocks":{"loox_reviews_loox_dynamic_section_YcYt3W":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"only_photos":false,"aggregated":true,"limit":20,"hide_thumbnails":false,"maxwidth":1080,"is_sample":true}}},"block_order":["loox_reviews_loox_dynamic_section_YcYt3W"],"settings":{}}},"order":["breadcrumb","custom_liquid_4BzeAQ","custom_liquid_pFnamg","main","custom_liquid_fB4mXF","175973502228b72262","custom_liquid_77etJC","custom_liquid_wjTEpj","175614447726766098","17561444503cbd8d74","custom_liquid_AaxHx9","feature_columns_UBHdJf","custom_liquid_U7bKqA","custom_liquid_MgCkAT","accordion_7Bg6Dq","featured_collection_UxnE7Y","sidebar","product-recommendations","recently-viewed-products","1752688979c8d6e654"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "brc-nav-product",
+      "disabled": true,
+      "settings": {
+        "breadcrumb_pr": true,
+        "back_next_pr": true,
+        "cl_bg": "#fae9d4",
+        "cl_link": "#222222"
+      }
+    },
+    "custom_liquid_4BzeAQ": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Floating Candles</title>\n  <style>\n    /* Hide everything on desktop */\n    @media (min-width: 768px) {\n      .info-heading-mobile,\n      .info-badges-mobile {\n        display: none;\n      }\n    }\n\n    /* Mobile styles */\n    @media (max-width: 767px) {\n      .info-heading-mobile {\n        text-align: center;\n        font-family: 'Poppins', sans-serif;\n        font-weight: 700;\n        font-size: 32px; /* original size restored */\n        line-height: 44px;\n        letter-spacing: -0.02em;\n        text-transform: uppercase;\n        color: #000;\n        margin-bottom: 20px;\n        padding: 0 10px;\n        word-break: break-word;\n      }\n\n      .info-badges-mobile {\n        display: flex;\n        justify-content: center;\n        gap: 10px;\n        flex-wrap: nowrap; /* keep original layout */\n        margin: 0 auto 20px;\n      }\n\n      .info-badges-mobile .badge {\n        display: flex;\n        align-items: center;\n        gap: 6px;\n        width: 188px;\n        height: 44px;\n        border: 1px solid #E25A5A;\n        border-radius: 6px;\n        padding: 0 12px;\n        font-family: sans-serif;\n        font-size: 16px;\n        color: #2c2c2c;\n        background-color: #FCF1E2;\n        box-sizing: border-box;\n        justify-content: center;\n      }\n\n      .info-badges-mobile .badge img {\n        width: 20px;\n        height: 20px;\n        object-fit: contain;\n      }\n    }\n  </style>\n</head>\n<body>\n\n  <!-- Heading -->\n  <div class=\"info-heading-mobile\">\n    FLOATING CANDLES<br>FOR INSTANT CALM\n  </div>\n\n  <!-- Badges -->\n  <div class=\"info-badges-mobile\">\n    <div class=\"badge\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Vector.png?v=1752999075\" alt=\"Mood-lifting icon\">\n      <span>Mood-lifting</span>\n    </div>\n    <div class=\"badge\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Group_121.png?v=1752999075\" alt=\"Soot-free icon\">\n      <span>soot-free</span>\n    </div>\n  </div>\n\n</body>\n</html>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "30px,,15px,",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_pFnamg": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler aras\u0131ndaki bo\u015fluk */\n  transform: scale(0.8); /* T\u00fcm bile\u015fenleri orant\u0131l\u0131 k\u00fc\u00e7\u00fcltme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* A\u00e7\u0131k k\u0131rm\u0131z\u0131 arka plan */\n  color: #000000; /* Koyu k\u0131rm\u0131z\u0131 metin */\n  padding: 3px 5px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f padding */\n  border-radius: 5px; /* Orant\u0131l\u0131 yuvarlama */\n  font-size: 10px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f bo\u015fluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n  height: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "10,,10px",
+        "pd": "",
+        "mg_tb": "10,,10px",
+        "pd_tb": "",
+        "mg_mb": "10,,10px",
+        "pd_mb": ""
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_8naEbP": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler aras\u0131ndaki bo\u015fluk */\n  transform: scale(0.8); /* T\u00fcm bile\u015fenleri orant\u0131l\u0131 k\u00fc\u00e7\u00fcltme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* A\u00e7\u0131k k\u0131rm\u0131z\u0131 arka plan */\n  color: #000000; /* Koyu k\u0131rm\u0131z\u0131 metin */\n  padding: 3px 5px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f padding */\n  border-radius: 5px; /* Orant\u0131l\u0131 yuvarlama */\n  font-size: 10px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f bo\u015fluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n  height: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "txt_tr_pr": "uppercase",
+            "fnt_df_pr": "1",
+            "size_pr": 24,
+            "fw_pr": 600,
+            "lh_pr": 0,
+            "ls_pr": 0,
+            "pr_title_color": "#222222"
+          }
+        },
+        "price_review": {
+          "type": "price_review",
+          "settings": {
+            "price": "0",
+            "type_sale": "1",
+            "tax_ship": false,
+            "rating": false,
+            "review_liquid": "",
+            "size_price_pr": 22,
+            "fw_price_pr": 400,
+            "price_color": "#696969",
+            "price_sale_color": "#ec0101"
+          }
+        },
+        "affirm_pay_over_time_messaging_product_block_zUbYQw": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 14,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ""
+          }
+        },
+        "loox_reviews_loox_rating_UaQ4Uy": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "(4.93/5) Based on 11,000+ Reviews",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": true,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "custom_liquid_bDeVrW": {
+          "type": "custom_liquid",
+          "name": "USPs ",
+          "settings": {
+            "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Product Features</title>\n  <style> \n    body {\n      font-family: Arial, sans-serif;\n      margin: 0;\n      padding: 20px;\n      background-color: white;\n    }\n\n    .features-section {\n      max-width: 600px;\n      margin: 0 auto;\n    }\n\n    .feature-item {\n      display: flex;\n      align-items: center;\n      margin-bottom: 20px;\n      color: #000; /* Corrected color */\n    }\n\n    .feature-icon {\n      margin-right: 15px;\n      flex-shrink: 0;\n      width: 20px;\n      height: 20px;\n      object-fit: contain;\n    }\n\n    .feature-text {\n      font-size: 14px;\n      font-weight: 400;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"features-section\">\n    <div class=\"feature-item\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/download_3.png?v=1754248299\" alt=\"Refillable & Eco-friendly\" class=\"feature-icon\">\n      <p class=\"feature-text\">Refillable & Eco-friendly</p>\n    </div>\n\n    <div class=\"feature-item\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/download_b3dd6ebc-b9bd-480a-acff-c1a599084da2.png?v=1754248299\" alt=\"Safe and Clean Burning\" class=\"feature-icon\">\n      <p class=\"feature-text\">Safe and Clean Burning</p>\n    </div>\n\n    <div class=\"feature-item\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/download_2_eaa15157-7590-434c-899a-288a7925bac1.png?v=1754248299\" alt=\"Plant-Based Wax\" class=\"feature-icon\">\n      <p class=\"feature-text\">Plant-Based Wax</p>\n    </div>\n\n    <div class=\"feature-item\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/download_1.png?v=1754248300\" alt=\"Safe for pets\" class=\"feature-icon\">\n      <p class=\"feature-text\">Safe for pets</p>\n    </div>\n  </div>\n</body>\n</html>"
+          }
+        },
+        "custom_liquid_yU7p6E": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<img src=\"{{ product.metafields.custom.image | image_url: 'master' }}\" alt=\"Product Image\">"
+          }
+        },
+        "custom_liquid_XwRJAr": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.short_desription | metafield_tag }}"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "selector_mode": "block2",
+            "color_mode": "variant_image",
+            "enable_fit_ratio_img": false,
+            "color_size": "exlarge",
+            "show_qty": true,
+            "enable_wishlist": true,
+            "enable_compare": true,
+            "btn_atc_full": true,
+            "pr_btn_round": 6,
+            "ani": "t4s-ani-shake",
+            "time": 6,
+            "btn_txt": "3",
+            "btn_icon": false,
+            "button_style": "default",
+            "button_color": "primary",
+            "button_effect": "sweep-to-top",
+            "wishlist_color": "#222222",
+            "wishlist_color_hover": "#56cfe1",
+            "wishlist_color_active": "#e81e1e",
+            "compare_color": "#222222",
+            "compare_color_hover": "#56cfe1",
+            "compare_color_active": "#222222",
+            "show_dynamic_checkout": true,
+            "btn_txt2": "3",
+            "button_color_payment": "dark",
+            "show_gift_card_recipient": false,
+            "product_list": [],
+            "show_product_current": true,
+            "qty_val": "0",
+            "advance_label": "Choose style",
+            "advance_pr_list": []
+          }
+        },
+        "custom_liquid_33kEK3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Mobile Secure Checkout Block</title>\n    <style>\n        /* Mobile-only styles */\n        .mobile-secure-checkout {\n            display: none;\n            text-align: center;\n            padding: 0;\n            background-color: #FAEAD3A6;\n            font-family: 'Poppins', sans-serif;\n            margin: 0;\n        }\n        \n        .secure-text {\n            font-size: 15px;\n            color: #2c2c2c;\n            margin: 0 0 8px 0;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            gap: 6px;\n            font-weight: 400;\n        }\n        \n        .lock-icon {\n            width: auto;\n            height: auto;\n            vertical-align: middle;\n        }\n        \n        .separator-line {\n            width: 100%;\n            height: 1px;\n            background-color: #2c2c2c;\n            margin: 0;\n            opacity: 0.6;\n        }\n        \n        /* Show only on mobile devices */\n        @media only screen and (max-width: 768px) {\n            .mobile-secure-checkout {\n                display: block;\n            }\n        }\n        \n        /* Hide on desktop */\n        @media only screen and (min-width: 769px) {\n            .mobile-secure-checkout {\n                display: none;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"mobile-secure-checkout\">\n        <div class=\"secure-text\">\n            we commit a secure checkout\n            <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Vector_bb28a8d2-7273-4f6a-9fd3-6c7057137a65.png?v=1753979673\" \n                 alt=\"Secure Lock Icon\" \n                 class=\"lock-icon\">\n        </div>\n        <div class=\"separator-line\"></div>\n    </div>\n</body>\n</html>"
+          }
+        },
+        "img_Aw6Qwr": {
+          "type": "img",
+          "settings": {
+            "al": "center",
+            "mess": "",
+            "size": 16,
+            "source": "1",
+            "image": "shopify://shop_images/08fb3ec239273a8d9c17a8534d390e98d06e8b41-removebg-preview.png",
+            "wimg": 100,
+            "svg": "apple_pay,google_pay,master,paypal,shopify_pay,visa",
+            "height": 33
+          }
+        },
+        "custom_liquid_jVkYcg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"mobile-badge-wrapper\">\n  <div class=\"mobile-badge-container\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_2.png?v=1754767673\" alt=\"Shipping Icon\" class=\"mobile-badge-image\">\n    <span class=\"mobile-badge-text\">Same Day Free Shipping</span>\n  </div>\n</div>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');\n\n  .mobile-badge-wrapper {\n    background-color: #faebd7; /* beige background */\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 20px 0;\n    font-family: 'Poppins', sans-serif;\n  }\n\n  .mobile-badge-container {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    background-color: #ffffff; /* white background */\n    border: 1.5px solid #e0c7b1;\n    border-radius: 8px; /* reduced radius */\n    padding: 8px 16px;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.08);\n    position: relative;\n  }\n\n  .mobile-badge-container::before,\n  .mobile-badge-container::after {\n    content: \"\";\n    flex: 1;\n    height: 1px;\n    background-color: #d8b99e;\n    position: absolute;\n    top: 50%;\n  }\n\n  .mobile-badge-container::before {\n    left: -50px;\n    width: 50px;\n  }\n\n  .mobile-badge-container::after {\n    right: -50px;\n    width: 50px;\n  }\n\n  .mobile-badge-image {\n    height: 30px; /* increased size */\n    width: auto;\n    display: block;\n  }\n\n  .mobile-badge-text {\n    font-weight: 600;\n    font-size: 14px;\n    color: #000; /* black text */\n  }\n\n  /* Hide on tablets & desktop, show only on mobile */\n  @media (min-width: 769px) {\n    .mobile-badge-wrapper {\n      display: none !important;\n    }\n  }\n</style>"
+          }
+        },
+        "order_tfwqY9": {
+          "type": "order",
+          "disabled": true,
+          "settings": {
+            "hide_pre": true,
+            "icon": "2",
+            "icon_name": "las la-truck",
+            "ani": "none",
+            "txt": "Order in the next [hour] to get it between [date_start] and [date_end]",
+            "ds": 3,
+            "de": 7,
+            "mode": "1",
+            "cut_day": "SAT,SUN",
+            "frm_day": "t44, t45 t46",
+            "time": "6:00:00",
+            "hr": "hours",
+            "min": "minutes"
+          }
+        },
+        "custom_liquid_4cYaUe": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n  .what-included-section {\n    padding: 60px 0;\n    background-color: #fff;\n  }\n  \n  .what-included-container {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n  \n  .what-included-title {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 700;\n    font-size: 2.5rem;\n    color: #8B4513;\n    text-align: center;\n    margin-bottom: 50px;\n  }\n  \n  .products-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 30px;\n    margin-top: 40px;\n  }\n  \n  .product-item {\n    background-color: #f5f5dc;\n    border-radius: 15px;\n    padding: 30px;\n    text-align: center;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n    transition: transform 0.3s ease;\n  }\n  \n  .product-item:hover {\n    transform: translateY(-5px);\n  }\n  \n  .product-image {\n    width: 100%;\n    max-width: 250px;\n    height: auto;\n    border-radius: 10px;\n    margin-bottom: 20px;\n  }\n  \n  .product-container {\n    width: 100%;\n    max-width: 200px;\n    height: auto;\n    border-radius: 8px;\n    margin: 0 auto;\n  }\n  \n  .product-info {\n    margin-top: 15px;\n  }\n  \n  .product-name {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 1.2rem;\n    color: #333;\n    margin-bottom: 8px;\n  }\n  \n  .product-size {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 500;\n    font-size: 1rem;\n    color: #666;\n  }\n  \n  .essential-oils-badge {\n    display: inline-block;\n    background: linear-gradient(45deg, #FFD700, #FFA500);\n    color: #333;\n    padding: 8px 15px;\n    border-radius: 20px;\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 0.85rem;\n    margin-top: 10px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n  }\n  \n  @media (max-width: 768px) {\n    .products-grid {\n      grid-template-columns: 1fr;\n      gap: 20px;\n    }\n    \n    .what-included-title {\n      font-size: 2rem;\n    }\n    \n    .product-item {\n      padding: 20px;\n    }\n  }\n</style>\n\n<section class=\"what-included-section\">\n  <div class=\"what-included-container\">\n    <h2 class=\"what-included-title\">What is included</h2>\n    \n    <div class=\"products-grid\">\n      <!-- First Product - Metafield Image -->\n      <div class=\"product-item\">\n        <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n      \n      <!-- Second Product - First URL -->\n      <div class=\"product-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n      \n      <!-- Third Product - Second URL -->\n      <div class=\"product-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/ChatGPTImageMay27_2025_04_00_01PM.webp?v=1749826287\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
+          }
+        },
+        "reelfy_videos_reelfy_section_4VCm4z": {
+          "type": "shopify://apps/reelfy-videos/blocks/reelfy-section/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "heading_color": "",
+            "desc_style": "subtitle",
+            "desc_color": "",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
+        },
+        "custom_liquid_TrxhrN": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div style=\"text-align:center; padding: 20px;\">\n  <h2 style=\"font-size: 28px; font-weight: bold; color: #3d1b00; margin-bottom: 30px;\">What is included</h2>\n\n  <div class=\"what-included-row\" style=\"display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;\">\n\n    <!-- First Image - Metafield -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.image %}\n          <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" alt=\"Included image 1\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n        {% endif %}\n      </div>\n    </div>\n\n    <!-- Plus Sign -->\n    <div class=\"included-plus\">+</div>\n\n    <!-- Second Image - Correct namespace/key -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.essential_oil %}\n          {% capture essential_val %}{{ product.metafields.custom.essential_oil }}{% endcapture %}\n          {% if essential_val contains 'http' %}\n            <!-- Metafield stores a direct URL -->\n            <img src=\"{{ essential_val }}\" alt=\"Included image 2\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n          {% else %}\n            <!-- Metafield is a Shopify file/image reference -->\n            <img src=\"{{ product.metafields.custom.essential_oil | image_url: width: 600 }}\" alt=\"Included image 2\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n          {% endif %}\n        {% endif %}\n      </div>\n    </div>\n\n    <!-- Plus Sign -->\n    <div class=\"included-plus\">+</div>\n\n    <!-- Third Image -->\n    <div class=\"included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_1_163653f2-4245-4341-b516-9402f0889ce0.png?v=1754577023\" alt=\"Included image 3\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n  .included-img {\n    flex: 1;\n    max-width: 210px;\n  }\n  .included-plus {\n    font-size: 20px;\n    font-weight: normal;\n    color: #8b5e3c;\n    line-height: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  @media (max-width: 768px) {\n    .included-img {\n      flex: 0 0 30%;\n      max-width: none;\n    }\n    .included-plus {\n      font-size: 16px;\n    }\n  }\n</style>"
+          }
+        },
+        "95d4f334-8ea7-4cd2-b609-2373b1e848b8": {
+          "type": "tab_des",
+          "settings": {
+            "title": "Description"
+          }
+        },
+        "tab_html_TA6yNN": {
+          "type": "tab_html",
+          "settings": {
+            "title": "What\u2019s Included in the Pack?",
+            "content": "<p>{{ product.metafields.custom.includes | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "tab_html_hzGPhA": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p><strong>100%</strong> <strong>Plant-Based Wax</strong> <strong>- </strong>Clean-burning, non-toxic, and free from paraffin.</p><p><strong>Premium Fragrance Oils</strong> <strong>- </strong>Thoughtfully curated for a balanced, long-lasting scent.</p><p><strong>Phthalate-Free Fragrances</strong> <strong>- </strong>Luxurious, non-toxic scents crafted to enhance your mood.</p>",
+            "page": ""
+          }
+        },
+        "tab_html_KkUw9D": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Burn Time",
+            "content": "<p>Each Wick burns for 12 hrs.</p>",
+            "page": ""
+          }
+        },
+        "tab_html_JqUUNt": {
+          "type": "tab_html",
+          "settings": {
+            "title": "How To Use",
+            "content": "<p><strong>Trim the Wick -</strong> Before lighting, trim the wick to 1/4 inch for a clean, even burn.</p><p><strong>Burn Safely -</strong> Keep the candle on a flat, heat-resistant surface, and never leave it unattended.</p>",
+            "page": ""
+          }
+        },
+        "tab_html_xhYjV4": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Why You\u2019ll Love It",
+            "content": "<p><strong>Customizable & Refillable</strong> <strong>- </strong>Adjust wax levels, mix colors, and blend scents.</p><p><strong>Mess-Free & Even Burning - </strong>No tunneling, no wasted wax.</p><p><strong>Long lasting</strong> <strong>- </strong>A candle you can keep using forever.</p>",
+            "page": ""
+          }
+        },
+        "94011ade-ec25-4d68-b37a-70660ede49dd": {
+          "type": "social",
+          "settings": {
+            "socials_align": "start",
+            "social_mode": "2",
+            "social_style": "1",
+            "social_size": "extra_small",
+            "bd_radius": 0,
+            "use_color_set": true,
+            "icon_cl": "#222222",
+            "bg_cl": "#00badb",
+            "space_h_item": "20",
+            "space_v_item": "5",
+            "space_h_item_mb": "20",
+            "space_v_item_mb": "4"
+          }
+        },
+        "bded529b-9b8f-4d5c-8f04-5de0b22e627d": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Collapsible tab",
+            "content": "",
+            "page": ""
+          }
+        },
+        "custom_liquid_87hzpc": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n    body {\n      margin: 0;\n      padding: 0;\n    }\n  \n    .icon-wrapper,\n    .custom-icon-row {\n      margin: 0 !important;\n      padding: 0 !important;\n    }\n  \n    .custom-icon-row {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      width: 100%;\n      text-align: center;\n      flex-wrap: nowrap;\n      overflow-x: hidden; /* Hide horizontal scrollbar */\n      -webkit-overflow-scrolling: touch;\n      gap: 0;\n      scrollbar-width: none; /* Firefox */\n    }\n    .custom-icon-row::-webkit-scrollbar {\n      display: none; /* Chrome, Safari, Opera */\n    }\n  \n    .icon-block {\n      flex: 0 0 33.33%;\n      max-width: 33.33%;\n      padding: 0; /* Removed top and bottom padding */\n      margin: 0;\n      box-sizing: border-box;\n      min-width: 120px;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n  \n    .icon-block img {\n      width: 48px;\n      height: auto;\n      margin-bottom: 6px;\n      margin-top: 0; /* Ensure no top margin */\n    }\n  \n    .icon-block p {\n      font-size: 13px;\n      font-weight: 500;\n      margin: 0;\n      color: #333;\n      line-height: 1.2;\n    }\n  \n    .icon-block p + p {\n      font-size: 13px;\n      font-weight: 400;\n      color: #555;\n      margin-top: 2px;\n    }\n  \n    @media (max-width: 768px) {\n      .icon-block {\n        min-width: 100px;\n      }\n  \n      .icon-block img {\n        width: 36px;\n      }\n  \n      .icon-block p,\n      .icon-block p + p {\n        font-size: 12px;\n      }\n    }\n  \n    @media (max-width: 480px) {\n      .icon-block {\n        min-width: 90px;\n      }\n  \n      .icon-block img {\n        width: 30px;\n      }\n  \n      .icon-block p,\n      .icon-block p + p {\n        font-size: 11px;\n      }\n    }\n  </style>\n  \n  <div class=\"icon-wrapper\">\n    <div class=\"custom-icon-row\">\n      <div class=\"icon-block\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/free-shipping.png?v=1751615179\" alt=\"Free Shipping Icon\">\n        <p>Free shipping in</p>\n        <p>US</p>\n      </div>\n      <div class=\"icon-block\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/leaves.png?v=1751615389\" alt=\"Hassle-free returns Icon\">\n        <p>100 % Plant Based </p>\n        <p>wax</p>\n      </div>\n      <div class=\"icon-block\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire.png?v=1751615179\" alt=\"Secure checkout Icon\">\n        <p>Long Lasting</p>\n        <p>Burn Time</p>\n      </div>\n    </div>\n  </div>"
+          }
+        },
+        "custom_liquid_CRO_desktop": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n/* CENTER SHORT DESCRIPTION + VARIANT SELECTOR (mobile only) */\n@media (max-width: 767px) {\n  .t4s-product__info-container .t4s-pr-block__custom_liquid,\n  .t4s-product__info-container .t4s-pr-block__custom_liquid *,\n  .t4s-product__info-container .metafield-rich_text_field,\n  .t4s-product__info-container .metafield-rich_text_field * {\n    text-align: center !important;\n  }\n  .t4s-product__info-container .t4s-pr-block__form .t4s-pr-variants,\n  .t4s-product__info-container .t4s-pr-block__form .t4s-swatch,\n  .t4s-product__info-container .t4s-pr-block__form .t4s-pr__variants,\n  .t4s-product__info-container .t4s-swatch-wrapper,\n  .t4s-product__info-container .t4s-pr-block__form .t4s-swatch__header,\n  .t4s-product__info-container .t4s-pr-block__form .t4s-variant-label,\n  .t4s-product__info-container .t4s-pr-block__form [class*='variant'],\n  .t4s-product__info-container .t4s-pr-block__form [class*='swatch'],\n  .t4s-product__info-container .t4s-product-form .t4s-swatch,\n  .t4s-product__info-container .t4s-product-form .t4s-pr__variants,\n  .t4s-product__info-container .t4s-product-form .t4s-pr-variants {\n    text-align: center !important;\n    justify-content: center !important;\n    display: flex !important;\n    flex-wrap: wrap !important;\n  }\n  .t4s-product__info-container .t4s-swatch .t4s-swatch__header,\n  .t4s-product__info-container .t4s-swatch .t4s-swatch__title,\n  .t4s-product__info-container .t4s-pr-variants__label,\n  .t4s-product__info-container .t4s-pr-block__form .t4s-variant-label,\n  .t4s-product__info-container .t4s-pr-block__form [class*='variant-label'] {\n    width: 100% !important;\n    text-align: center !important;\n    justify-content: center !important;\n    display: flex !important;\n  }\n  .t4s-product__info-container .t4s-swatch .t4s-swatch__list,\n  .t4s-product__info-container .t4s-swatch .t4s-swatch__items,\n  .t4s-product__info-container .t4s-pr-variants__options {\n    justify-content: center !important;\n    display: flex !important;\n    flex-wrap: wrap !important;\n  }\n}\n</style>\n<style>\n/* ===== CRO DESKTOP PRODUCT PAGE ENHANCEMENTS ===== */\n@media (min-width: 768px) {\n  /* FULL WIDTH - reduce side margins */\n  .t4s-section-main-product .t4s-container,\n  .t4s-main-product__content.t4s-container {\n    max-width: 100% !important;\n    padding-left: 20px !important;\n    padding-right: 20px !important;\n  }\n\n  .t4s-product-media__two_columns .t4s-product__media-item {\n    margin-bottom: 6px !important;\n  }\n  .t4s-product-media__two_columns [data-main-media] {\n    gap: 6px;\n  }\n\n  /* Sticky info - NO scrollbar */\n  .t4s-product__info-container--sticky {\n    top: 2rem;\n    overflow-y: visible;\n    overflow: visible;\n    scrollbar-width: none;\n    -ms-overflow-style: none;\n    padding-right: 0;\n  }\n  .t4s-product__info-container--sticky::-webkit-scrollbar {\n    display: none;\n    width: 0;\n  }\n\n  .t4s-product__info-container > *:not(:last-child) {\n    margin-bottom: 16px;\n  }\n  .t4s-product__title {\n    font-size: 28px !important;\n    font-weight: 600 !important;\n    letter-spacing: 0.02em !important;\n    line-height: 1.2 !important;\n    text-transform: uppercase;\n    color: #1a1a1a !important;\n    margin-bottom: 8px !important;\n  }\n  .t4s-product__price-review {\n    padding: 0;\n    margin-bottom: 12px !important;\n  }\n  .t4s-product__info-container .t4s-product-price {\n    font-size: 22px !important;\n    font-weight: 500 !important;\n  }\n  .t4s-product__description {\n    font-size: 14px;\n    line-height: 1.6;\n    color: #555;\n    border-bottom: 1px solid #e5e5e5;\n    padding-bottom: 16px;\n  }\n  .t4s-product-form__buttons .t4s-product-form__submit {\n    min-height: 50px !important;\n    font-size: 15px !important;\n    font-weight: 700 !important;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    border-radius: 6px !important;\n    transition: all 0.3s ease;\n  }\n  .t4s-product-form__buttons .t4s-product-form__submit:hover {\n    transform: translateY(-1px);\n    box-shadow: 0 4px 12px rgba(0,0,0,0.15);\n  }\n  .t4s-product-form__buttons .t4s-quantity-wrapper {\n    height: 50px !important;\n    border-radius: 6px !important;\n  }\n  .t4s-product-form__buttons .t4s-quantity-wrapper input {\n    height: 48px !important;\n    font-size: 15px !important;\n  }\n  .t4s-product-form__buttons .t4s-quantity-wrapper button {\n    height: 50px !important;\n    line-height: 50px !important;\n  }\n  .t4s-product-form__buttons .t4s-pr-wishlist,\n  .t4s-product-form__buttons .t4s-pr-compare {\n    width: 50px !important;\n    height: 50px !important;\n    min-width: 50px !important;\n    border-radius: 6px !important;\n  }\n  .custom-icon-row {\n    border-top: 1px solid #e5e5e5;\n    border-bottom: 1px solid #e5e5e5;\n    padding: 16px 0 !important;\n    margin: 8px 0 !important;\n  }\n  .t4s-extra-link, .t4s-product_meta, .t4s-product_social-share {\n    padding-top: 12px;\n    border-top: 1px solid #e5e5e5;\n  }\n}\n@media (min-width: 1200px) {\n  .t4s-section-main-product .t4s-container,\n  .t4s-main-product__content.t4s-container {\n    padding-left: 40px !important;\n    padding-right: 40px !important;\n  }\n}\n@media (max-width: 767px) {\n\n  /* Center quantity + wishlist on mobile */\n  .t4s-product-form__buttons > .t4s-flex-wrap,\n  .t4s-product-form__buttons > .t4s-d-flex,\n  .t4s-product-form__buttons > div {\n    justify-content: center !important;\n    display: flex !important;\n    flex-wrap: wrap !important;\n  }\n  .t4s-product-form__buttons .t4s-quantity-wrapper {\n    margin-left: 0 !important;\n    margin-right: 10px !important;\n  }\n  .t4s-product-form__buttons .t4s-pr-wishlist,\n  .t4s-product-form__buttons .t4s-pr-compare {\n    margin-left: 0 !important;\n  }\n\n  .t4s-product__title {\n    font-size: 22px !important;\n    text-align: center;\n  }\n  .t4s-product__price-review {\n    justify-content: center !important;\n  }\n}\n.t4s-product__media-item img {\n  transition: transform 0.4s ease;\n}\n.t4s-product__media-item:hover img {\n  transform: scale(1.02);\n}\n.t4s-product__info-container .t4s-product-price span.t4s-txt-sale:not(.t4s-dn) {\n  background-color: #1a1a1a !important;\n  color: #fff !important;\n  font-weight: 600;\n  padding: 4px 10px;\n  font-size: 11px;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n.t4s-product__info-container .t4s-product-price del {\n  color: #999;\n  font-weight: 400;\n  font-size: 0.85em;\n}\n.t4s-product__info-container .t4s-product-price ins {\n  text-decoration: none;\n  font-weight: 600;\n}\n\n/* Hide external product tabs (moved into custom accordion) */\n.t4s-pr-tab,\n.is--tab-design__accordion,\n.is--tab-position__external,\n.is--tab-position__inner,\n.t4s-product-tabs-wrapper {\n  display: none !important;\n}\n</style>"
+          }
+        },
+        "custom_liquid_usp_badges": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.vpc-usp-grid {\n  display: inline-grid;\n  grid-template-columns: auto auto;\n  gap: 8px;\n  margin-top: 4px;\n}\n@media (max-width: 767px) {\n  .vpc-usp-grid {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    width: 100%;\n  }\n}\n.vpc-usp-badge {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  background: rgba(52, 21, 12, 0.06);\n  border-radius: 20px;\n  padding: 8px 14px;\n  font-family: 'Poppins', sans-serif;\n  font-size: 12px;\n  font-weight: 600;\n  color: #34150C;\n  line-height: 1.2;\n}\n.vpc-usp-badge svg {\n  width: 18px;\n  height: 18px;\n  flex-shrink: 0;\n  color: #34150C;\n}\n@media (max-width: 767px) {\n  .vpc-usp-grid {\n    gap: 6px;\n  }\n  .vpc-usp-badge {\n    padding: 7px 10px;\n    font-size: 11px;\n    gap: 6px;\n  }\n  .vpc-usp-badge svg {\n    width: 16px;\n    height: 16px;\n  }\n}\n</style>\n\n<div class=\"vpc-usp-grid\">\n  <div class=\"vpc-usp-badge\">\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 2a26.6 26.6 0 0 1 10 20c.9-6.82 1.5-9.5 4-14\"/><path d=\"M16 8c4 0 6-2 6-6-4 0-6 2-6 6\"/></svg>\n    <span>Vegan</span>\n  </div>\n  <div class=\"vpc-usp-badge\">\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m4.9 4.9 14.2 14.2\"/></svg>\n    <span>Soy-Free</span>\n  </div>\n  <div class=\"vpc-usp-badge\">\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>\n    <span>Paraben-Free</span>\n  </div>\n  <div class=\"vpc-usp-badge\">\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 14V2\"/><path d=\"M9 18.12L2 22V6l7-4\"/><path d=\"M15 2l7 4v16l-7-4\"/><path d=\"M2 6l7 4v12\"/></svg>\n    <span>Sustainably Sourced</span>\n  </div>\n</div>"
+          }
+        },
+        "custom_liquid_desktop_accordion_tabs": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n/* ===== FORCE SHOPIFY PAY BUTTON VISIBLE ===== */\n.shopify-payment-button__more-options,\n.t4s-product-form__buttons .shopify-payment-button__more-options {\n  display: none !important;\n}\n.shopify-payment-button__button,\n.shopify-payment-button__button--branded,\n.shopify-payment-button__button--unbranded {\n  border-radius: 6px !important;\n}\n.t4s-product-form__buttons .shopify-payment-button,\n.shopify-payment-button {\n  display: block !important;\n  margin-top: 10px !important;\n}\n\n/* ===== DESKTOP: Hide mobile accordion, show desktop ===== */\n@media (min-width: 768px) {\n  .vpc-mobile-accordion { display: none !important; }\n  .vpc-mobile-sheet-overlay { display: none !important; }\n  .vpc-mobile-sheet { display: none !important; }\n}\n\n/* ===== MOBILE: Hide desktop accordion, show mobile ===== */\n@media (max-width: 767px) {\n  .vpc-desktop-accordion { display: none !important; }\n  .vpc-drawer-overlay { display: none !important; }\n  .vpc-drawer { display: none !important; }\n}\n\n/* ===== DESKTOP ACCORDION + DRAWER ===== */\n@media (min-width: 768px) {\n  .vpc-desktop-accordion {\n    width: 100%;\n    border-top: 1px solid #000;\n    margin-top: 8px;\n  }\n  .vpc-accordion-item {\n    border-bottom: 1px solid #000;\n  }\n  .vpc-accordion-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 16px 0;\n    cursor: pointer;\n    background: none !important;\n    border: none;\n    width: 100%;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.08em;\n    text-transform: none;\n    color: #1a1a1a !important;\n    transition: none;\n    outline: none;\n    -webkit-tap-highlight-color: transparent;\n  }\n  .vpc-accordion-header:hover,\n  .vpc-accordion-header:focus,\n  .vpc-accordion-header:active,\n  .vpc-accordion-header:focus-visible {\n    color: #1a1a1a !important;\n    background: none !important;\n    outline: none !important;\n    box-shadow: none !important;\n  }\n  .vpc-accordion-chevron {\n    width: 12px;\n    height: 12px;\n    flex-shrink: 0;\n    color: #1a1a1a;\n  }\n\n  /* Right side drawer */\n  .vpc-drawer-overlay {\n    position: fixed;\n    top: 0; left: 0;\n    width: 100%; height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    z-index: 99998;\n    opacity: 0;\n    visibility: hidden;\n    transition: opacity 0.3s ease, visibility 0.3s ease;\n  }\n  .vpc-drawer-overlay.is-visible {\n    opacity: 1;\n    visibility: visible;\n  }\n  .vpc-drawer {\n    position: fixed;\n    top: 0; right: 0;\n    width: 420px;\n    max-width: 90vw;\n    height: 100%;\n    background: #fae9d4;\n    z-index: 99999;\n    transform: translateX(100%);\n    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);\n    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);\n    display: flex;\n    flex-direction: column;\n  }\n  .vpc-drawer.is-open {\n    transform: translateX(0);\n  }\n  .vpc-drawer-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 20px 24px;\n    border-bottom: 1px solid #000;\n    flex-shrink: 0;\n  }\n  .vpc-drawer-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 15px;\n    font-weight: 700;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    color: #1a1a1a;\n    margin: 0;\n  }\n  .vpc-drawer-close {\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 4px;\n    color: #1a1a1a;\n    line-height: 1;\n  }\n  .vpc-drawer-close:hover { color: #555; }\n  .vpc-drawer-close svg { width: 18px; height: 18px; }\n  .vpc-drawer-body {\n    padding: 24px;\n    overflow-y: auto;\n    flex: 1;\n    font-family: 'Poppins', sans-serif;\n    font-size: 14px;\n    line-height: 1.8;\n    color: #444;\n  }\n  .vpc-drawer-body p { margin: 0 0 12px 0; }\n  .vpc-drawer-body p:last-child { margin-bottom: 0; }\n  .vpc-drawer-body strong { color: #1a1a1a; }\n\n  /* Trust badges wrapper */\n  .vpc-trust-wrapper {\n    background: rgba(52, 21, 12, 0.06);\n    border-radius: 6px;\n    padding: 20px 16px;\n    margin-top: 16px;\n  }\n\n  /* Trust badges */\n  .vpc-desktop-trust-badges {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    gap: 16px;\n    padding: 20px 16px;\n    margin-top: 4px;\n    }\n  .vpc-trust-badge {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    flex: 1;\n    gap: 8px;\n  }\n  .vpc-trust-badge img {\n    width: 40px; height: 40px; object-fit: contain;\n    filter: brightness(0) saturate(100%) invert(8%) sepia(30%) saturate(3500%) hue-rotate(350deg) brightness(95%) contrast(100%);\n  }\n  .vpc-trust-badge span {\n    font-family: 'Poppins', sans-serif;\n    font-size: 11px;\n    font-weight: 600;\n    color: #34150C;\n    letter-spacing: 0.02em;\n    line-height: 1.3;\n  }\n}\n\n/* ===== MOBILE ACCORDION + BOTTOM SHEET ===== */\n@media (max-width: 767px) {\n  .vpc-mobile-accordion {\n    width: 100%;\n    border-top: 1px solid #000;\n    margin-top: 12px;\n  }\n  .vpc-mob-acc-item {\n    border-bottom: 1px solid #000;\n  }\n  .vpc-mob-acc-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 14px 0;\n    cursor: pointer;\n    background: none !important;\n    border: none;\n    width: 100%;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 13px;\n    font-weight: 700;\n    letter-spacing: 0.08em;\n    text-transform: none;\n    color: #1a1a1a !important;\n    -webkit-tap-highlight-color: transparent;\n  }\n  .vpc-mob-acc-header:hover,\n  .vpc-mob-acc-header:focus,\n  .vpc-mob-acc-header:active {\n    color: #1a1a1a !important;\n    background: none !important;\n    outline: none !important;\n  }\n  .vpc-mob-chevron {\n    width: 12px; height: 12px;\n    flex-shrink: 0;\n    color: #1a1a1a;\n  }\n\n  /* Bottom sheet overlay */\n  .vpc-mobile-sheet-overlay {\n    position: fixed;\n    top: 0; left: 0;\n    width: 100%; height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    z-index: 99998;\n    opacity: 0;\n    visibility: hidden;\n    transition: opacity 0.3s ease, visibility 0.3s ease;\n  }\n  .vpc-mobile-sheet-overlay.is-visible {\n    opacity: 1;\n    visibility: visible;\n  }\n\n  /* Bottom sheet */\n  .vpc-mobile-sheet {\n    position: fixed;\n    bottom: 0; left: 0; right: 0;\n    background: #fae9d4;\n    z-index: 99999;\n    transform: translateY(100%);\n    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);\n    border-radius: 16px 16px 0 0;\n    max-height: 85vh;\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);\n  }\n  .vpc-mobile-sheet.is-open {\n    transform: translateY(0);\n  }\n\n  /* Drag handle */\n  .vpc-sheet-handle {\n    width: 40px;\n    height: 4px;\n    background: #ccc;\n    border-radius: 2px;\n    margin: 10px auto 0;\n    flex-shrink: 0;\n  }\n\n  .vpc-sheet-header {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 16px 20px;\n    border-bottom: 1px solid #e0e0e0;\n    flex-shrink: 0;\n    position: relative;\n  }\n  .vpc-sheet-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    color: #1a1a1a;\n    margin: 0;\n  }\n  .vpc-sheet-close {\n    position: absolute;\n    right: 20px;\n    top: 50%;\n    transform: translateY(-50%);\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 4px;\n    color: #1a1a1a;\n    line-height: 1;\n  }\n  .vpc-sheet-close svg { width: 16px; height: 16px; }\n\n  .vpc-sheet-body {\n    padding: 20px;\n    overflow-y: auto;\n    flex: 1;\n    font-family: 'Poppins', sans-serif;\n    font-size: 14px;\n    line-height: 1.8;\n    color: #444;\n    -webkit-overflow-scrolling: touch;\n  }\n  .vpc-sheet-body p { margin: 0 0 12px 0; }\n  .vpc-sheet-body p:last-child { margin-bottom: 0; }\n  .vpc-sheet-body strong { color: #1a1a1a; }\n\n  /* Mobile trust badges wrapper */\n  .vpc-trust-wrapper-mobile {\n    background: rgba(52, 21, 12, 0.06);\n    border-radius: 6px;\n    padding: 16px 12px;\n    margin-top: 16px;\n  }\n\n  /* Mobile trust badges */\n  .vpc-mobile-trust-badges {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    gap: 12px;\n    padding: 16px 12px;\n    margin-top: 4px;\n    }\n  .vpc-mob-trust-badge {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    flex: 1;\n    gap: 6px;\n  }\n  .vpc-mob-trust-badge img {\n    width: 32px; height: 32px; object-fit: contain;\n    filter: brightness(0) saturate(100%) invert(8%) sepia(30%) saturate(3500%) hue-rotate(350deg) brightness(95%) contrast(100%);\n  }\n  .vpc-mob-trust-badge span {\n    font-family: 'Poppins', sans-serif;\n    font-size: 10px;\n    font-weight: 600;\n    color: #34150C;\n    letter-spacing: 0.02em;\n    line-height: 1.3;\n  }\n}\n</style>\n\n<!-- ===== DESKTOP: Drawer Overlay + Drawer ===== -->\n<div class=\"vpc-drawer-overlay\" id=\"vpcDrawerOverlay\"></div>\n<div class=\"vpc-drawer\" id=\"vpcDrawer\">\n  <div class=\"vpc-drawer-header\">\n    <h3 class=\"vpc-drawer-title\" id=\"vpcDrawerTitle\"></h3>\n    <button class=\"vpc-drawer-close\" id=\"vpcDrawerClose\" type=\"button\" aria-label=\"Close\">\n      <svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>\n    </button>\n  </div>\n  <div class=\"vpc-drawer-body\" id=\"vpcDrawerBody\"></div>\n</div>\n\n<!-- ===== DESKTOP: Accordion Tabs ===== -->\n<div class=\"vpc-desktop-accordion\">\n  <div class=\"vpc-accordion-item\" data-drawer-tab=\"description\"><button class=\"vpc-accordion-header\" type=\"button\"><span>Description</span><svg class=\"vpc-accordion-chevron\" viewBox=\"0 0 12 12\" fill=\"none\"><path d=\"M2 4L6 8L10 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div>\n  <div class=\"vpc-accordion-item\" data-drawer-tab=\"included\"><button class=\"vpc-accordion-header\" type=\"button\"><span>What's Included in the Pack?</span><svg class=\"vpc-accordion-chevron\" viewBox=\"0 0 12 12\" fill=\"none\"><path d=\"M2 4L6 8L10 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div>\n  <div class=\"vpc-trust-wrapper\"><div class=\"vpc-desktop-trust-badges\">\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_5.png?v=1756754744\" alt=\"Eco-friendly\" loading=\"lazy\"><span>Refillable &<br>Eco-friendly</span></div>\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_4.png?v=1756754742\" alt=\"Clean Burning\" loading=\"lazy\"><span>Safe and Clean<br>Burning</span></div>\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_3.png?v=1756754742\" alt=\"Pet Friendly\" loading=\"lazy\"><span>Pet Friendly</span></div>\n  </div>\n  <div class=\"vpc-desktop-trust-badges\" style=\"border-top:none;padding-top:0;margin-top:12px;\">\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/free-shipping.png?v=1751615179\" alt=\"Free Shipping\" loading=\"lazy\"><span>Free Shipping<br>in US</span></div>\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/leaves.png?v=1751615389\" alt=\"Plant Based\" loading=\"lazy\"><span>100% Plant<br>Based Wax</span></div>\n    <div class=\"vpc-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire.png?v=1751615179\" alt=\"Long Lasting\" loading=\"lazy\"><span>Long Lasting<br>Burn Time</span></div>\n  </div></div>\n</div>\n\n<!-- ===== MOBILE: Bottom Sheet Overlay + Sheet ===== -->\n<div class=\"vpc-mobile-sheet-overlay\" id=\"vpcSheetOverlay\"></div>\n<div class=\"vpc-mobile-sheet\" id=\"vpcSheet\">\n  <div class=\"vpc-sheet-handle\"></div>\n  <div class=\"vpc-sheet-header\">\n    <h3 class=\"vpc-sheet-title\" id=\"vpcSheetTitle\"></h3>\n    <button class=\"vpc-sheet-close\" id=\"vpcSheetClose\" type=\"button\" aria-label=\"Close\">\n      <svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>\n    </button>\n  </div>\n  <div class=\"vpc-sheet-body\" id=\"vpcSheetBody\"></div>\n</div>\n\n<!-- ===== MOBILE: Accordion Tabs ===== -->\n<div class=\"vpc-mobile-accordion\">\n  <div class=\"vpc-mob-acc-item\" data-sheet-tab=\"description\"><button class=\"vpc-mob-acc-header\" type=\"button\"><span>Description</span><svg class=\"vpc-mob-chevron\" viewBox=\"0 0 12 12\" fill=\"none\"><path d=\"M2 4L6 8L10 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div>\n  <div class=\"vpc-mob-acc-item\" data-sheet-tab=\"included\"><button class=\"vpc-mob-acc-header\" type=\"button\"><span>What's Included in the Pack?</span><svg class=\"vpc-mob-chevron\" viewBox=\"0 0 12 12\" fill=\"none\"><path d=\"M2 4L6 8L10 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div>\n  <div class=\"vpc-trust-wrapper-mobile\"><div class=\"vpc-mobile-trust-badges\">\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_5.png?v=1756754744\" alt=\"Eco-friendly\" loading=\"lazy\"><span>Refillable &<br>Eco-friendly</span></div>\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_4.png?v=1756754742\" alt=\"Clean Burning\" loading=\"lazy\"><span>Safe and Clean<br>Burning</span></div>\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_3.png?v=1756754742\" alt=\"Pet Friendly\" loading=\"lazy\"><span>Pet Friendly</span></div>\n  </div>\n  <div class=\"vpc-mobile-trust-badges\" style=\"border-top:none;padding-top:0;margin-top:6px;\">\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/free-shipping.png?v=1751615179\" alt=\"Free Shipping\" loading=\"lazy\"><span>Free Shipping<br>in US</span></div>\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/leaves.png?v=1751615389\" alt=\"Plant Based\" loading=\"lazy\"><span>100% Plant<br>Based Wax</span></div>\n    <div class=\"vpc-mob-trust-badge\"><img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire.png?v=1751615179\" alt=\"Long Lasting\" loading=\"lazy\"><span>Long Lasting<br>Burn Time</span></div>\n  </div></div>\n</div>\n\n<!-- Hidden content for both drawer and sheet -->\n<div style=\"display:none\">\n  <div id=\"vpc-content-description\">\n    {{ product.description }}\n  </div>\n  <div id=\"vpc-content-included\">\n    {% if product.metafields.custom.includes %}\n      {{ product.metafields.custom.includes | metafield_tag }}\n    {% else %}\n      {{ product.description }}\n    {% endif %}\n  </div>\n</div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var titles = { description:'Description', included:\"What's Included in the Pack?\" };\n\n  /* ===== DESKTOP: Right drawer ===== */\n  var dOverlay = document.getElementById('vpcDrawerOverlay');\n  var drawer = document.getElementById('vpcDrawer');\n  var dTitle = document.getElementById('vpcDrawerTitle');\n  var dBody = document.getElementById('vpcDrawerBody');\n  var dClose = document.getElementById('vpcDrawerClose');\n\n  function openDrawer(tab) {\n    var el = document.getElementById('vpc-content-' + tab);\n    if (!el) return;\n    dTitle.textContent = titles[tab] || '';\n    dBody.innerHTML = el.innerHTML;\n    dOverlay.classList.add('is-visible');\n    drawer.classList.add('is-open');\n    document.body.style.overflow = 'hidden';\n  }\n  function closeDrawer() {\n    dOverlay.classList.remove('is-visible');\n    drawer.classList.remove('is-open');\n    document.body.style.overflow = '';\n  }\n  document.querySelectorAll('[data-drawer-tab]').forEach(function(item) {\n    item.addEventListener('click', function() { openDrawer(this.getAttribute('data-drawer-tab')); });\n  });\n  if (dClose) dClose.addEventListener('click', closeDrawer);\n  if (dOverlay) dOverlay.addEventListener('click', closeDrawer);\n\n  /* ===== MOBILE: Bottom sheet ===== */\n  var sOverlay = document.getElementById('vpcSheetOverlay');\n  var sheet = document.getElementById('vpcSheet');\n  var sTitle = document.getElementById('vpcSheetTitle');\n  var sBody = document.getElementById('vpcSheetBody');\n  var sClose = document.getElementById('vpcSheetClose');\n\n  function openSheet(tab) {\n    var el = document.getElementById('vpc-content-' + tab);\n    if (!el) return;\n    sTitle.textContent = titles[tab] || '';\n    sBody.innerHTML = el.innerHTML;\n    sOverlay.classList.add('is-visible');\n    sheet.classList.add('is-open');\n    document.body.style.overflow = 'hidden';\n  }\n  function closeSheet() {\n    sOverlay.classList.remove('is-visible');\n    sheet.classList.remove('is-open');\n    document.body.style.overflow = '';\n  }\n  document.querySelectorAll('[data-sheet-tab]').forEach(function(item) {\n    item.addEventListener('click', function() { openSheet(this.getAttribute('data-sheet-tab')); });\n  });\n  if (sClose) sClose.addEventListener('click', closeSheet);\n  if (sOverlay) sOverlay.addEventListener('click', closeSheet);\n\n  /* ESC key closes both */\n  document.addEventListener('keydown', function(e) {\n    if (e.key === 'Escape') { closeDrawer(); closeSheet(); }\n  });\n});\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_CRO_desktop",
+        "custom_liquid_8naEbP",
+        "title",
+        "price_review",
+        "custom_liquid_usp_badges",
+        "affirm_pay_over_time_messaging_product_block_zUbYQw",
+        "loox_reviews_loox_rating_UaQ4Uy",
+        "custom_liquid_bDeVrW",
+        "custom_liquid_yU7p6E",
+        "custom_liquid_XwRJAr",
+        "form",
+        "custom_liquid_33kEK3",
+        "img_Aw6Qwr",
+        "custom_liquid_jVkYcg",
+        "order_tfwqY9",
+        "custom_liquid_4cYaUe",
+        "reelfy_videos_reelfy_section_4VCm4z",
+        "custom_liquid_TrxhrN",
+        "custom_liquid_desktop_accordion_tabs",
+        "94011ade-ec25-4d68-b37a-70660ede49dd",
+        "custom_liquid_87hzpc"
+      ],
+      "settings": {
+        "pr_layout": "default",
+        "enable_sticky_info": true,
+        "media_layout": "two_columns",
+        "media_size": "large",
+        "thumb_lr_size": "medium",
+        "image_ratio": "ratioadapt",
+        "image_size": "contain",
+        "image_position": "default",
+        "main_click": "none",
+        "zoom_tp": "inner",
+        "enable_zoom_icon": false,
+        "enable_zoom_click_mb": true,
+        "enable_video_looping": false,
+        "enable_video_muting": true,
+        "enable_video_autoplaying": false,
+        "eff": "slide",
+        "nav_btn": false,
+        "btn_vi": "always",
+        "btn_owl": "default",
+        "btn_shape": "round",
+        "btn_cl": "primary",
+        "btn_size": "medium",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "tabs_design": "accordion",
+        "tabs_design_mb": "tab",
+        "tabs_position": "inner",
+        "enable_first_tab": true,
+        "tabs_layout_fix": "full",
+        "bg": "#fae9d4",
+        "bg_mb": "#fae9d4",
+        "product_list": [],
+        "sticky_mode": "2",
+        "sticky_show": "2",
+        "sticky_layout_mb": "minimal",
+        "enable_select": true,
+        "ani": "t4s-ani-shake",
+        "time": 3
+      }
+    },
+    "custom_liquid_fB4mXF": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"desktop-included-wrapper\" style=\"text-align:center; padding: 20px;\">\n  <h2 style=\"font-size: 28px; font-weight: bold; color: #3d1b00; margin-bottom: 30px;\">What is included</h2>\n\n  <div class=\"desktop-included-row\" style=\"display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;\">\n\n    <!-- First Image - Metafield -->\n    <div class=\"desktop-included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        {% if product.metafields.custom.image %}\n          <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" alt=\"Included image 1\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n        {% endif %}\n      </div>\n    </div>\n\n    <!-- Plus Sign -->\n    <div class=\"desktop-included-plus\">+</div>\n\n    <!-- Second Image -->\n    <div class=\"desktop-included-img\">\n      <div style=\"width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/2_868ae35e-4bc7-40f1-8809-289dfb1a02d7.png?v=1754239567\" style=\"width: 100%; height: 100%; object-fit: cover;\">\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n  .desktop-included-img {\n    flex: 1;\n    max-width: 210px;\n  }\n  .desktop-included-plus {\n    font-size: 20px;\n    font-weight: normal;\n    color: #8b5e3c;\n    line-height: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  @media (max-width: 768px) {\n    .desktop-included-wrapper {\n      display: none !important; /* hide on mobile */\n    }\n  }\n</style>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "175973502228b72262": {
+      "type": "apps",
+      "blocks": {
+        "reelfy_videos_reelfy_section_aTFapg": {
+          "type": "shopify://apps/reelfy-videos/blocks/reelfy-section/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_align": "left",
+            "heading_color": "",
+            "desc_style": "subtitle",
+            "desc_color": "",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 24
+          }
+        }
+      },
+      "block_order": [
+        "reelfy_videos_reelfy_section_aTFapg"
+      ],
+      "settings": {}
+    },
+    "custom_liquid_77etJC": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Candle Info Section</title>\n  <!-- Poppins font -->\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      margin: 0;\n      font-family: 'Poppins', sans-serif;\n    }\n\n    /* Desktop only */\n    @media (max-width: 991px) {\n      .candle-info-section {\n        display: none !important;\n      }\n    }\n\n    .candle-info-section {\n      position: relative;\n      background: url('https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Copy_of_vb2.webp?v=1752503627') no-repeat center center/cover;\n      padding: 120px 20px; /* Increased height */\n      color: #fff;\n      text-align: center;\n      overflow: hidden;\n    }\n\n    /* Brown overlay */\n    .candle-info-section::before {\n      content: \"\";\n      position: absolute;\n      top: 0; left: 0; right: 0; bottom: 0;\n      background: rgba(60, 30, 10, 0.7);\n      z-index: 1;\n    }\n\n    .candle-info-section > * {\n      position: relative;\n      z-index: 2;\n    }\n\n    .accordion-row {\n      display: flex;\n      justify-content: center;\n      flex-wrap: wrap;\n      gap: 15px;\n      margin-bottom: 80px; /* more space before icons */\n    }\n\n    .accordion-item {\n      border: 1px solid #fff;\n      border-radius: 6px;\n      padding: 12px 20px;\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      cursor: pointer;\n      min-width: 220px;\n      background: rgba(255, 255, 255, 0.05);\n      transition: background 0.3s;\n      color: #fff;\n    }\n\n    .accordion-item:hover {\n      background: rgba(255, 255, 255, 0.15);\n    }\n\n    .accordion-item strong {\n      font-weight: 600;\n      font-size: 15px;\n    }\n\n    .accordion-item span {\n      font-size: 18px;\n      font-weight: bold;\n    }\n\n    /* Popup */\n    .popup-overlay {\n      display: none;\n      position: fixed;\n      top: 0; left: 0;\n      width: 100%; height: 100%;\n      background: rgba(0,0,0,0.8);\n      justify-content: center;\n      align-items: center;\n      z-index: 9999;\n    }\n\n    .popup-content {\n      background: #fff;\n      color: #000;\n      padding: 30px;\n      border-radius: 10px;\n      max-width: 600px;\n      text-align: left;\n      position: relative;\n      font-family: 'Poppins', sans-serif;\n    }\n\n    .popup-content h3 {\n      margin-top: 0;\n      margin-bottom: 15px;\n      font-weight: 600;\n    }\n\n    .popup-content p {\n      margin-bottom: 10px;\n      line-height: 1.6;\n    }\n\n    .popup-close {\n      position: absolute;\n      top: 12px;\n      right: 12px;\n      font-size: 20px;\n      cursor: pointer;\n      font-weight: bold;\n    }\n\n    /* Icons at bottom */\n    .icon-row {\n      display: flex;\n      justify-content: center;\n      gap: 100px;\n      flex-wrap: wrap;\n    }\n\n    .icon-box {\n      text-align: center;\n      color: #fff;\n      max-width: 200px;\n    }\n\n    .icon-box img {\n      max-width: 70px;\n      margin-bottom: 12px;\n    }\n\n    .icon-box p {\n      font-weight: 600;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n  \n  <section class=\"candle-info-section\">\n    <div class=\"accordion-row\">\n      <div class=\"accordion-item\" data-popup=\"included\"><strong>Included</strong><span>+</span></div>\n      <div class=\"accordion-item\" data-popup=\"ingredients\"><strong>Ingredients</strong><span>+</span></div>\n      <div class=\"accordion-item\" data-popup=\"burntime\"><strong>Burn Time</strong><span>+</span></div>\n      <div class=\"accordion-item\" data-popup=\"howtouse\"><strong>How to Use</strong><span>+</span></div>\n    </div>\n\n    <!-- Popup -->\n    <div class=\"popup-overlay\" id=\"popup\">\n      <div class=\"popup-content\">\n        <span class=\"popup-close\">&times;</span>\n        <div id=\"popup-text\"></div>\n      </div>\n    </div>\n\n    <!-- Bottom Icons -->\n    <div class=\"icon-row\">\n      <div class=\"icon-box\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_5.png?v=1756754744\" alt=\"eco\">\n        <p>Refillable & Eco-friendly</p>\n      </div>\n      <div class=\"icon-box\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_4.png?v=1756754742\" alt=\"clean burning\">\n        <p>Safe and Clean Burning</p>\n      </div>\n      <div class=\"icon-box\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/image_3.png?v=1756754742\" alt=\"pet friendly\">\n        <p>Pet Friendly</p>\n      </div>\n    </div>\n  </section>\n\n  <script>\n    const popupOverlay = document.getElementById(\"popup\");\n    const popupText = document.getElementById(\"popup-text\");\n    const closeBtn = document.querySelector(\".popup-close\");\n\n    const popupData = {\n      included: `\n        <h3>What's Included</h3>\n        <p>{{ product.metafields.custom.includes | metafield_tag }}</p>\n      `,\n      ingredients: `\n        <h3>Ingredients</h3>\n        <p>100% Plant-Based Wax - Clean-burning, non-toxic, and free from paraffin.</p>\n        <p>Premium Fragrance Oils - Thoughtfully curated for a balanced, long-lasting scent.</p>\n        <p>Phthalate-Free Fragrances - Luxurious, non-toxic scents crafted to enhance your mood.</p>\n      `,\n      burntime: `\n        <h3>Burn Time</h3>\n        <p>Each Wick burns for 12 hrs.</p>\n      `,\n      howtouse: `\n        <h3>How to Use</h3>\n        <p><strong>Trim the Wick</strong> - Before lighting, trim the wick to 1/4 inch for a clean, even burn.</p>\n        <p><strong>Burn Safely</strong> - Keep the candle on a flat, heat-resistant surface, and never leave it unattended.</p>\n      `\n    };\n\n    document.querySelectorAll(\".accordion-item\").forEach(item => {\n      item.addEventListener(\"click\", () => {\n        const type = item.getAttribute(\"data-popup\");\n        popupText.innerHTML = popupData[type];\n        popupOverlay.style.display = \"flex\";\n      });\n    });\n\n    closeBtn.addEventListener(\"click\", () => {\n      popupOverlay.style.display = \"none\";\n    });\n\n    popupOverlay.addEventListener(\"click\", (e) => {\n      if (e.target === popupOverlay) {\n        popupOverlay.style.display = \"none\";\n      }\n    });\n  </script>\n\n</body>\n</html>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_wjTEpj": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Candle Info Section</title>\n  <!-- Poppins font -->\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      margin: 0;\n      font-family: 'Poppins', sans-serif;\n    }\n\n\n    /* Mobile only - hide on desktop */\n    @media (min-width: 768px) {\n      .mobile-candle-features {\n        display: none !important;\n      }\n    }\n\n    .mobile-candle-features {\n      position: relative;\n      background: url('https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Copy_of_vb2.webp?v=1752503627') no-repeat center center/cover;\n      padding: 60px 20px;\n      color: #fff;\n      text-align: center;\n      overflow: hidden;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 350px;\n    }\n\n    /* Brown overlay */\n    .mobile-candle-features::before {\n      content: \"\";\n      position: absolute;\n      top: 0; left: 0; right: 0; bottom: 0;\n      background: rgba(60, 30, 10, 0.7);\n      z-index: 1;\n    }\n\n    .mobile-candle-features > * {\n      position: relative;\n      z-index: 2;\n    }\n\n    /* Mobile icons layout */\n    .mobile-feature-icons {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      gap: 0;\n      width: 100%;\n    }\n\n    .mobile-feature-row {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      gap: 30px;\n      flex-wrap: nowrap;\n      width: 100%;\n    }\n\n    .mobile-feature-item {\n      text-align: center;\n      color: #fff;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .mobile-feature-item img {\n      width: 50px;\n      height: 50px;\n      margin-bottom: 8px;\n      filter: brightness(0) invert(1);\n    }\n\n    .mobile-feature-item p {\n      font-weight: 600;\n      margin: 0;\n      font-size: 12px;\n      line-height: 1.3;\n      text-align: center;\n    }\n\n  </style>\n</head>\n<body>\n  \n  <section class=\"mobile-candle-features\">\n    <!-- Mobile Feature Icons -->\n    <div class=\"mobile-feature-icons\">\n      <div class=\"mobile-feature-row\">\n        <div class=\"mobile-feature-item\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/free-shipping.png?v=1751615179\" alt=\"Free Shipping Icon\">\n          <p>Free shipping in US</p>\n        </div>\n        <div class=\"mobile-feature-item\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/leaves.png?v=1751615389\" alt=\"Plant Based Icon\">\n          <p>100% Plant Based wax</p>\n        </div>\n        <div class=\"mobile-feature-item\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire.png?v=1751615179\" alt=\"Burn Time Icon\">\n          <p>Long Lasting Burn Time</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n\n</body>\n</html>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "175614447726766098": {
+      "type": "apps",
+      "blocks": {
+        "affirm_pay_over_time_messaging_product_block_C3qBPG": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "disabled": true,
+          "settings": {
+            "logo_align": "left",
+            "font_size": 16,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "affirm_pay_over_time_messaging_product_block_C3qBPG"
+      ],
+      "settings": {}
+    },
+    "17561444503cbd8d74": {
+      "type": "apps",
+      "blocks": {
+        "essential_upsell_frequently_bought_together_app_block_8cNj6C": {
+          "type": "shopify://apps/essential-upsell/blocks/frequently-bought-together-app-block/50627fd9-24fd-4250-8614-accc12826d80",
+          "disabled": true,
+          "settings": {}
+        },
+        "affirm_pay_over_time_messaging_product_block_tnxRPJ": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "disabled": true,
+          "settings": {
+            "logo_align": "left",
+            "font_size": 14,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "essential_upsell_frequently_bought_together_app_block_8cNj6C",
+        "affirm_pay_over_time_messaging_product_block_tnxRPJ"
+      ],
+      "settings": {}
+    },
+    "custom_liquid_AaxHx9": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  /* Hide by default */\n  .mobile-only {\n    display: none;\n  }\n\n  /* Show only on mobile (max-width: 767px = common breakpoint) */\n  @media screen and (max-width: 767px) {\n    .mobile-only {\n      display: block;\n      width: 100%; /* make it responsive */\n      height: auto;\n    }\n  }\n</style>\n\n<!-- Image -->\n<img \n  src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Safe_Clean_6.jpg?v=1756063468\" \n  alt=\"Safe Clean\"\n  class=\"mobile-only\"\n/>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "feature_columns_UBHdJf": {
+      "type": "feature_columns",
+      "blocks": {
+        "text_block_4Wygf4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ChatGPT_Image_Apr_17_2025_04_31_51_PM.webp",
+            "title": "1-POUR",
+            "text": "<p>Gently pour the pearled wax into your candle holder, filling it up to your desired level. The beauty of pearled candles is that you control how much you use!<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade"
+          }
+        },
+        "text_block_4yr9C6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Copy_of_ic2.webp",
+            "title": "2-INSERT",
+            "text": "<p>Place the wick into the wax pearls, ensuring it's upright and centered for an even burn.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade"
+          }
+        },
+        "text_block_Bxa7Cm": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG-20250417-WA0021.webp",
+            "title": "3-DROP",
+            "text": "<p>Add a few drops of essential oil from our collection onto the candle pearls. As the pearls warm, the fragrance gently infuses the air, creating a serene, aromatic atmosphere that soothes your senses.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade"
+          }
+        },
+        "text_block_Nx8eKH": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Copy_of_ic3.webp",
+            "title": "4-LIGHT",
+            "text": "<p>Ignite the wick and enjoy a clean, slow-burning candle experience. Watch as the pearls melt into a smooth, glowing pool of wax.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_4Wygf4",
+        "text_block_4yr9C6",
+        "text_block_Bxa7Cm",
+        "text_block_Nx8eKH"
+      ],
+      "name": "Text columns with image",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "HOW TO USE",
+        "icon_heading": "las la-gem",
+        "top_subheading": "It's so easy",
+        "tophead_mb": 30,
+        "visibility_option": "both",
+        "text_align": "center",
+        "pos_text": "default",
+        "fs_title": 22.5,
+        "fs_text": 14,
+        "fs_title_mb": 24,
+        "fs_text_mb": 14,
+        "image_ratio": "ratio2_3",
+        "image_size": "cover",
+        "image_position": "8",
+        "img_effect": "none",
+        "b_effect": "none",
+        "layout_des": "1",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "always",
+        "btn_owl": "simple",
+        "btn_shape": "round",
+        "btn_cl": "primary",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "elessi",
+        "dots_cl": "primary",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#f1e1cd",
+        "cl_bg_gradient": "",
+        "mg": "0px,,50px,",
+        "pd": "20px,,20px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "20px,,20px,",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "custom_liquid_U7bKqA": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Why Choose \u2013 Mobile</title>\n  <!-- Poppins Font -->\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n  <style>\n    .why-choose-mobile {\n      font-family: 'Poppins', sans-serif; /* only poppins font */\n      background: #FAE9D4; /* brand bg */\n      padding: 32px 16px 24px;\n      display: block; /* mobile default */\n    }\n\n    .why-choose-mobile .container {\n      max-width: 520px;\n      margin: 0 auto;\n    }\n\n    .why-choose-header .section-title {\n      color: #34150C;\n      font-size: 26px;\n      font-weight: 800;\n      letter-spacing: -0.2px;\n      margin: 0 0 8px;\n      text-align: center;\n    }\n\n    .comparison-section {\n      margin-bottom: 28px;\n    }\n\n    .comparison-title {\n      color: #B23C3E;\n      font-size: 17px;\n      font-weight: 800;\n      text-align: center;\n      margin: 0 0 14px;\n    }\n\n    .comparison-card {\n      background: rgba(250, 233, 212, 0.58); /* #FAE9D594 */\n      border: none;\n      border-radius: 12px;\n      padding: 14px;\n      box-shadow: none;\n    }\n\n    .comparison-content {\n      display: flex;\n      align-items: center;   /* align image + text vertically */\n      gap: 16px;\n      min-height: 140px;     /* same min height for both */\n    }\n\n    .candle-image-container,\n    .hazard-image-container {\n      flex: 0 0 100px;       /* same reserved width for both images */\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .candle-image {\n      width: 84px;\n      height: auto;\n      max-height: 120px;\n      object-fit: contain;\n      border-radius: 360px;\n      background: transparent;\n    }\n\n    .hazard-image {\n      width: auto;\n      height: auto;\n      max-width: 84px;       /* match candle image width */\n      max-height: 120px;\n      object-fit: contain;\n    }\n\n    .benefits-list, .drawbacks-list {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      justify-content: center; /* vertically center list */\n      gap: 8px;\n    }\n\n    .benefit-item,\n    .drawback-item {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 4px 0;\n    }\n\n    .benefit-item img,\n    .drawback-item img {\n      width: auto;\n      height: auto;\n      max-width: 24px;\n      max-height: 24px;\n      flex: 0 0 auto;\n      object-fit: contain;\n      image-rendering: -webkit-optimize-contrast;\n      image-rendering: crisp-edges;\n    }\n\n    .benefit-item span,\n    .drawback-item span {\n      color: #34231C;\n      font-size: 14px;\n      font-weight: 600;\n      line-height: 1.2;\n    }\n\n    /* hide on tablet/desktop */\n    @media (min-width: 768px) {\n      .why-choose-mobile { display: none !important; }\n    }\n  </style>\n</head>\n<body>\n  <!-- Why Choose \u2013 Mobile -->\n  <section class=\"why-choose-mobile\" aria-label=\"Why Choose Vibes Pearl Candles \u2013 Mobile\">\n    <div class=\"container\">\n      <div class=\"why-choose-header\">\n        <h2 class=\"section-title\">Why Choose Vibes Pearl Candles?</h2>\n      </div>\n\n      <!-- This is us -->\n      <div class=\"comparison-section\">\n        <h3 class=\"comparison-title\">This is us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"candle-image-container\">\n              <img class=\"candle-image\" alt=\"Vibes Pearl Candle\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Copy_of_vb28_e1a93f2c-f6ab-4bd8-b9c4-87b8c0774bfb.jpg?v=1755786897\" />\n            </div>\n            <div class=\"benefits-list\">\n              <div class=\"benefit-item\">\n                <img alt=\"Non Toxic\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/chemical-free.png?v=1755110976\" />\n                <span>Non Toxic</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Even Burning\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire_1.png?v=1755110977\" />\n                <span>Even Burning</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Pet Friendly\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/animal_1.png?v=1755110977\" />\n                <span>Pet Friendly</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Soothing\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/lotus.png?v=1755110977\" />\n                <span>Soothing</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- This is not us -->\n      <div class=\"comparison-section\" style=\"margin-bottom:0;\">\n        <h3 class=\"comparison-title\">This is not us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"hazard-image-container\">\n              <img class=\"hazard-image\" alt=\"Hazard Warning\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/warning.png?v=1755245335\" />\n            </div>\n            <div class=\"drawbacks-list\">\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Synthetic Toxins</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Short lifespan</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Harmful for Pets</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Soot & Smoke</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </section>\n</body>\n</html>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_MgCkAT": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "accordion_7Bg6Dq": {
+      "type": "accordion",
+      "blocks": {
+        "accor_item_rNJEUP": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "1. How do Vibes Pearled Candles work?",
+            "content": "<p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.</p>"
+          }
+        },
+        "accor_item_yrXpB9": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "2. Are the pearled candles refillable?",
+            "content": "<p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.</p>"
+          }
+        },
+        "accor_item_gyfciE": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "3. What are the wax Pearls made from?",
+            "content": "<p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.</p>"
+          }
+        },
+        "accor_item_zrWytD": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "4. How long do the candles burn?",
+            "content": "<p>Our 11 oz candles are provided with 15 wicks, while the 18 oz candles are provided with 30 wicks.</p><p>Each Wick burns for 12 hrs.</p>"
+          }
+        },
+        "accor_item_tYJmVY": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "5. Why can\u2019t I smell the fragrance when burning?",
+            "content": "<p>Our fragrances are designed to be subtle and calming, not overpowering. If you\u2019re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.</p>"
+          }
+        },
+        "accor_item_BG8VUy": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "6. Are your pearled candles safe for pets?",
+            "content": "<p>Yes, our candles are made with non-toxic ingredients, but we recommend keeping them out of reach of pets and never leaving a burning candle unattended.</p>"
+          }
+        },
+        "accor_item_YEwyMV": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "7. Do your pearled candles produce soot?",
+            "content": "<p>Not at all! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton/wood wicks.</p>"
+          }
+        },
+        "accor_item_bCMCzy": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "8. Where can I buy pearled candle refills?",
+            "content": "<p>You can get additional Pearls, wicks, and accessories directly from our website!</p>"
+          }
+        },
+        "accor_item_WiT6ep": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "9. Are the pearled candles safe to use?",
+            "content": "<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:</p><ul><li>Keep away from flammable objects</li><li>Don\u2019t leave burning candles unattended</li><li>Trim the wick to 5mm before each use</li></ul>"
+          }
+        },
+        "accor_item_JX6AFD": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "10. Do you offer international shipping?",
+            "content": "<p>Currently, we ship within the USA, but we\u2019re working on expanding internationally. Stay tuned!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accor_item_rNJEUP",
+        "accor_item_yrXpB9",
+        "accor_item_gyfciE",
+        "accor_item_zrWytD",
+        "accor_item_tYJmVY",
+        "accor_item_BG8VUy",
+        "accor_item_YEwyMV",
+        "accor_item_bCMCzy",
+        "accor_item_WiT6ep",
+        "accor_item_JX6AFD"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Frequently Asked Questions",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#fb5157",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#34150c",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      },
+      "disabled": true
+    },
+    "featured_collection_UxnE7Y": {
+      "type": "featured-collection",
+      "settings": {
+        "design_heading": "2",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Frequently Bought Together",
+        "icon_heading": "gem",
+        "top_subheading": "99% Customers Love this",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection": "pearled-candles",
+        "product_des": "8",
+        "show_vendor": false,
+        "use_cdt": false,
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "center",
+        "limit": 8,
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 4.5,
+        "au_hover": true,
+        "center_slide": true,
+        "nav_btn": true,
+        "btns_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "elessi",
+        "dots_cl": "primary",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "use_pagination": "none",
+        "enable_bar_lm": true,
+        "btn_icon": false,
+        "button_style": "default",
+        "btns_size": "medium",
+        "btns_cl": "default",
+        "button_effect": "fade",
+        "btn_pos": "t4s-text-center",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,85px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,25px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "sidebar": {
+      "type": "sidebar-product",
+      "blocks": {
+        "f01b181b-62ee-4735-8e25-32cb71ccfaba": {
+          "type": "category",
+          "settings": {
+            "title_category": "Product Categories",
+            "cat_source": "1",
+            "cat_link_list": "",
+            "count": true
+          }
+        },
+        "f65f464b-9487-43be-9c91-8688a098bb6f": {
+          "type": "collection",
+          "settings": {
+            "title_fea_pr": "Sale Products",
+            "collection": "frontpage",
+            "limit_pr": 5,
+            "image_ratio": "t4s_ratioadapt",
+            "image_size": "t4s_cover",
+            "image_position": "t4s_position_8"
+          }
+        },
+        "83340bb8-58d2-4148-89e2-a4c7a01cf792": {
+          "type": "instagram",
+          "settings": {
+            "title_ins": "Instagram",
+            "mode": "2",
+            "acc": "",
+            "limit": 12,
+            "open_link": "_blank",
+            "round": 0,
+            "col_dk": "3",
+            "space_item": "6"
+          }
+        },
+        "9ce9ded8-1cef-4e32-b98b-47364ffa328c": {
+          "type": "shipping",
+          "settings": {
+            "title": "Shipping & Delivery",
+            "shipping_1": "las la-truck,FREE SHIPPING,Free shipping for all US order",
+            "shipping_2": "las la-headset,SUPPORT 24/7,We support 24 hours a day",
+            "shipping_3": "las la-exchange-alt,30 DAYS RETURN,You have 30 days to return",
+            "shipping_4": "",
+            "shipping_5": "",
+            "shipping_6": ""
+          }
+        },
+        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6": {
+          "type": "image",
+          "settings": {
+            "b_link": "",
+            "open_link": "_self",
+            "img_effect": "none",
+            "date": "2022/12/26",
+            "content_align": "center",
+            "cdt_des": "2",
+            "countdown_pos": "2",
+            "cdt_size": "medium",
+            "box_bdr": 0,
+            "bd_width": 0,
+            "space_item": 10,
+            "number_cl": "#ffffff",
+            "text_cl": "#ffffff",
+            "border_cl": "#000000",
+            "bg_cl": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "f01b181b-62ee-4735-8e25-32cb71ccfaba",
+        "f65f464b-9487-43be-9c91-8688a098bb6f",
+        "83340bb8-58d2-4148-89e2-a4c7a01cf792",
+        "9ce9ded8-1cef-4e32-b98b-47364ffa328c",
+        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_drawer": true,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 5,
+        "sidebar_pd": 10
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show": true,
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "YOU MAY ALSO LIKE",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "product_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "limit": 12,
+        "display_type": "4",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "default",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "1",
+        "btn_owl": "outline",
+        "btn_shape": "round",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "1",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "75px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently_viewed",
+      "disabled": true,
+      "settings": {
+        "show": true,
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Recently viewed products",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "product_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "limit": 14,
+        "sortby": "1",
+        "unavailable_prs": "show",
+        "image_ratio": "rationt",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "default",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "always",
+        "btn_owl": "outline",
+        "btn_shape": "round",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "75px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "1752688979c8d6e654": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_YcYt3W": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_YcYt3W"
+      ],
+      "settings": {}
+    },
+    "custom_liquid_vpc_faq_bundles-with-essential": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.vpc-faq-section {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 50px 15px 60px;\n  text-align: center;\n  font-family: 'Poppins', sans-serif;\n}\n.vpc-faq-heading {\n  font-family: 'Poppins', sans-serif;\n  font-size: 28px;\n  font-weight: 700;\n  color: #34150C;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  margin-bottom: 30px;\n}\n.vpc-faq-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 12px;\n  margin-bottom: 40px;\n  text-align: left;\n  align-items: start;\n}\n.vpc-faq-item {\n  background: rgba(52, 21, 12, 0.06);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.vpc-faq-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 16px 20px;\n  cursor: pointer;\n  background: none;\n  border: none;\n  width: 100%;\n  text-align: left;\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n  font-weight: 500;\n  color: #34150C !important;\n  -webkit-tap-highlight-color: transparent;\n}\n.vpc-faq-question:hover,\n.vpc-faq-question:focus,\n.vpc-faq-question:active {\n  background: rgba(52, 21, 12, 0.03);\n  color: #34150C !important;\n}\n.vpc-faq-question:focus { outline: none; }\n.vpc-faq-plus {\n  font-size: 18px;\n  font-weight: 400;\n  color: #34150C;\n  flex-shrink: 0;\n  margin-left: 12px;\n  transition: transform 0.3s ease;\n}\n.vpc-faq-item.is-open .vpc-faq-plus { transform: rotate(45deg); }\n.vpc-faq-answer {\n  max-height: 0;\n  overflow: hidden;\n  transition: max-height 0.35s ease;\n}\n.vpc-faq-item.is-open .vpc-faq-answer { max-height: 500px; }\n.vpc-faq-answer-inner {\n  padding: 0 20px 16px;\n  font-size: 13px;\n  line-height: 1.7;\n  color: #555;\n}\n.vpc-faq-answer-inner p { margin: 0 0 8px; }\n.vpc-faq-answer-inner p:last-child { margin: 0; }\n.vpc-faq-cta-text {\n  font-family: 'Poppins', sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  color: #34150C;\n  text-transform: uppercase;\n  letter-spacing: 0.03em;\n  margin-bottom: 16px;\n}\n.vpc-faq-cta-btn {\n  display: inline-block;\n  padding: 12px 28px;\n  background: #34150C;\n  color: #fff !important;\n  font-family: 'Poppins', sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.06em;\n  text-decoration: none;\n  border-radius: 6px;\n  transition: opacity 0.3s ease;\n}\n.vpc-faq-cta-btn:hover { opacity: 0.85; color: #fff !important; }\n\n@media (max-width: 767px) {\n  .vpc-faq-section { padding: 40px 10px 50px; }\n  .vpc-faq-heading { font-size: 22px; margin-bottom: 20px; }\n  .vpc-faq-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 30px; }\n  .vpc-faq-question { font-size: 14px; padding: 14px 16px; }\n  .vpc-faq-cta-text { font-size: 16px; }\n}\n</style>\n\n<section class=\"vpc-faq-section\">\n  <h2 class=\"vpc-faq-heading\">Frequently Asked Questions</h2>\n  <div class=\"vpc-faq-grid\">\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>How do Vibes Pearled Candles work?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are the pearled candles refillable?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>What are the wax Pearls made from?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>How long do the candles burn?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our 11 oz candles are provided with 15 wicks, while the 18 oz candles are provided with 30 wicks.</p><p>Each Wick burns for 12 hrs.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Why can't I smell the fragrance when burning?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Our fragrances are subtle and calming, not overpowering. We recommend burning in smaller rooms or ensuring the wax pool fully melts for the best scent throw.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are your pearled candles safe for pets?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Yes! Our candles are made with non-toxic ingredients, making them pet-safe. However, we recommend keeping them out of reach of pets and never leaving a burning candle unattended.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Do your pearled candles produce soot?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>No! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton/wood wicks.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Where can I buy pearled candle refills?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Get additional Pearls, wicks, and accessories directly from our website!</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Are the pearled candles safe to use?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Absolutely! Our candles are made with clean ingredients that produce minimal to no smoke. As with any candle, keep them away from flammable materials, never leave them unattended, and trim the wick to 5mm before lighting.</p></div></div>\n    </div>\n    <div class=\"vpc-faq-item\">\n      <button class=\"vpc-faq-question\" type=\"button\"><span>Do you offer international shipping?</span><span class=\"vpc-faq-plus\">+</span></button>\n      <div class=\"vpc-faq-answer\"><div class=\"vpc-faq-answer-inner\"><p>Currently, we ship within the USA only. We are working on expanding our shipping options internationally - stay tuned!</p></div></div>\n    </div>\n  </div>\n  <p class=\"vpc-faq-cta-text\">Need More Information?</p>\n  <a href=\"https://www.vibespearledcandle.com/pages/faqs\" class=\"vpc-faq-cta-btn\">Visit Our FAQ Page</a>\n</section>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var faqSection = document.querySelector('.vpc-faq-section');\n  if (faqSection) {\n    faqSection.querySelectorAll('.vpc-faq-question').forEach(function(btn) {\n      btn.addEventListener('click', function() {\n        var item = this.closest('.vpc-faq-item');\n        var isOpen = item.classList.contains('is-open');\n        faqSection.querySelectorAll('.vpc-faq-item.is-open').forEach(function(el) { el.classList.remove('is-open'); });\n        if (!isOpen) item.classList.add('is-open');\n      });\n    });\n  }\n});\n</script>",
+        "layout": "t4s-full",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_vpc_reels_bundles-with-essential": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.vpc-reels-section-19 {\n  padding: 40px 15px;\n  background: #f7e6d2;\n}\n.vpc-reels-inner-19 {\n  max-width: 100%;\n  overflow: hidden;\n}\n.vpc-reels-heading-19 {\n  text-align: center;\n  font-family: 'Poppins', sans-serif;\n  font-size: 26px;\n  font-weight: 700;\n  color: #34150C;\n  text-transform: uppercase;\n  letter-spacing: 0.03em;\n  margin: 0 0 25px 0;\n}\n.vpc-reels-slider-19 {\n  display: flex;\n  gap: 14px;\n  overflow-x: auto;\n  scroll-snap-type: x mandatory;\n  scrollbar-width: none;\n  padding: 0 0 10px;\n  -webkit-overflow-scrolling: touch;\n}\n.vpc-reels-slider-19::-webkit-scrollbar { display: none; }\n.vpc-reel-card-19 {\n  flex: 0 0 auto;\n  width: 200px;\n  height: 350px;\n  border-radius: 8px;\n  overflow: hidden;\n  scroll-snap-align: start;\n  background: #000;\n}\n.vpc-reel-video-19 {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n@media (min-width: 768px) {\n  .vpc-reels-slider-19 { padding: 0 0 10px; gap: 20px; }\n}\n@media (min-width: 1024px) {\n  .vpc-reels-heading-19 { font-size: 28px; }\n  .vpc-reels-slider-19 { padding: 0 0 10px; gap: 25px; }\n}\n@media (min-width: 1440px) {\n  .vpc-reel-card-19 { width: 250px; height: 450px; }\n  .vpc-reels-slider-19 { padding: 0 0 10px; gap: 30px; }\n}\n@media (max-width: 767px) {\n  .vpc-reels-section-19 { padding: 30px 0; }\n  .vpc-reels-heading-19 { font-size: 20px; margin-bottom: 18px; }\n  .vpc-reels-section-19 { padding: 30px 10px; }\\n  .vpc-reels-slider-19 { padding: 0 0 10px; gap: 12px; }\n}\n</style>\n\n<div class=\"vpc-reels-section-19\">\n  <div class=\"vpc-reels-inner-19\">\n    <h2 class=\"vpc-reels-heading-19\">Beautiful Ways to Decorate Your Candle</h2>\n    <div class=\"vpc-reels-slider-19\">\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/ac04f7ff1e6047f9b5f9b1461da5bf9a.mov\" type=\"video/mp4\"></video></div>\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/2e8b7510c8ae4741ac81cc69d8db5724.mov\" type=\"video/mp4\"></video></div>\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/b62025c09ece4ee58e558f9cca084a5b.mov\" type=\"video/mp4\"></video></div>\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/0632d8c745c6432ab1f021c2be605103.mp4\" type=\"video/mp4\"></video></div>\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/c2cd876ab0144961b7579606c2a8f7fb.mp4\" type=\"video/mp4\"></video></div>\n      <div class=\"vpc-reel-card-19\"><video class=\"vpc-reel-video-19\" autoplay muted loop playsinline><source src=\"https://cdn.shopify.com/videos/c/o/v/a2d3183688a644ffa3ac5122312024e9.mp4\" type=\"video/mp4\"></video></div>\n    </div>\n  </div>\n</div>",
+        "layout": "t4s-full",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "custom_liquid_4BzeAQ",
+    "custom_liquid_pFnamg",
+    "main",
+    "custom_liquid_fB4mXF",
+    "175973502228b72262",
+    "custom_liquid_77etJC",
+    "custom_liquid_wjTEpj",
+    "175614447726766098",
+    "17561444503cbd8d74",
+    "custom_liquid_AaxHx9",
+    "feature_columns_UBHdJf",
+    "custom_liquid_U7bKqA",
+    "custom_liquid_MgCkAT",
+    "accordion_7Bg6Dq",
+    "custom_liquid_vpc_reels_bundles-with-essential",
+    "custom_liquid_vpc_faq_bundles-with-essential",
+    "featured_collection_UxnE7Y",
+    "sidebar",
+    "product-recommendations",
+    "recently-viewed-products",
+    "1752688979c8d6e654"
+  ]
+}
