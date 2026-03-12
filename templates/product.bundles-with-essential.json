@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumb": {
@@ -31,7 +40,7 @@
       "disabled": true,
       "name": "Custom Liquid",
       "settings": {
-        "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler aras\u0131ndaki bo\u015fluk */\n  transform: scale(0.8); /* T\u00fcm bile\u015fenleri orant\u0131l\u0131 k\u00fc\u00e7\u00fcltme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* A\u00e7\u0131k k\u0131rm\u0131z\u0131 arka plan */\n  color: #000000; /* Koyu k\u0131rm\u0131z\u0131 metin */\n  padding: 3px 5px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f padding */\n  border-radius: 5px; /* Orant\u0131l\u0131 yuvarlama */\n  font-size: 10px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f bo\u015fluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n  height: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>",
+        "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler arasındaki boşluk */\n  transform: scale(0.8); /* Tüm bileşenleri orantılı küçültme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* Açık kırmızı arka plan */\n  color: #000000; /* Koyu kırmızı metin */\n  padding: 3px 5px; /* Küçültülmüş padding */\n  border-radius: 5px; /* Orantılı yuvarlama */\n  font-size: 10px; /* Küçültülmüş font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* Küçültülmüş boşluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* Küçültülmüş ikon boyutu */\n  height: 12px; /* Küçültülmüş ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -50,7 +59,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler aras\u0131ndaki bo\u015fluk */\n  transform: scale(0.8); /* T\u00fcm bile\u015fenleri orant\u0131l\u0131 k\u00fc\u00e7\u00fcltme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* A\u00e7\u0131k k\u0131rm\u0131z\u0131 arka plan */\n  color: #000000; /* Koyu k\u0131rm\u0131z\u0131 metin */\n  padding: 3px 5px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f padding */\n  border-radius: 5px; /* Orant\u0131l\u0131 yuvarlama */\n  font-size: 10px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f bo\u015fluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n  height: 12px; /* K\u00fc\u00e7\u00fclt\u00fclm\u00fc\u015f ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>"
+            "custom_liquid": "<div class=\"unique-badge-def456\">\n  <span>\n    <div class=\"unique-clock-icon-jkl012\">\n      <svg viewBox=\"0 0 64 64\" xmlns=\"http://w3.org/2000/svg\">\n        <circle cx=\"32\" cy=\"32\" r=\"30\" stroke=\"#b22222\" stroke-width=\"4\" fill=\"none\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"32\" y2=\"12\" stroke=\"#b22222\" stroke-width=\"4\"/>\n        <line x1=\"32\" y1=\"32\" x2=\"44\" y2=\"32\" stroke=\"#b22222\" stroke-width=\"4\"/>\n      </svg>\n    </div>\n   Your New Customer Discount, Sign Up With Us Via Email or SMS, And Recieve 25% Off Coupon Code \n  </span>\n<style>\n.unique-body-abc123 {\n  font-family: Arial, sans-serif;\n  background-color: #f5bd6e;\n  color: #333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  gap: 10px; /* Badge'ler arasındaki boşluk */\n  transform: scale(0.8); /* Tüm bileşenleri orantılı küçültme */\n}\n\n.unique-badge-def456 {\n  display: inline-flex;\n  align-items: center;\n  background-color: #f5bd6e; /* Açık kırmızı arka plan */\n  color: #000000; /* Koyu kırmızı metin */\n  padding: 3px 5px; /* Küçültülmüş padding */\n  border-radius: 5px; /* Orantılı yuvarlama */\n  font-size: 10px; /* Küçültülmüş font boyutu */\n  font-weight: bold;\n  text-align: center;\n  position: relative;\n}\n\n.unique-flame-icon-ghi789, .unique-clock-icon-jkl012 {\n  margin-right: 4px; /* Küçültülmüş boşluk */\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n}\n\n.unique-flame-icon-ghi789 svg, .unique-clock-icon-jkl012 svg {\n  width: 12px; /* Küçültülmüş ikon boyutu */\n  height: 12px; /* Küçültülmüş ikon boyutu */\n}\n\n.unique-flame-icon-ghi789 svg {\n  animation: unique-flame-animation-mno345 2s infinite;\n}\n\n.unique-clock-icon-jkl012 svg {\n  animation: unique-clock-animation-pqr678 2s infinite;\n}\n\n@keyframes\n unique-flame-animation-mno345 {\n  0%, 100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n@keyframes\n unique-clock-animation-pqr678 {\n  0%, 100% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(360deg);\n  }\n}\n\n.unique-badge-def456 span {\n  display: flex;\n  align-items: center;\n}\n</style>\n</div>"
           }
         },
         "title": {
@@ -212,24 +221,6 @@
             "custom_liquid": "<style>\n  .what-included-section {\n    padding: 60px 0;\n    background-color: #fff;\n  }\n  \n  .what-included-container {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n  \n  .what-included-title {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 700;\n    font-size: 2.5rem;\n    color: #8B4513;\n    text-align: center;\n    margin-bottom: 50px;\n  }\n  \n  .products-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 30px;\n    margin-top: 40px;\n  }\n  \n  .product-item {\n    background-color: #f5f5dc;\n    border-radius: 15px;\n    padding: 30px;\n    text-align: center;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n    transition: transform 0.3s ease;\n  }\n  \n  .product-item:hover {\n    transform: translateY(-5px);\n  }\n  \n  .product-image {\n    width: 100%;\n    max-width: 250px;\n    height: auto;\n    border-radius: 10px;\n    margin-bottom: 20px;\n  }\n  \n  .product-container {\n    width: 100%;\n    max-width: 200px;\n    height: auto;\n    border-radius: 8px;\n    margin: 0 auto;\n  }\n  \n  .product-info {\n    margin-top: 15px;\n  }\n  \n  .product-name {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 1.2rem;\n    color: #333;\n    margin-bottom: 8px;\n  }\n  \n  .product-size {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 500;\n    font-size: 1rem;\n    color: #666;\n  }\n  \n  .essential-oils-badge {\n    display: inline-block;\n    background: linear-gradient(45deg, #FFD700, #FFA500);\n    color: #333;\n    padding: 8px 15px;\n    border-radius: 20px;\n    font-family: 'Poppins', sans-serif;\n    font-weight: 600;\n    font-size: 0.85rem;\n    margin-top: 10px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n  }\n  \n  @media (max-width: 768px) {\n    .products-grid {\n      grid-template-columns: 1fr;\n      gap: 20px;\n    }\n    \n    .what-included-title {\n      font-size: 2rem;\n    }\n    \n    .product-item {\n      padding: 20px;\n    }\n  }\n</style>\n\n<section class=\"what-included-section\">\n  <div class=\"what-included-container\">\n    <h2 class=\"what-included-title\">What is included</h2>\n    \n    <div class=\"products-grid\">\n      <!-- First Product - Metafield Image -->\n      <div class=\"product-item\">\n        <img src=\"{{ product.metafields.custom.image | image_url: width: 600 }}\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n      \n      <!-- Second Product - First URL -->\n      <div class=\"product-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n      \n      <!-- Third Product - Second URL -->\n      <div class=\"product-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/ChatGPTImageMay27_2025_04_00_01PM.webp?v=1749826287\" \n             alt=\"Product Image\" \n             class=\"product-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/3_35d3fa88-8cd0-46f5-9f86-fcb76b6d55e8.png?v=1750435524\" \n             alt=\"Vibes Candle Container\" \n             class=\"product-container\">\n        <div class=\"product-info\">\n          <div class=\"essential-oils-badge\">\n            Includes Essential Oils with signature scents\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>"
           }
         },
-        "reelfy_videos_reelfy_section_4VCm4z": {
-          "type": "shopify://apps/reelfy-videos/blocks/reelfy-section/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "subtitle": "",
-            "heading_size": "1",
-            "heading_align": "left",
-            "heading_color": "",
-            "desc_style": "subtitle",
-            "desc_color": "",
-            "custom_class": "",
-            "background_color": "",
-            "padding_top": 36,
-            "padding_bottom": 36,
-            "padding_left_right": 0
-          }
-        },
         "custom_liquid_TrxhrN": {
           "type": "custom_liquid",
           "disabled": true,
@@ -246,7 +237,7 @@
         "tab_html_TA6yNN": {
           "type": "tab_html",
           "settings": {
-            "title": "What\u2019s Included in the Pack?",
+            "title": "What’s Included in the Pack?",
             "content": "<p>{{ product.metafields.custom.includes | metafield_tag }}</p>",
             "page": ""
           }
@@ -278,7 +269,7 @@
         "tab_html_xhYjV4": {
           "type": "tab_html",
           "settings": {
-            "title": "Why You\u2019ll Love It",
+            "title": "Why You’ll Love It",
             "content": "<p><strong>Customizable & Refillable</strong> <strong>- </strong>Adjust wax levels, mix colors, and blend scents.</p><p><strong>Mess-Free & Even Burning - </strong>No tunneling, no wasted wax.</p><p><strong>Long lasting</strong> <strong>- </strong>A candle you can keep using forever.</p>",
             "page": ""
           }
@@ -351,7 +342,6 @@
         "custom_liquid_jVkYcg",
         "order_tfwqY9",
         "custom_liquid_4cYaUe",
-        "reelfy_videos_reelfy_section_4VCm4z",
         "custom_liquid_TrxhrN",
         "custom_liquid_desktop_accordion_tabs",
         "94011ade-ec25-4d68-b37a-70660ede49dd",
@@ -421,28 +411,6 @@
     },
     "175973502228b72262": {
       "type": "apps",
-      "blocks": {
-        "reelfy_videos_reelfy_section_aTFapg": {
-          "type": "shopify://apps/reelfy-videos/blocks/reelfy-section/4022ffb0-05c3-4ef3-a409-6df51f4b1b3f",
-          "settings": {
-            "title": "",
-            "subtitle": "",
-            "heading_size": "1",
-            "heading_align": "left",
-            "heading_color": "",
-            "desc_style": "subtitle",
-            "desc_color": "",
-            "custom_class": "",
-            "background_color": "",
-            "padding_top": 36,
-            "padding_bottom": 36,
-            "padding_left_right": 24
-          }
-        }
-      },
-      "block_order": [
-        "reelfy_videos_reelfy_section_aTFapg"
-      ],
       "settings": {}
     },
     "custom_liquid_77etJC": {
@@ -501,11 +469,6 @@
     "17561444503cbd8d74": {
       "type": "apps",
       "blocks": {
-        "essential_upsell_frequently_bought_together_app_block_8cNj6C": {
-          "type": "shopify://apps/essential-upsell/blocks/frequently-bought-together-app-block/50627fd9-24fd-4250-8614-accc12826d80",
-          "disabled": true,
-          "settings": {}
-        },
         "affirm_pay_over_time_messaging_product_block_tnxRPJ": {
           "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
           "disabled": true,
@@ -520,7 +483,6 @@
         }
       },
       "block_order": [
-        "essential_upsell_frequently_bought_together_app_block_8cNj6C",
         "affirm_pay_over_time_messaging_product_block_tnxRPJ"
       ],
       "settings": {}
@@ -680,7 +642,7 @@
       "type": "custom-liquid",
       "name": "Custom Liquid",
       "settings": {
-        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Why Choose \u2013 Mobile</title>\n  <!-- Poppins Font -->\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n  <style>\n    .why-choose-mobile {\n      font-family: 'Poppins', sans-serif; /* only poppins font */\n      background: #FAE9D4; /* brand bg */\n      padding: 32px 16px 24px;\n      display: block; /* mobile default */\n    }\n\n    .why-choose-mobile .container {\n      max-width: 520px;\n      margin: 0 auto;\n    }\n\n    .why-choose-header .section-title {\n      color: #34150C;\n      font-size: 26px;\n      font-weight: 800;\n      letter-spacing: -0.2px;\n      margin: 0 0 8px;\n      text-align: center;\n    }\n\n    .comparison-section {\n      margin-bottom: 28px;\n    }\n\n    .comparison-title {\n      color: #B23C3E;\n      font-size: 17px;\n      font-weight: 800;\n      text-align: center;\n      margin: 0 0 14px;\n    }\n\n    .comparison-card {\n      background: rgba(250, 233, 212, 0.58); /* #FAE9D594 */\n      border: none;\n      border-radius: 12px;\n      padding: 14px;\n      box-shadow: none;\n    }\n\n    .comparison-content {\n      display: flex;\n      align-items: center;   /* align image + text vertically */\n      gap: 16px;\n      min-height: 140px;     /* same min height for both */\n    }\n\n    .candle-image-container,\n    .hazard-image-container {\n      flex: 0 0 100px;       /* same reserved width for both images */\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .candle-image {\n      width: 84px;\n      height: auto;\n      max-height: 120px;\n      object-fit: contain;\n      border-radius: 360px;\n      background: transparent;\n    }\n\n    .hazard-image {\n      width: auto;\n      height: auto;\n      max-width: 84px;       /* match candle image width */\n      max-height: 120px;\n      object-fit: contain;\n    }\n\n    .benefits-list, .drawbacks-list {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      justify-content: center; /* vertically center list */\n      gap: 8px;\n    }\n\n    .benefit-item,\n    .drawback-item {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 4px 0;\n    }\n\n    .benefit-item img,\n    .drawback-item img {\n      width: auto;\n      height: auto;\n      max-width: 24px;\n      max-height: 24px;\n      flex: 0 0 auto;\n      object-fit: contain;\n      image-rendering: -webkit-optimize-contrast;\n      image-rendering: crisp-edges;\n    }\n\n    .benefit-item span,\n    .drawback-item span {\n      color: #34231C;\n      font-size: 14px;\n      font-weight: 600;\n      line-height: 1.2;\n    }\n\n    /* hide on tablet/desktop */\n    @media (min-width: 768px) {\n      .why-choose-mobile { display: none !important; }\n    }\n  </style>\n</head>\n<body>\n  <!-- Why Choose \u2013 Mobile -->\n  <section class=\"why-choose-mobile\" aria-label=\"Why Choose Vibes Pearl Candles \u2013 Mobile\">\n    <div class=\"container\">\n      <div class=\"why-choose-header\">\n        <h2 class=\"section-title\">Why Choose Vibes Pearl Candles?</h2>\n      </div>\n\n      <!-- This is us -->\n      <div class=\"comparison-section\">\n        <h3 class=\"comparison-title\">This is us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"candle-image-container\">\n              <img class=\"candle-image\" alt=\"Vibes Pearl Candle\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Copy_of_vb28_e1a93f2c-f6ab-4bd8-b9c4-87b8c0774bfb.jpg?v=1755786897\" />\n            </div>\n            <div class=\"benefits-list\">\n              <div class=\"benefit-item\">\n                <img alt=\"Non Toxic\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/chemical-free.png?v=1755110976\" />\n                <span>Non Toxic</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Even Burning\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire_1.png?v=1755110977\" />\n                <span>Even Burning</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Pet Friendly\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/animal_1.png?v=1755110977\" />\n                <span>Pet Friendly</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Soothing\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/lotus.png?v=1755110977\" />\n                <span>Soothing</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- This is not us -->\n      <div class=\"comparison-section\" style=\"margin-bottom:0;\">\n        <h3 class=\"comparison-title\">This is not us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"hazard-image-container\">\n              <img class=\"hazard-image\" alt=\"Hazard Warning\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/warning.png?v=1755245335\" />\n            </div>\n            <div class=\"drawbacks-list\">\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Synthetic Toxins</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Short lifespan</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Harmful for Pets</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Soot & Smoke</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </section>\n</body>\n</html>",
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Why Choose – Mobile</title>\n  <!-- Poppins Font -->\n  <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n  <style>\n    .why-choose-mobile {\n      font-family: 'Poppins', sans-serif; /* only poppins font */\n      background: #FAE9D4; /* brand bg */\n      padding: 32px 16px 24px;\n      display: block; /* mobile default */\n    }\n\n    .why-choose-mobile .container {\n      max-width: 520px;\n      margin: 0 auto;\n    }\n\n    .why-choose-header .section-title {\n      color: #34150C;\n      font-size: 26px;\n      font-weight: 800;\n      letter-spacing: -0.2px;\n      margin: 0 0 8px;\n      text-align: center;\n    }\n\n    .comparison-section {\n      margin-bottom: 28px;\n    }\n\n    .comparison-title {\n      color: #B23C3E;\n      font-size: 17px;\n      font-weight: 800;\n      text-align: center;\n      margin: 0 0 14px;\n    }\n\n    .comparison-card {\n      background: rgba(250, 233, 212, 0.58); /* #FAE9D594 */\n      border: none;\n      border-radius: 12px;\n      padding: 14px;\n      box-shadow: none;\n    }\n\n    .comparison-content {\n      display: flex;\n      align-items: center;   /* align image + text vertically */\n      gap: 16px;\n      min-height: 140px;     /* same min height for both */\n    }\n\n    .candle-image-container,\n    .hazard-image-container {\n      flex: 0 0 100px;       /* same reserved width for both images */\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .candle-image {\n      width: 84px;\n      height: auto;\n      max-height: 120px;\n      object-fit: contain;\n      border-radius: 360px;\n      background: transparent;\n    }\n\n    .hazard-image {\n      width: auto;\n      height: auto;\n      max-width: 84px;       /* match candle image width */\n      max-height: 120px;\n      object-fit: contain;\n    }\n\n    .benefits-list, .drawbacks-list {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      justify-content: center; /* vertically center list */\n      gap: 8px;\n    }\n\n    .benefit-item,\n    .drawback-item {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 4px 0;\n    }\n\n    .benefit-item img,\n    .drawback-item img {\n      width: auto;\n      height: auto;\n      max-width: 24px;\n      max-height: 24px;\n      flex: 0 0 auto;\n      object-fit: contain;\n      image-rendering: -webkit-optimize-contrast;\n      image-rendering: crisp-edges;\n    }\n\n    .benefit-item span,\n    .drawback-item span {\n      color: #34231C;\n      font-size: 14px;\n      font-weight: 600;\n      line-height: 1.2;\n    }\n\n    /* hide on tablet/desktop */\n    @media (min-width: 768px) {\n      .why-choose-mobile { display: none !important; }\n    }\n  </style>\n</head>\n<body>\n  <!-- Why Choose – Mobile -->\n  <section class=\"why-choose-mobile\" aria-label=\"Why Choose Vibes Pearl Candles – Mobile\">\n    <div class=\"container\">\n      <div class=\"why-choose-header\">\n        <h2 class=\"section-title\">Why Choose Vibes Pearl Candles?</h2>\n      </div>\n\n      <!-- This is us -->\n      <div class=\"comparison-section\">\n        <h3 class=\"comparison-title\">This is us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"candle-image-container\">\n              <img class=\"candle-image\" alt=\"Vibes Pearl Candle\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Copy_of_vb28_e1a93f2c-f6ab-4bd8-b9c4-87b8c0774bfb.jpg?v=1755786897\" />\n            </div>\n            <div class=\"benefits-list\">\n              <div class=\"benefit-item\">\n                <img alt=\"Non Toxic\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/chemical-free.png?v=1755110976\" />\n                <span>Non Toxic</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Even Burning\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/fire_1.png?v=1755110977\" />\n                <span>Even Burning</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Pet Friendly\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/animal_1.png?v=1755110977\" />\n                <span>Pet Friendly</span>\n              </div>\n              <div class=\"benefit-item\">\n                <img alt=\"Soothing\"\n                     src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/lotus.png?v=1755110977\" />\n                <span>Soothing</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- This is not us -->\n      <div class=\"comparison-section\" style=\"margin-bottom:0;\">\n        <h3 class=\"comparison-title\">This is not us</h3>\n        <div class=\"comparison-card\">\n          <div class=\"comparison-content\">\n            <div class=\"hazard-image-container\">\n              <img class=\"hazard-image\" alt=\"Hazard Warning\"\n                   src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/warning.png?v=1755245335\" />\n            </div>\n            <div class=\"drawbacks-list\">\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Synthetic Toxins</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Short lifespan</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Harmful for Pets</span>\n              </div>\n              <div class=\"drawback-item\">\n                <img alt=\"Warning icon\" src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/hazard.png?v=1755110727\" />\n                <span>Soot & Smoke</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </section>\n</body>\n</html>",
         "layout": "t4s-container-fluid",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -748,8 +710,8 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "5. Why can\u2019t I smell the fragrance when burning?",
-            "content": "<p>Our fragrances are designed to be subtle and calming, not overpowering. If you\u2019re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.</p>"
+            "title": "5. Why can’t I smell the fragrance when burning?",
+            "content": "<p>Our fragrances are designed to be subtle and calming, not overpowering. If you’re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.</p>"
           }
         },
         "accor_item_BG8VUy": {
@@ -781,7 +743,7 @@
           "settings": {
             "icon": "none",
             "title": "9. Are the pearled candles safe to use?",
-            "content": "<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:</p><ul><li>Keep away from flammable objects</li><li>Don\u2019t leave burning candles unattended</li><li>Trim the wick to 5mm before each use</li></ul>"
+            "content": "<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:</p><ul><li>Keep away from flammable objects</li><li>Don’t leave burning candles unattended</li><li>Trim the wick to 5mm before each use</li></ul>"
           }
         },
         "accor_item_JX6AFD": {
@@ -789,7 +751,7 @@
           "settings": {
             "icon": "none",
             "title": "10. Do you offer international shipping?",
-            "content": "<p>Currently, we ship within the USA, but we\u2019re working on expanding internationally. Stay tuned!</p>"
+            "content": "<p>Currently, we ship within the USA, but we’re working on expanding internationally. Stay tuned!</p>"
           }
         }
       },
@@ -805,6 +767,7 @@
         "accor_item_WiT6ep",
         "accor_item_JX6AFD"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-center",
@@ -833,8 +796,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      },
-      "disabled": true
+      }
     },
     "featured_collection_UxnE7Y": {
       "type": "featured-collection",
