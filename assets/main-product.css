@@ -882,23 +882,35 @@ button.t4s-product__description_readm:hover {
   margin-bottom: 7px;
 }
 
-/* Fix: Prevent hidden overlays from blocking Shop Pay touch events on mobile */
+/* Fix: Prevent hidden overlays/sheets from blocking touch events on mobile */
 .vpc-drawer-overlay,
-.vpc-mobile-sheet-overlay {
-  pointer-events: none;
+.vpc-mobile-sheet-overlay,
+.vpc-mobile-sheet:not(.is-open),
+.vpc-drawer:not(.is-open) {
+  pointer-events: none !important;
 }
 .vpc-drawer-overlay.is-visible,
-.vpc-mobile-sheet-overlay.is-visible {
-  pointer-events: auto;
+.vpc-mobile-sheet-overlay.is-visible,
+.vpc-mobile-sheet.is-open,
+.vpc-drawer.is-open {
+  pointer-events: auto !important;
 }
 
-/* Fix: Eliminate double-tap requirement for Shop Pay on mobile */
+/* Fix: Eliminate double-tap requirement for buttons on mobile */
 .shopify-payment-button,
 .shopify-payment-button__button,
 .shopify-payment-button__button--branded,
 .shopify-payment-button__button--unbranded,
 .t4s-product-form__buttons,
-.t4s-product-form__submit {
+.t4s-product-form__submit,
+.t4s-product-form__variants {
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 767px) {
+  .shopify-payment-button iframe {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 2;
+  }
 }
