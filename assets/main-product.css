@@ -891,3 +891,14 @@ button.t4s-product__description_readm:hover {
 .vpc-mobile-sheet-overlay.is-visible {
   pointer-events: auto;
 }
+
+/* Fix: Eliminate double-tap requirement for Shop Pay on mobile */
+.shopify-payment-button,
+.shopify-payment-button__button,
+.shopify-payment-button__button--branded,
+.shopify-payment-button__button--unbranded,
+.t4s-product-form__buttons,
+.t4s-product-form__submit {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
