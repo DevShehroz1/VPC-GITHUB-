@@ -299,7 +299,7 @@
       "settings": {
         "pr_layout": "default",
         "enable_sticky_info": true,
-        "media_layout": "two_columns",
+        "media_layout": "thumbnails_bottom",
         "media_size": "large",
         "thumb_lr_size": "medium",
         "image_ratio": "ratioadapt",
