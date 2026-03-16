@@ -882,30 +882,35 @@ button.t4s-product__description_readm:hover {
   margin-bottom: 7px;
 }
 
-/* Fix: Prevent hidden overlays/sheets from blocking touch events on mobile */
-.vpc-drawer-overlay,
-.vpc-mobile-sheet-overlay,
+/* Fix: Force-hide overlays/sheets so they cannot block touch events on mobile */
+.vpc-drawer-overlay:not(.is-visible),
+.vpc-mobile-sheet-overlay:not(.is-visible) {
+  display: none !important;
+}
 .vpc-mobile-sheet:not(.is-open),
 .vpc-drawer:not(.is-open) {
-  pointer-events: none !important;
-}
-.vpc-drawer-overlay.is-visible,
-.vpc-mobile-sheet-overlay.is-visible,
-.vpc-mobile-sheet.is-open,
-.vpc-drawer.is-open {
-  pointer-events: auto !important;
+  display: none !important;
 }
 
 /* Fix: Eliminate double-tap requirement for buttons on mobile */
-.shopify-payment-button,
-.shopify-payment-button__button,
-.shopify-payment-button__button--branded,
-.shopify-payment-button__button--unbranded,
-.t4s-product-form__buttons,
-.t4s-product-form__submit,
-.t4s-product-form__variants {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+@media (hover: none) and (pointer: coarse) {
+  .shopify-payment-button,
+  .shopify-payment-button__button,
+  .shopify-payment-button__button--branded,
+  .shopify-payment-button__button--unbranded,
+  .t4s-product-form__buttons,
+  .t4s-product-form__submit,
+  .t4s-product-form__variants,
+  .t4s-product-form__buttons * {
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  .t4s-product-form__buttons .shopify-payment-button__button--unbranded:hover,
+  .t4s-product-form__buttons .shopify-payment-button__more-options:hover {
+    color: inherit;
+    background-color: inherit;
+  }
 }
 @media (max-width: 767px) {
   .shopify-payment-button iframe {
