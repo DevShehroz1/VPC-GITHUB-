@@ -1,6 +1,12 @@
 .t4s_ratio.t4s-product__media {
   max-width: var(--mw-media);
   margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.t4s-product__thumb-item .t4s_ratio {
+  border-radius: 3px;
+  overflow: hidden;
 }
 /* Hover thumb 1 */
 .t4s-product__thumb-item:not(.is-nav-selected) {
