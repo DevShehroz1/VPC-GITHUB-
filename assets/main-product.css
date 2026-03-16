@@ -881,3 +881,13 @@ button.t4s-product__description_readm:hover {
   font-weight: 400;
   margin-bottom: 7px;
 }
+
+/* Fix: Prevent hidden overlays from blocking Shop Pay touch events on mobile */
+.vpc-drawer-overlay,
+.vpc-mobile-sheet-overlay {
+  pointer-events: none;
+}
+.vpc-drawer-overlay.is-visible,
+.vpc-mobile-sheet-overlay.is-visible {
+  pointer-events: auto;
+}
