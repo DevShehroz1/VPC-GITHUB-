@@ -894,93 +894,6 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
-    "sidebar": {
-      "type": "sidebar-product",
-      "blocks": {
-        "f01b181b-62ee-4735-8e25-32cb71ccfaba": {
-          "type": "category",
-          "settings": {
-            "title_category": "Product Categories",
-            "cat_source": "1",
-            "cat_link_list": "",
-            "count": true
-          }
-        },
-        "f65f464b-9487-43be-9c91-8688a098bb6f": {
-          "type": "collection",
-          "settings": {
-            "title_fea_pr": "Sale Products",
-            "collection": "frontpage",
-            "limit_pr": 5,
-            "image_ratio": "t4s_ratioadapt",
-            "image_size": "t4s_cover",
-            "image_position": "t4s_position_8"
-          }
-        },
-        "83340bb8-58d2-4148-89e2-a4c7a01cf792": {
-          "type": "instagram",
-          "settings": {
-            "title_ins": "Instagram",
-            "mode": "2",
-            "acc": "",
-            "limit": 12,
-            "open_link": "_blank",
-            "round": 0,
-            "col_dk": "3",
-            "space_item": "6"
-          }
-        },
-        "9ce9ded8-1cef-4e32-b98b-47364ffa328c": {
-          "type": "shipping",
-          "settings": {
-            "title": "Shipping & Delivery",
-            "shipping_1": "las la-truck,FREE SHIPPING,Free shipping for all US order",
-            "shipping_2": "las la-headset,SUPPORT 24/7,We support 24 hours a day",
-            "shipping_3": "las la-exchange-alt,30 DAYS RETURN,You have 30 days to return",
-            "shipping_4": "",
-            "shipping_5": "",
-            "shipping_6": ""
-          }
-        },
-        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6": {
-          "type": "image",
-          "settings": {
-            "b_link": "",
-            "open_link": "_self",
-            "img_effect": "none",
-            "date": "2022/12/26",
-            "content_align": "center",
-            "cdt_des": "2",
-            "countdown_pos": "2",
-            "cdt_size": "medium",
-            "box_bdr": 0,
-            "bd_width": 0,
-            "space_item": 10,
-            "number_cl": "#ffffff",
-            "text_cl": "#ffffff",
-            "border_cl": "#000000",
-            "bg_cl": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "f01b181b-62ee-4735-8e25-32cb71ccfaba",
-        "f65f464b-9487-43be-9c91-8688a098bb6f",
-        "83340bb8-58d2-4148-89e2-a4c7a01cf792",
-        "9ce9ded8-1cef-4e32-b98b-47364ffa328c",
-        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6"
-      ],
-      "disabled": true,
-      "settings": {
-        "enable_drawer": true,
-        "space": 50,
-        "size": "medium",
-        "br_style": "none",
-        "brcolor": "#222222",
-        "sidebar_bdr": 5,
-        "sidebar_pd": 10
-      }
-    },
     "1752688979c8d6e654": {
       "type": "apps",
       "blocks": {
@@ -1056,7 +969,6 @@
     "custom_liquid_vpc_faq_giftbox",
     "accordion_rHG3RG",
     "featured_collection_MpytB9",
-    "sidebar",
     "1752688979c8d6e654"
   ]
 }
