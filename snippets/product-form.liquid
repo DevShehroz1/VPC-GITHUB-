@@ -236,30 +236,6 @@
           {%- endif -%}
         </div>
         {%- if PR_buy_pr and type != 'main_sticky' %}{{- form | payment_button -}}{% endif -%}
-        {%- unless PR_buy_pr or type == 'main_sticky' -%}
-          {%- if isProductAvailable -%}
-          <button type="button" class="t4s-btn-buy-it-now t4s-w-100" data-buy-now-btn{% unless current_variant_available %} disabled="disabled"{% endunless %}>Buy it Now</button>
-          <script>
-          (function(){
-            var btn = document.querySelector('[data-buy-now-btn]');
-            if (!btn) return;
-            btn.addEventListener('click', function(){
-              if (btn.disabled) return;
-              var form = btn.closest('.t4s-product-form__variants').querySelector('form');
-              if (!form) return;
-              var id = form.querySelector('[name="id"]');
-              if (!id) return;
-              var qty = form.querySelector('[name="quantity"]');
-              fetch('/cart/add.js', {
-                method: 'POST',
-                headers: {'Content-Type':'application/json'},
-                body: JSON.stringify({items:[{id: parseInt(id.value), quantity: parseInt(qty ? qty.value : 1)}]})
-              }).then(function(){ window.location.href = '/checkout'; });
-            });
-          })();
-          </script>
-          {%- endif -%}
-        {%- endunless -%}
         {%- if settings.use_notify_me -%}<button data-class="t4s-mfp-btn-close-inline" data-id="t4s-pr-popup__notify-stock" data-storageid="notify-stock{{ current_variant.id }}" data-mfp-src data-open-mfp-ajax class="t4s-pr__notify-stock" type="button" data-notify-stock-btn data-variant-id="{{ current_variant.id }}" data-root-url="{{ routes.root_url }}"{% if current_variant_available or current_variant == blank %} style="display: none"{% endif %}>{{ 'products.notify_stock.trigger' | t }}</button>{%- endif -%}
       </div>
     {%- endform -%}
