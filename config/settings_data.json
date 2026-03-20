@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "purchase_code": "Anything",
@@ -129,7 +138,7 @@
           "b3c6ceca-2d54-4a14-b482-bb86cbf25f08": {
             "type": "copyR",
             "settings": {
-              "text": "<center>Copyright \u00a9 [year] Vibes Pearled Candle. Designed by <a href=\"https://www.instagram.com/fluxventures.pk/\">Flux Ventures</a> </center>",
+              "text": "<center>Copyright © [year] Vibes Pearled Candle. Designed by <a href=\"https://www.instagram.com/fluxventures.pk/\">Flux Ventures</a> </center>",
               "mgb": 0,
               "mgb_mb": 0
             }
@@ -424,9 +433,8 @@
           "use_gradient": false,
           "bg_color": "#34150c",
           "text_color": "#ffffff",
-          "text_1": "\ud83d\ude9a Free Fast Delivery",
-          "text_2": "\ud83c\udff7\ufe0f Save Extra 10% Today",
-          "text_3": "\u2b50 10,000+ Happy Customers"
+          "text_1": "🚚 Free Fast Delivery",
+          "text_3": "⭐ 10,000+ Happy Customers"
         }
       },
       "top-bar": {

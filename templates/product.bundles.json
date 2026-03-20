@@ -7,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-
 {
   "sections": {
     "breadcrumb": {
@@ -304,8 +303,8 @@
         "media_layout": "thumbnails_bottom",
         "media_size": "large",
         "thumb_lr_size": "medium",
-        "image_ratio": "ratioadapt",
-        "image_size": "contain",
+        "image_ratio": "rationt",
+        "image_size": "cover",
         "image_position": "default",
         "main_click": "none",
         "zoom_tp": "inner",
