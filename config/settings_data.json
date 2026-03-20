@@ -1733,14 +1733,6 @@
               "price_sale_color": "#ec0101"
             }
           },
-          "main-qv-2": {
-            "type": "description",
-            "settings": {
-              "des": "2",
-              "text": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
-              "length": 31
-            }
-          },
           "main-qv-3": {
             "type": "form",
             "settings": {
@@ -1766,7 +1758,7 @@
               "compare_color": "#222222",
               "compare_color_hover": "#56cfe1",
               "compare_color_active": "#222222",
-              "show_dynamic_checkout": true,
+              "show_dynamic_checkout": false,
               "btn_txt2": "3",
               "button_color_payment": "dark",
               "show_gift_card_recipient": true,
@@ -1776,60 +1768,12 @@
               "advance_label": "Choose style",
               "advance_pr_list": []
             }
-          },
-          "main-qv-4": {
-            "type": "size_delivery_ask",
-            "settings": {
-              "size_chart": "3",
-              "pos_sizeg": "1",
-              "sc_type": "1",
-              "page": "size-chart",
-              "size_ck": "",
-              "delivery": true,
-              "page_dr": "delivery-return",
-              "ask": true,
-              "phone": true
-            }
-          },
-          "main-qv-5": {
-            "type": "meta",
-            "settings": {
-              "show_options": true,
-              "show_vendor": false,
-              "show_type": false,
-              "show_sku": true,
-              "show_barcode": false,
-              "show_available": true,
-              "show_category": true,
-              "show_tags": true
-            }
-          },
-          "main-qv-6": {
-            "type": "social",
-            "settings": {
-              "socials_align": "start",
-              "social_mode": "2",
-              "social_style": "1",
-              "social_size": "extra_small",
-              "bd_radius": 0,
-              "use_color_set": true,
-              "icon_cl": "#222222",
-              "bg_cl": "#56cfe1",
-              "space_h_item": "20",
-              "space_v_item": "5",
-              "space_h_item_mb": "6",
-              "space_v_item_mb": "2"
-            }
           }
         },
         "block_order": [
           "main-qv-0",
           "main-qv-1",
-          "main-qv-2",
-          "main-qv-3",
-          "main-qv-4",
-          "main-qv-5",
-          "main-qv-6"
+          "main-qv-3"
         ],
         "settings": {
           "demo_pr": "",
