@@ -209,7 +209,7 @@
           "disabled": true,
           "settings": {
             "title": "Burn Time",
-            "content": "<p><strong>19 oz Candle:</strong> Our 19 oz candles are provided with 20 wicks.</p><p>Each Wick burns for 12 hrs.</p>",
+            "content": "<p>Our 11 oz candles are provided with 15 wicks, while the 19 oz candles are provided with 20 wicks.</p><p>Each Wick burns for 12 hrs.</p>",
             "page": ""
           }
         },
@@ -636,7 +636,7 @@
           "settings": {
             "icon": "none",
             "title": "4. How long do the candles burn?",
-            "content": "<p><strong>19 oz Candle:</strong> Our 19 oz candles are provided with 20 wicks.</p><p>Each Wick burns for 12 hrs.</p>"
+            "content": "<p>Our 11 oz candles are provided with 15 wicks, while the 19 oz candles are provided with 20 wicks.</p><p>Each Wick burns for 12 hrs.</p>"
           }
         },
         "accor_item_PgjdKf": {
