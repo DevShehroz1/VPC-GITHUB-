@@ -1,1 +1,254 @@
-{"sections":{"heading":{"type":"heading-template","blocks":{"ba0c8e30-c11a-4ab7-97c4-4acc1a053a3e":{"type":"1","settings":{"heading":"FAQ","fontf":"inherit","text_cl":"#34150c","text_fs":29,"text_lh":20,"text_fw":700,"text_ls":0,"font_italic":false,"font_uppercase":false,"text_shadow":false,"text_mgb":15,"hidden_mobile":false,"text_fs_mb":20,"text_lh_mb":20,"text_ls_mb":0,"text_mgb_mobile":10}},"2_MExDfW":{"type":"2","settings":{"content":"<p>Welcome to our FAQ, we are so happy to have you here and as a client.<br\/>We have tried to answer the most common questions.<\/p>","fontf":"inherit","text_cl":"#34150c","text_fs":16,"text_lh":0,"text_fw":400,"text_ls":0,"font_italic":false,"font_uppercase":false,"text_shadow":false,"text_mgb":0,"hidden_mobile":false,"text_fs_mb":16,"text_lh_mb":0,"text_ls_mb":0,"text_mgb_mobile":0}}},"block_order":["ba0c8e30-c11a-4ab7-97c4-4acc1a053a3e","2_MExDfW"],"settings":{"heading_fullwidth":false,"use_specify_image":true,"parallax":false,"color":"#fae9d4","overlay":100,"padding":18,"paddingmb":18,"mg_b":70,"mg_bmb":50,"content_align":"t4s-text-center","bg_pos":"center center","bg_repeat":"no-repeat","bg_size":"cover","use_cus_css":false,"code_cus_css":".SectionID {\nbackground-color:red\n}"}},"main":{"type":"main-page","disabled":true,"settings":{"layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":"60px,,60px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"sidebar-page":{"type":"sidebar-page","blocks":{"f69681ed-b75e-42de-be58-fdf73b3b7e08":{"type":"blog_cate","settings":{"title":"Blog categories","cat_link_list":"","count":true}}},"block_order":["f69681ed-b75e-42de-be58-fdf73b3b7e08"],"disabled":true,"settings":{"enable_drawer":false,"space":50,"size":"medium","br_style":"none","brcolor":"#222222","sidebar_bdr":5,"sidebar_pd":10}},"165214825814e830e7":{"type":"accordion","blocks":{"1652148258305a99c1-0":{"type":"accor_item","settings":{"icon":"none","title":"1. How do Vibes Pearled Candles work?","content":"<p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.<\/p>"}},"1652148258305a99c1-1":{"type":"accor_item","settings":{"icon":"none","title":"2. Are the pearled candles refillable?","content":"<p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.<\/p>"}},"1652148258305a99c1-2":{"type":"accor_item","settings":{"icon":"none","title":"3. What are the wax Pearls made from?","content":"<p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.<\/p>"}},"0c4e86da-f870-4d3c-abce-b988cae18d6c":{"type":"accor_item","settings":{"icon":"none","title":"4. How long do the candles burn?","content":"<p>Our 11 oz candles are provided with 15 wicks, while the 19 oz candles are provided with 20 wicks.<\/p><p>Each Wick burns for 12 hrs.<\/p>"}},"cb973ab0-b192-4c97-b7ba-6b8acbf93e5f":{"type":"accor_item","settings":{"icon":"none","title":"5. Why can’t I smell the fragrance when burning?","content":"<p>Our fragrances are designed to be subtle and calming, not overpowering. If you’re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.<\/p>"}},"f9fbcebb-a809-4cca-8806-c102d1de1c0b":{"type":"accor_item","settings":{"icon":"none","title":"6. Are your pearled candles safe for pets?","content":"<p>Yes, our candles are made with non-toxic ingredients, but we recommend keeping them out of reach of pets and never leaving a burning candle unattended.<\/p>"}},"9aa601e3-a39f-431e-aaa9-de35ae6945fb":{"type":"accor_item","settings":{"icon":"none","title":"7. Do your pearled candles produce soot?","content":"<p>Not at all! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton\/wood wicks.<\/p>"}},"15f6d610-63c6-4503-8a7f-4a1774dcf9ed":{"type":"accor_item","settings":{"icon":"none","title":"8. Where can I buy pearled candle refills?","content":"<p>You can get additional Pearls, wicks, and accessories directly from our website!<\/p>"}},"accor_item_DY9JCr":{"type":"accor_item","settings":{"icon":"none","title":"9. Are the pearled candles safe to use?","content":"<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:<\/p><ul><li>Keep away from flammable objects<\/li><li>Don’t leave burning candles unattended<\/li><li>Trim the wick to 5mm before each use<\/li><\/ul>"}},"accor_item_Y4QyPG":{"type":"accor_item","settings":{"icon":"none","title":"10. Do you offer international shipping?","content":"<p>Currently, we ship within the USA, but we’re working on expanding internationally. Stay tuned!<\/p>"}}},"block_order":["1652148258305a99c1-0","1652148258305a99c1-1","1652148258305a99c1-2","0c4e86da-f870-4d3c-abce-b988cae18d6c","cb973ab0-b192-4c97-b7ba-6b8acbf93e5f","f9fbcebb-a809-4cca-8806-c102d1de1c0b","9aa601e3-a39f-431e-aaa9-de35ae6945fb","15f6d610-63c6-4503-8a7f-4a1774dcf9ed","accor_item_DY9JCr","accor_item_Y4QyPG"],"settings":{"design_heading":"1","heading_align":"t4s-text-center","top_heading":"","icon_heading":"las la-gem","top_subheading":"","tophead_mb":30,"accor_des":"1","title_cl":"#222222","bg_title_cl":"#f6f6f8","title_active_cl":"#34150c","bg_title_active_cl":"#f6f6f8","content_cl":"#878787","bg_content_cl":"#ffffff","content_align":"t4s-text-start","auto_active":true,"layout":"t4s-container-wrap","custom_width":1000,"cl_bg":"","cl_bg_gradient":"","mg":",,80px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":"","use_cus_css":false,"code_cus_css":".SectionID {\nbackground-color:red\n}"}}},"order":["heading","main","sidebar-page","165214825814e830e7"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "heading": {
+      "type": "heading-template",
+      "blocks": {
+        "ba0c8e30-c11a-4ab7-97c4-4acc1a053a3e": {
+          "type": "1",
+          "settings": {
+            "heading": "FAQ",
+            "fontf": "inherit",
+            "text_cl": "#34150c",
+            "text_fs": 29,
+            "text_lh": 20,
+            "text_fw": 700,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 15,
+            "hidden_mobile": false,
+            "text_fs_mb": 20,
+            "text_lh_mb": 20,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        },
+        "2_MExDfW": {
+          "type": "2",
+          "settings": {
+            "content": "<p>Welcome to our FAQ, we are so happy to have you here and as a client.<br/>We have tried to answer the most common questions.</p>",
+            "fontf": "inherit",
+            "text_cl": "#34150c",
+            "text_fs": 16,
+            "text_lh": 0,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 0,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "ba0c8e30-c11a-4ab7-97c4-4acc1a053a3e",
+        "2_MExDfW"
+      ],
+      "settings": {
+        "heading_fullwidth": false,
+        "use_specify_image": true,
+        "parallax": false,
+        "color": "#fae9d4",
+        "overlay": 100,
+        "padding": 18,
+        "paddingmb": 18,
+        "mg_b": 70,
+        "mg_bmb": 50,
+        "content_align": "t4s-text-center",
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "60px,,60px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "sidebar-page": {
+      "type": "sidebar-page",
+      "blocks": {
+        "f69681ed-b75e-42de-be58-fdf73b3b7e08": {
+          "type": "blog_cate",
+          "settings": {
+            "title": "Blog categories",
+            "cat_link_list": "",
+            "count": true
+          }
+        }
+      },
+      "block_order": [
+        "f69681ed-b75e-42de-be58-fdf73b3b7e08"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_drawer": false,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 5,
+        "sidebar_pd": 10
+      }
+    },
+    "165214825814e830e7": {
+      "type": "accordion",
+      "blocks": {
+        "1652148258305a99c1-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "1. How do Vibes Pearled Candles work?",
+            "content": "<p>Our Pearled candles are designed for customization and sustainability. Simply pour the Pearls into a heat-resistant container, insert the wick, and light it. As the Pearls melt, they create an even burn. Once used, just add more Pearls and trim the wick to keep your candle going.</p>"
+          }
+        },
+        "1652148258305a99c1-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "2. Are the pearled candles refillable?",
+            "content": "<p>Yes! Unlike traditional candles that burn down and get tossed, our pearled candles can be refilled indefinitely. Just top up with fresh Pearls, replace the wick, and continue enjoying your candle.</p>"
+          }
+        },
+        "1652148258305a99c1-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "3. What are the wax Pearls made from?",
+            "content": "<p>Our candles are crafted from 100% plant-based wax, making them non-toxic and eco-friendly. We use lead-free cotton wicks and mild, high-quality fragrance oils to create a clean, balanced scent without overpowering your space.</p>"
+          }
+        },
+        "0c4e86da-f870-4d3c-abce-b988cae18d6c": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "4. How long do the candles burn?",
+            "content": "<p>Our 11 oz candles are provided with 15 wicks, while the 19 oz candles are provided with 20 wicks.</p><p>Each Wick burns for 12 hrs.</p>"
+          }
+        },
+        "cb973ab0-b192-4c97-b7ba-6b8acbf93e5f": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "5. Why can’t I smell the fragrance when burning?",
+            "content": "<p>Our fragrances are designed to be subtle and calming, not overpowering. If you’re having trouble smelling the scent, try burning the candle in a smaller room or ensuring the wax pool is fully melted.</p>"
+          }
+        },
+        "f9fbcebb-a809-4cca-8806-c102d1de1c0b": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "6. Are your pearled candles safe for pets?",
+            "content": "<p>Yes, our candles are made with non-toxic ingredients, but we recommend keeping them out of reach of pets and never leaving a burning candle unattended.</p>"
+          }
+        },
+        "9aa601e3-a39f-431e-aaa9-de35ae6945fb": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "7. Do your pearled candles produce soot?",
+            "content": "<p>Not at all! Our pearled candles burn cleanly without soot, thanks to our high-quality Pearls and cotton/wood wicks.</p>"
+          }
+        },
+        "15f6d610-63c6-4503-8a7f-4a1774dcf9ed": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "8. Where can I buy pearled candle refills?",
+            "content": "<p>You can get additional Pearls, wicks, and accessories directly from our website!</p>"
+          }
+        },
+        "accor_item_DY9JCr": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "9. Are the pearled candles safe to use?",
+            "content": "<p>Absolutely! Our pearled candles have clean ingredients that produce minimal to no smoke. Just follow basic candle safety:</p><ul><li>Keep away from flammable objects</li><li>Don’t leave burning candles unattended</li><li>Trim the wick to 5mm before each use</li></ul>"
+          }
+        },
+        "accor_item_Y4QyPG": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "10. Do you offer international shipping?",
+            "content": "<p>Currently, we ship within the USA, but we’re working on expanding internationally. Stay tuned!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1652148258305a99c1-0",
+        "1652148258305a99c1-1",
+        "1652148258305a99c1-2",
+        "0c4e86da-f870-4d3c-abce-b988cae18d6c",
+        "cb973ab0-b192-4c97-b7ba-6b8acbf93e5f",
+        "f9fbcebb-a809-4cca-8806-c102d1de1c0b",
+        "9aa601e3-a39f-431e-aaa9-de35ae6945fb",
+        "15f6d610-63c6-4503-8a7f-4a1774dcf9ed",
+        "accor_item_DY9JCr",
+        "accor_item_Y4QyPG"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#34150c",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "sidebar-page",
+    "165214825814e830e7"
+  ]
+}
