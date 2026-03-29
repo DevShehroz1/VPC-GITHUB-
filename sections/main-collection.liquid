@@ -42,6 +42,15 @@
       width: clamp(4rem, 35vw, 6.5rem);
     }
   }
+
+  /* Tighten spacing */
+  #shopify-section-{{ section.id }} {
+    margin-top: 0 !important;
+  }
+  #shopify-section-{{ section.id }} .t4s-collection-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 </style>
 {%- liquid 
   assign se_blocks = section.blocks
@@ -266,7 +275,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      margin: 0 0 16px;
+      margin: 8px 0 12px;
       padding: 0;
     }
     .plant-wax-section {
