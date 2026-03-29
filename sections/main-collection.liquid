@@ -245,6 +245,21 @@
     {%- if show_filter and style_filters == 'area' %}<div class="t4s-filter-area" data-filter-area></div>{% endif -%}
   {%- endif -%}
   
+  <!-- Filter & Sort background override -->
+  <style>
+    #shopify-section-{{ section.id }} ~ .t4s-drawer,
+    .t4s-drawer[aria-hidden="false"] {
+      background-color: #FAE9D5;
+    }
+    .t4s-dropdown__wrapper,
+    .t4s-dropdown__wrapper.is--opened {
+      background-color: #FAE9D5;
+    }
+    .t4s-drop-arrow {
+      background-color: #FAE9D5;
+    }
+  </style>
+
   <!-- Plant Wax Info Section -->
   <style>
     .plant-wax-wrapper {
