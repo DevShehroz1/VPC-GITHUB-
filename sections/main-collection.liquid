@@ -251,45 +251,56 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      margin-bottom: 20px;
+      margin: 0 0 16px;
+      padding: 0;
     }
-
     .plant-wax-section {
       background-color: #fae9d4;
-      padding: 8px 12px;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
-      gap: 10px;
-      justify-content: center;
+      gap: 14px;
+      border-radius: 10px;
+      width: 100%;
     }
-
     .plant-wax-icon {
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 34px;
       flex-shrink: 0;
+      object-fit: contain;
     }
-
     .plant-wax-text {
       font-family: 'Poppins', sans-serif;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 20px;
       letter-spacing: 0;
       color: #3C1E1E;
-      text-align: center;
+    }
+    @media (max-width: 767px) {
+      .plant-wax-wrapper {
+        margin: 0 0 12px;
+      }
+      .plant-wax-section {
+        padding: 12px 16px;
+        gap: 12px;
+        border-radius: 8px;
+      }
+      .plant-wax-icon {
+        width: 30px;
+        height: 30px;
+      }
+      .plant-wax-text {
+        font-size: 13px;
+        line-height: 18px;
+      }
     }
   </style>
 
   <div class="plant-wax-wrapper">
     <div class="plant-wax-section">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Group_175.png?v=1754244809"
-        alt="Plant-based Wax Icon"
-        class="plant-wax-icon"
-      >
-      <div class="plant-wax-text">
-        Crafted from clean, plant-based wax.<br>No toxins—just calm.
-      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Group_175.png?v=1754244809" alt="Plant-based Wax Icon" class="plant-wax-icon">
+      <div class="plant-wax-text">Crafted from clean, plant-based wax. No toxins—just calm.</div>
     </div>
   </div>
   
