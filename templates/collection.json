@@ -1,1 +1,469 @@
-{"sections":{"collections_list_carousel_YFHDhC":{"type":"collections-list-carousel","blocks":{"collection_item_p7Km7N":{"type":"collection_item","settings":{"collection":"pearled-candles","image":"shopify://shop_images/pearled_candles.png","collection_title":"Pearled Candle","collection_link":""}},"collection_item_MFafHk":{"type":"collection_item","settings":{"collection":"bundles","image":"shopify://shop_images/bundles.png","collection_title":"Bundles","collection_link":""}},"collection_item_TDt4eD":{"type":"collection_item","settings":{"collection":"essential-oils","image":"shopify://shop_images/essential_oils.png","collection_title":"Essential Oil","collection_link":""}},"collection_item_dqUAAm":{"type":"collection_item","settings":{"collection":"shop-by-gifting","image":"shopify://shop_images/accessories.png","collection_title":"Accessories","collection_link":""}},"collection_item_ThfLAR":{"type":"collection_item","settings":{"collection":"vessels","image":"shopify://shop_images/bases.png","collection_title":"Accessories","collection_link":""}},"collection_item_6p8th3":{"type":"collection_item","settings":{"collection":"best-sellers","image":"shopify://shop_images/bestsellers.png","collection_title":"Accessories","collection_link":""}},"collection_item_79YdgX":{"type":"collection_item","settings":{"collection":"gifts","image":"shopify://shop_images/gifts_deals.png","collection_title":"Accessories","collection_link":""}}},"block_order":["collection_item_p7Km7N","collection_item_MFafHk","collection_item_TDt4eD","collection_item_dqUAAm","collection_item_ThfLAR","collection_item_6p8th3","collection_item_79YdgX"],"name":"Collections carousel","settings":{"show_on":"show_all","design_heading":"1","heading_align":"t4s-text-center","top_heading":"","icon_heading":"las la-gem","top_subheading":"","tophead_mb":30,"title_fs":10,"title_fw":500,"title_cl":"#222222","title_cl_hover":"#34150c","open_link":"_self","image_rd":false,"img_effect":"none","col_dk":"4","col_tb":"4","col_mb":"4","space_h_item":"30","space_h_item_mb":"10","loop":false,"au_time":0,"au_hover":true,"scrollbar":false,"nav_btn":false,"btn_pos":"default","btn_vi":"hover","btn_owl":"default","btn_shape":"none","btn_cl":"dark","btn_size":"small","btn_hidden_mobile":false,"nav_dot":true,"dot_owl":"elessi","dots_cl":"primary","dots_round":true,"dots_space":10,"dots_hidden_mobile":false,"layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,20px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,10px,","pd_mb":"","use_cus_css":false,"code_cus_css":""}},"top":{"type":"top-collections","blocks":{"69bbe0dd-0a50-42e8-986b-0d5e6c5cfa67":{"type":"cat","settings":{"collection":"default-3","icon":""}},"863873b6-012e-4a34-90e3-eead750fa3ce":{"type":"cat","settings":{"collection":"bag","icon":""}},"fc07bff9-6d08-423c-8802-9a03c34f3a31":{"type":"cat","settings":{"collection":"decor","icon":""}},"a286cc0b-0c90-4b1a-862c-a1136f283aac":{"type":"cat","settings":{"collection":"default-2","icon":""}},"23c84729-8fcb-488c-9541-00e283af6afe":{"type":"cat","settings":{"collection":"dress","icon":""}},"5f1d751a-fdac-43d4-ad9d-55da0c297244":{"type":"cat","settings":{"collection":"hats","icon":""}},"0f0e1f7c-788c-46c0-9fb4-1ec7ce88da01":{"type":"cat","settings":{"collection":"frontpage","icon":""}},"70189b51-5562-4924-b642-a1deba7741ee":{"type":"cat","settings":{"collection":"sale","icon":""}},"560f5822-3eeb-4070-a2cd-b5738881a4c1":{"type":"cat","settings":{"collection":"shoes","icon":""}},"be9b8b8f-6cac-47ab-b809-a2fe640a75a7":{"type":"cat","settings":{"collection":"women","icon":""}}},"block_order":["69bbe0dd-0a50-42e8-986b-0d5e6c5cfa67","863873b6-012e-4a34-90e3-eead750fa3ce","fc07bff9-6d08-423c-8802-9a03c34f3a31","a286cc0b-0c90-4b1a-862c-a1136f283aac","23c84729-8fcb-488c-9541-00e283af6afe","5f1d751a-fdac-43d4-ad9d-55da0c297244","0f0e1f7c-788c-46c0-9fb4-1ec7ce88da01","70189b51-5562-4924-b642-a1deba7741ee","560f5822-3eeb-4070-a2cd-b5738881a4c1","be9b8b8f-6cac-47ab-b809-a2fe640a75a7"],"disabled":true,"settings":{"show_top_collections":true,"source":"1","menu":"main-menu","sort_collections":"alphabetical_reversed","box_border":"top","content_align":"center","hidden_mobile":false,"space_item":30,"fontf":"inherit","text_cl":"#222222","text_cl_hover":"#56cfe1","text_fs":14,"text_lh":45,"text_fw":400,"text_ls":0,"font_italic":false,"nav_btn":true,"layout":"t4s-container-fluid","cl_bg":"","cl_bg_gradient":"","mg":"","pd":"","mg_tb":"","pd_tb":"","mg_mb":"","pd_mb":""}},"heading_template":{"type":"heading-template","blocks":{"a61b5459-0dd8-4796-a9c8-e3f1ee42dfb9":{"type":"1","settings":{"heading":"Page Heading","fontf":"1","text_cl":"#34150c","text_fs":28,"text_lh":0,"text_fw":700,"text_ls":0,"font_italic":false,"font_uppercase":false,"text_shadow":false,"text_mgb":5,"hidden_mobile":false,"text_fs_mb":22,"text_lh_mb":0,"text_ls_mb":0,"text_mgb_mobile":5}},"e9f249a0-0a0f-4baf-9664-73babbd7bbe7":{"type":"4","disabled":true,"settings":{"design_des":"show_all","length":60,"view_more":true,"viewm_txt":"View more","fontf":"inherit","text_cl":"#ffffff","text_fs":16,"text_lh":24,"text_fw":400,"text_ls":0,"font_italic":false,"font_uppercase":false,"text_shadow":false,"text_mgb":20,"hidden_mobile":false,"text_fs_mb":16,"text_lh_mb":0,"text_ls_mb":0,"text_mgb_mobile":10}}},"block_order":["a61b5459-0dd8-4796-a9c8-e3f1ee42dfb9","e9f249a0-0a0f-4baf-9664-73babbd7bbe7"],"settings":{"heading_fullwidth":false,"use_specify_image":true,"parallax":true,"color":"#fae9d4","overlay":100,"padding":10,"paddingmb":0,"mg_b":0,"mg_bmb":0,"content_align":"t4s-text-center","bg_pos":"left center","bg_repeat":"inherit","bg_size":"auto","use_cus_css":false,"code_cus_css":".SectionID {\nbackground-color:red\n}"}},"main":{"type":"main-collection","blocks":{"filter_id":{"type":"filter","settings":{"style_filters":"sidebar"}},"custom_liquid_kQybdd":{"type":"custom_liquid","settings":{"custom_liquid_code":"<style>\n  .plant-wax-wrapper {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    margin: 0 0 4px;\n  }\n  .plant-wax-section {\n    background-color: #fae9d4;\n    padding: 14px 20px;\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    border-radius: 10px;\n    width: 100%;\n  }\n  .plant-wax-icon {\n    width: 34px;\n    height: 34px;\n    flex-shrink: 0;\n    object-fit: contain;\n  }\n  .plant-wax-text {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 20px;\n    letter-spacing: 0;\n    color: #3C1E1E;\n  }\n  @media (max-width: 767px) {\n    .plant-wax-section {\n      padding: 12px 16px;\n      gap: 12px;\n      border-radius: 8px;\n    }\n    .plant-wax-icon {\n      width: 30px;\n      height: 30px;\n    }\n    .plant-wax-text {\n      font-size: 13px;\n      line-height: 18px;\n    }\n  }\n</style>\n\n<div class=\"plant-wax-wrapper\">\n  <div class=\"plant-wax-section\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Vector_1.png?v=1753273532\" alt=\"Plant-based Wax Icon\" class=\"plant-wax-icon\">\n    <div class=\"plant-wax-text\">Crafted from clean, plant-based wax. No toxins—just calm.</div>\n  </div>\n</div>"},"disabled":true},"30594d23-d644-4653-9545-9ff769d2e6ab":{"type":"sortby","settings":{}}},"block_order":["filter_id","custom_liquid_kQybdd","30594d23-d644-4653-9545-9ff769d2e6ab"],"settings":{"show_desc":false,"position_desc":"2","product_des":"8","show_vendor":false,"use_cdt":true,"image_ratio":"ratio1_1","image_size":"cover","image_position":"8","content_align":"center","limit":12,"enable_listing":false,"enable_listing_default":true,"col_dk":"4","col_tb":"2","col_mb":"2","space_h_item":"30","space_v_item":"30","space_h_item_mb":"10","space_v_item_mb":"10","layout_des":"1","use_pagination":"infinite","enable_bar_lm":true,"btn_icon":false,"button_style":"outline","btns_size":"large","btns_cl":"primary","button_effect":"sweep-to-right","btn_pos":"t4s-text-center","type_filters":"facets","layout":"t4s-container-wrap","cl_bg":"","cl_bg_gradient":"","mg":",,50px,","pd":"","mg_tb":"","pd_tb":"","mg_mb":",,30px,","pd_mb":""}},"sidebar":{"type":"sidebar-collection","blocks":{"c7bdf308-8019-4991-b58c-6d3e205a52eb":{"type":"category","settings":{"heading":"Product Categories","cat_source":"1","cat_link_list":"","count":true}},"9d37e80a-1eda-4a65-bb08-199e6a933a16":{"type":"collection","settings":{"heading":"Sale Products","collection":"frontpage","limit_pr":3,"image_ratio":"t4s_ratioadapt","image_size":"t4s_cover","image_position":"t4s_position_8"}},"c090f36e-d6ef-4a2a-ab04-cc78211dadb7":{"type":"image","settings":{"heading":"","img_effect":"zoom","b_link":"","open_link":"_self","content_align":"center","date":"2023/12/26","cdt_des":"1","countdown_pos":"2","cdt_size":"small","box_bdr":0,"bd_width":0,"space_item":10,"number_cl":"#ffffff","text_cl":"#222222","border_cl":"#000000","bg_cl":"#000000"}},"221aa22f-5c6c-40c9-9403-6d3cd2c23e93":{"type":"filter","settings":{}}},"block_order":["c7bdf308-8019-4991-b58c-6d3e205a52eb","9d37e80a-1eda-4a65-bb08-199e6a933a16","c090f36e-d6ef-4a2a-ab04-cc78211dadb7","221aa22f-5c6c-40c9-9403-6d3cd2c23e93"],"disabled":true,"settings":{"enable_drawer":false,"space":50,"size":"medium","br_style":"none","brcolor":"#222222","sidebar_bdr":0,"sidebar_pd":15}}},"order":["collections_list_carousel_YFHDhC","top","heading_template","main","sidebar"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collections_list_carousel_YFHDhC": {
+      "type": "collections-list-carousel",
+      "blocks": {
+        "collection_item_p7Km7N": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pearled-candles",
+            "image": "shopify://shop_images/pearled_candles.png",
+            "collection_title": "Pearled Candle",
+            "collection_link": ""
+          }
+        },
+        "collection_item_MFafHk": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bundles",
+            "image": "shopify://shop_images/bundles.png",
+            "collection_title": "Bundles",
+            "collection_link": ""
+          }
+        },
+        "collection_item_TDt4eD": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "essential-oils",
+            "image": "shopify://shop_images/essential_oils.png",
+            "collection_title": "Essential Oil",
+            "collection_link": ""
+          }
+        },
+        "collection_item_dqUAAm": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "shop-by-gifting",
+            "image": "shopify://shop_images/accessories.png",
+            "collection_title": "Accessories",
+            "collection_link": ""
+          }
+        },
+        "collection_item_ThfLAR": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "vessels",
+            "image": "shopify://shop_images/bases.png",
+            "collection_title": "Accessories",
+            "collection_link": ""
+          }
+        },
+        "collection_item_6p8th3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "best-sellers",
+            "image": "shopify://shop_images/bestsellers.png",
+            "collection_title": "Accessories",
+            "collection_link": ""
+          }
+        },
+        "collection_item_79YdgX": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "gifts",
+            "image": "shopify://shop_images/gifts_deals.png",
+            "collection_title": "Accessories",
+            "collection_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_p7Km7N",
+        "collection_item_MFafHk",
+        "collection_item_TDt4eD",
+        "collection_item_dqUAAm",
+        "collection_item_ThfLAR",
+        "collection_item_6p8th3",
+        "collection_item_79YdgX"
+      ],
+      "name": "Collections carousel",
+      "settings": {
+        "show_on": "show_all",
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "title_fs": 10,
+        "title_fw": 500,
+        "title_cl": "#222222",
+        "title_cl_hover": "#34150c",
+        "open_link": "_self",
+        "image_rd": false,
+        "img_effect": "none",
+        "col_dk": "6",
+        "col_tb": "4",
+        "col_mb": "4",
+        "space_h_item": "30",
+        "space_h_item_mb": "10",
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "scrollbar": false,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "elessi",
+        "dots_cl": "primary",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,20px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,10px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "top": {
+      "type": "top-collections",
+      "blocks": {
+        "69bbe0dd-0a50-42e8-986b-0d5e6c5cfa67": {
+          "type": "cat",
+          "settings": {
+            "collection": "default-3",
+            "icon": ""
+          }
+        },
+        "863873b6-012e-4a34-90e3-eead750fa3ce": {
+          "type": "cat",
+          "settings": {
+            "collection": "bag",
+            "icon": ""
+          }
+        },
+        "fc07bff9-6d08-423c-8802-9a03c34f3a31": {
+          "type": "cat",
+          "settings": {
+            "collection": "decor",
+            "icon": ""
+          }
+        },
+        "a286cc0b-0c90-4b1a-862c-a1136f283aac": {
+          "type": "cat",
+          "settings": {
+            "collection": "default-2",
+            "icon": ""
+          }
+        },
+        "23c84729-8fcb-488c-9541-00e283af6afe": {
+          "type": "cat",
+          "settings": {
+            "collection": "dress",
+            "icon": ""
+          }
+        },
+        "5f1d751a-fdac-43d4-ad9d-55da0c297244": {
+          "type": "cat",
+          "settings": {
+            "collection": "hats",
+            "icon": ""
+          }
+        },
+        "0f0e1f7c-788c-46c0-9fb4-1ec7ce88da01": {
+          "type": "cat",
+          "settings": {
+            "collection": "frontpage",
+            "icon": ""
+          }
+        },
+        "70189b51-5562-4924-b642-a1deba7741ee": {
+          "type": "cat",
+          "settings": {
+            "collection": "sale",
+            "icon": ""
+          }
+        },
+        "560f5822-3eeb-4070-a2cd-b5738881a4c1": {
+          "type": "cat",
+          "settings": {
+            "collection": "shoes",
+            "icon": ""
+          }
+        },
+        "be9b8b8f-6cac-47ab-b809-a2fe640a75a7": {
+          "type": "cat",
+          "settings": {
+            "collection": "women",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "69bbe0dd-0a50-42e8-986b-0d5e6c5cfa67",
+        "863873b6-012e-4a34-90e3-eead750fa3ce",
+        "fc07bff9-6d08-423c-8802-9a03c34f3a31",
+        "a286cc0b-0c90-4b1a-862c-a1136f283aac",
+        "23c84729-8fcb-488c-9541-00e283af6afe",
+        "5f1d751a-fdac-43d4-ad9d-55da0c297244",
+        "0f0e1f7c-788c-46c0-9fb4-1ec7ce88da01",
+        "70189b51-5562-4924-b642-a1deba7741ee",
+        "560f5822-3eeb-4070-a2cd-b5738881a4c1",
+        "be9b8b8f-6cac-47ab-b809-a2fe640a75a7"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_top_collections": true,
+        "source": "1",
+        "menu": "main-menu",
+        "sort_collections": "alphabetical_reversed",
+        "box_border": "top",
+        "content_align": "center",
+        "hidden_mobile": false,
+        "space_item": 30,
+        "fontf": "inherit",
+        "text_cl": "#222222",
+        "text_cl_hover": "#56cfe1",
+        "text_fs": 14,
+        "text_lh": 45,
+        "text_fw": 400,
+        "text_ls": 0,
+        "font_italic": false,
+        "nav_btn": true,
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "heading_template": {
+      "type": "heading-template",
+      "blocks": {
+        "a61b5459-0dd8-4796-a9c8-e3f1ee42dfb9": {
+          "type": "1",
+          "settings": {
+            "heading": "Page Heading",
+            "fontf": "1",
+            "text_cl": "#34150c",
+            "text_fs": 28,
+            "text_lh": 0,
+            "text_fw": 700,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 5,
+            "hidden_mobile": false,
+            "text_fs_mb": 22,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 5
+          }
+        },
+        "e9f249a0-0a0f-4baf-9664-73babbd7bbe7": {
+          "type": "4",
+          "disabled": true,
+          "settings": {
+            "design_des": "show_all",
+            "length": 60,
+            "view_more": true,
+            "viewm_txt": "View more",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 16,
+            "text_lh": 24,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 20,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        }
+      },
+      "block_order": [
+        "a61b5459-0dd8-4796-a9c8-e3f1ee42dfb9",
+        "e9f249a0-0a0f-4baf-9664-73babbd7bbe7"
+      ],
+      "settings": {
+        "heading_fullwidth": false,
+        "use_specify_image": true,
+        "parallax": true,
+        "color": "#fae9d4",
+        "overlay": 100,
+        "padding": 10,
+        "paddingmb": 0,
+        "mg_b": 0,
+        "mg_bmb": 0,
+        "content_align": "t4s-text-center",
+        "bg_pos": "left center",
+        "bg_repeat": "inherit",
+        "bg_size": "auto",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "filter_id": {
+          "type": "filter",
+          "settings": {
+            "style_filters": "sidebar"
+          }
+        },
+        "custom_liquid_kQybdd": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid_code": "<style>\n  .plant-wax-wrapper {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    margin: 0 0 4px;\n  }\n  .plant-wax-section {\n    background-color: #fae9d4;\n    padding: 14px 20px;\n    display: flex;\n    align-items: center;\n    gap: 14px;\n    border-radius: 10px;\n    width: 100%;\n  }\n  .plant-wax-icon {\n    width: 34px;\n    height: 34px;\n    flex-shrink: 0;\n    object-fit: contain;\n  }\n  .plant-wax-text {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 20px;\n    letter-spacing: 0;\n    color: #3C1E1E;\n  }\n  @media (max-width: 767px) {\n    .plant-wax-section {\n      padding: 12px 16px;\n      gap: 12px;\n      border-radius: 8px;\n    }\n    .plant-wax-icon {\n      width: 30px;\n      height: 30px;\n    }\n    .plant-wax-text {\n      font-size: 13px;\n      line-height: 18px;\n    }\n  }\n</style>\n\n<div class=\"plant-wax-wrapper\">\n  <div class=\"plant-wax-section\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0920/7591/7591/files/Vector_1.png?v=1753273532\" alt=\"Plant-based Wax Icon\" class=\"plant-wax-icon\">\n    <div class=\"plant-wax-text\">Crafted from clean, plant-based wax. No toxins—just calm.</div>\n  </div>\n</div>"
+          }
+        },
+        "30594d23-d644-4653-9545-9ff769d2e6ab": {
+          "type": "sortby",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filter_id",
+        "custom_liquid_kQybdd",
+        "30594d23-d644-4653-9545-9ff769d2e6ab"
+      ],
+      "settings": {
+        "show_desc": false,
+        "position_desc": "2",
+        "product_des": "8",
+        "show_vendor": false,
+        "use_cdt": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "center",
+        "limit": 12,
+        "enable_listing": false,
+        "enable_listing_default": true,
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "1",
+        "use_pagination": "infinite",
+        "enable_bar_lm": true,
+        "btn_icon": false,
+        "button_style": "outline",
+        "btns_size": "large",
+        "btns_cl": "primary",
+        "button_effect": "sweep-to-right",
+        "btn_pos": "t4s-text-center",
+        "type_filters": "facets",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "sidebar": {
+      "type": "sidebar-collection",
+      "blocks": {
+        "c7bdf308-8019-4991-b58c-6d3e205a52eb": {
+          "type": "category",
+          "settings": {
+            "heading": "Product Categories",
+            "cat_source": "1",
+            "cat_link_list": "",
+            "count": true
+          }
+        },
+        "9d37e80a-1eda-4a65-bb08-199e6a933a16": {
+          "type": "collection",
+          "settings": {
+            "heading": "Sale Products",
+            "collection": "frontpage",
+            "limit_pr": 3,
+            "image_ratio": "t4s_ratioadapt",
+            "image_size": "t4s_cover",
+            "image_position": "t4s_position_8"
+          }
+        },
+        "c090f36e-d6ef-4a2a-ab04-cc78211dadb7": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "img_effect": "zoom",
+            "b_link": "",
+            "open_link": "_self",
+            "content_align": "center",
+            "date": "2023/12/26",
+            "cdt_des": "1",
+            "countdown_pos": "2",
+            "cdt_size": "small",
+            "box_bdr": 0,
+            "bd_width": 0,
+            "space_item": 10,
+            "number_cl": "#ffffff",
+            "text_cl": "#222222",
+            "border_cl": "#000000",
+            "bg_cl": "#000000"
+          }
+        },
+        "221aa22f-5c6c-40c9-9403-6d3cd2c23e93": {
+          "type": "filter",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "c7bdf308-8019-4991-b58c-6d3e205a52eb",
+        "9d37e80a-1eda-4a65-bb08-199e6a933a16",
+        "c090f36e-d6ef-4a2a-ab04-cc78211dadb7",
+        "221aa22f-5c6c-40c9-9403-6d3cd2c23e93"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_drawer": false,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 0,
+        "sidebar_pd": 15
+      }
+    }
+  },
+  "order": [
+    "collections_list_carousel_YFHDhC",
+    "top",
+    "heading_template",
+    "main",
+    "sidebar"
+  ]
+}
