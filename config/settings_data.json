@@ -2383,5 +2383,11 @@
         "settings": {}
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "/* Force the container to be exactly 50x50 */.offer-image-preview {width: 50px !important; height: 50px !important; min-width: 50px !important; max-width: 50px !important; display: flex !important; align-items: center !important; justify-content: center !important; overflow: hidden !important;}",
+      "/* Force the image to fill the 50x50 area without stretching */.offer-image-preview img {width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important;}"
+    ]
   }
 }
