@@ -12,48 +12,49 @@
 </style>
 
 <script>
-    (() => {
-  function _fixFtFastClick() {
-    const FIXED_CLASS = "needsclick";
-    const FIXED_ATTR = "data-ft-fixed";
-    const FT_LABEL_SELECTOR = ".fether-widget label";
-    const isBundle =
-      (typeof window?._fetherStoreAppEmbed != "undefined" && window?._fetherStoreAppEmbed) ||
-      (typeof window?._fetherStoreAppBlock != "undefined" && window?._fetherStoreAppBlock);
-    if (!isBundle) return;
-    const preventFastClick = (labels) => {
-      if (labels.length === 0) return;
-      labels.forEach((label) => {
-        if (!label.hasAttribute(FIXED_ATTR)) {
-          label.setAttribute(FIXED_ATTR, "true");
-          label.classList.add(FIXED_CLASS);
-          label.querySelectorAll("*").forEach((child) => {
-            child.style.pointerEvents = "none";
-          });
-        }
-      });
-    };
-    const labels = document.querySelectorAll(FT_LABEL_SELECTOR);
-    preventFastClick(labels);
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        mutation.addedNodes.forEach((node) => {
-          if (node.nodeType !== Node.ELEMENT_NODE) return;
-          if (node.matches(FT_LABEL_SELECTOR)) {
-            preventFastClick([node]);
-          }
-          const newLabels = node.querySelectorAll(FT_LABEL_SELECTOR);
-          if (newLabels.length > 0) {
-            preventFastClick(newLabels);
-          }
-        });
-      });
-    });
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
+   (() => {
+  const FIXED_CLASS = "needsclick";
+  const FIXED_ATTR = "data-ft-fixed";
+  const FT_LABEL_SELECTOR = ".fether-widget label";
+
+  const isBundle =
+    window?._fetherStoreAppEmbed ||
+    window?._fetherStoreAppBlock;
+
+  if (!isBundle) return;
+
+  function fixLabel(label) {
+    if (label.hasAttribute(FIXED_ATTR)) return;
+
+    label.setAttribute(FIXED_ATTR, "true");
+    label.classList.add(FIXED_CLASS);
+
+    // Chỉ disable pointer-events cho child interactive thôi
+    label.querySelectorAll("button, span, div, svg, img").forEach((child) => {
+      child.style.pointerEvents = "none";
     });
   }
-  _fixFtFastClick();
+
+  function scanAndFix(root = document) {
+    const labels = root.querySelectorAll(FT_LABEL_SELECTOR);
+    labels.forEach(fixLabel);
+  }
+
+  // Initial run
+  scanAndFix();
+
+  // Optimize observer (debounce)
+  let timeout;
+  const observer = new MutationObserver(() => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      scanAndFix();
+    }, 100);
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
 })();
 </script>
