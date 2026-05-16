@@ -285,7 +285,6 @@
       "blocks": {
         "fether_frequently_bought_widget_block_aQyiUR": {
           "type": "shopify://apps/fether-frequently-bought/blocks/widget-block/f96a0d1a-35b8-40ef-ad54-1cb7fb011e11",
-          "disabled": true,
           "settings": {}
         }
       },
